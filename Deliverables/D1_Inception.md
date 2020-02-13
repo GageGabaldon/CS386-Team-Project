@@ -1,4 +1,6 @@
-Introduction
+Introduction:
+
+We are developing a text adventure game. We want a immersive world that tries to help the player solve problems in creative and fun ways. 
 
 
 
