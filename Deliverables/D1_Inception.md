@@ -6,6 +6,8 @@ We are developing a text adventure game. We want a immersive world that tries to
 
 Initial value proposition and consumer segments: 
 
+Inital value proposition is that for escapisim, need to create.
+
 
 
 Interviews summary:
