@@ -56,8 +56,4 @@ Explore and create an impact in a virtual world.
 Express your creativity.
 Simple and easy to use interface.
 
-<<<<<<< HEAD
-Our product is a text adventure game. Our target customers are gamers. We provide the chance to escape reality and get immersed in our virtual world. Our product is bound by less restrictions, because we are allowing players to think for themselves on what they want to do and how they want to act. The game can provide the same level if not more than the same level of immersion as the most sophisticated games out there (;
-=======
-Our product is a text adventure game. Our target customers are gamers. We provide the chance to escape reality and get immersed in our virtual world. Our product is bound by less restrictions, because we are allowing players to think for themselves on what they want to do and how they want to act. The game can provide the same level if not more than the same level of immersion as the most sophisticated games out there (;
->>>>>>> ea21b2a5f2c6637bd6489617297907bd78558ac9
+Our product is a text adventure game. Our target customers are gamers. We provide the chance to escape reality and get immersed in our virtual world. Our product is bound by less restrictions, because we are allowing players to think for themselves on what they want to do and how they want to act. The game can provide the same level if not more than the same level of immersion as the most sophisticated games out there.
