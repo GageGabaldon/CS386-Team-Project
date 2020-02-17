@@ -39,17 +39,20 @@ Vidal's Interview 1:
 I interviewed with Anthony, the morning of February 11th. Anthony has never really had interest in text adventure games. He feels there are better types of games. I then asked what he liked about other types of games and in response he told me they were good for escaping reality and doing fun things. He said he didn't really know exactly how to say it, but explained that he enjoyed doing things he doesn't do in the real world. He enjoys being able to act as he pleases without worrying about consequences like you would in real life. I asked him what he liked for features in a game or what he would like to see in a text adventure. He said he wanted things to matter in a game, as in the actions he makes should have an affect. He wants what he does to be impactful. Because I was understanding he was using games for an escape, I asked him what themes he liked. Did the game need to be set in something different from our reality, something fantasy? He said he did not care about the setting, but he wanted it to be serious. He didn't like games that were jokie or silly. Anthony said he liked the idea of having an option to type in what you say to include "hidden" options that are not explicitly offered. He likes the idea of being able to string together sentences from available words. He also stated that for a phone, including buttons to open up menus would be needed to avoid clutter if we included an inventory system or map to be able to view. Finally I asked him about if he wanted player customizability as this was to be a first person perspective game where he said it only mattered to have that option if we made stupid design choices that he would be required to use. To him, stupid meant silly, nonserious characters. I asked him this, because I was considering if he use some system for roles you can select, would that be something that mattered to players.
 I learned that a focus on a serious and interesting story driven game with continuity is what Anthony wants if he were to play a text adventure. There is little interest in specific themes or roles the player is set in from the start. 
 Games are definitely important for entertainment and preventing boredom. Impact and interaction in a game is important. Creativity may not be so important to some people.
+
 Assessment of Anthony: Nice to have
 
 Vidal's Interview 2:
 I interviewed with Alyssa on February 13th in the afternoon. She said she has never played a text adventure game, but likes the idea of the "choose your own adventure" aspect behind it. She wants a story to be detailed and full of choices. She wants fantasy themes in her games, because it is different from reality. I asked her about interaction with the game and she said she liked to be able to type out an action only because it makes her feel as though she is more submerged in the game and the decision was her own. She likes the idea of customization in a game and being able to reimagine herself as different characters, in other words to be able to play a role different from her real life one. She overall said she wants something fun and distracting, something to get invested in.
 She likes the idea of a book that lets her choose the path which I enjoy, because the concept of that intriguing. Alyssa enjoys some video games, but also enjoys fantasy worlds and writing. It makes me wonder if our audience could include those who like to read fictional stories, not just those who play video games.
 Entertainment is important, but she didn't specify its need to prevent boredom. She wants to have impact and choices in the world however. Creativity may be slightly important to her, but she never specified it as something she valued. I am thinking that a well told or possibly only well described story could be important.
+
 Assessment of Alyssa: Nice to have
 
 Final value proposition and consumer segments:
 
 Updating our final value propositions:
+
 Escape reality in an immersive story and world.
 Alleviate boredom and be entertained with this replayable game.
 Explore and create an impact in a virtual world.
