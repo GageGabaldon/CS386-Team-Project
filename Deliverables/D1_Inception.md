@@ -2,7 +2,6 @@ Introduction:
 
 Our team is developing a text adventure game playable through an Android mobile platform. In our program, a player will be able to progress through a storyline leaving their own impact in an immersive world that allows the player to solve problems in creative and entertaining ways. We hope to give the player a chance to be able to focus on just the game and the story at hand. It will resolve boredom and offer an escape from reality.
 
-
 Initial value proposition and consumer segments:
 
 Be immersed in a world.
@@ -10,10 +9,9 @@ Play this game to alleviate boredom and be entertained.
 Be able to explore and interact, creating an impact in a world.
 Express your creativity.
 
-
 Interviews summary:
 
-Gage's Interview:
+Gage's Interview 1:
 I interviewed Brian Bingham at 9:30 pm on February 14, 2020. I talked with Brian about our text adventure game. He hasn’t played too many text adventure games but has played a lot of games. He noted the reason he likes playing video games is for the freedom to be creative and explore a new world. He also likes a good story to stay interested in the game. He said, “ Make red dead into a text adventure game ” and he would be interested. The other key point to note is that he likes games to be replayable and branching. He likes to be able to play a game a few times and be able to fully immersive and explore the world. He said that a game in the fantasy realm would be pretty generic but something like sci-fi has a lot of potential. The immersion and exploration we seem to get nailed down but need to work on branching narrative and replayability.
 
 Assessment of Brian: Nice to have
@@ -26,11 +24,14 @@ Tommy's Interview 2: I interviewed Gordon Hageman at 7:30 pm on February 16, 202
 
 Assessment of Gordon: Nice to have
 
+
 Elijah's Interview 1: I interviewed Christian Gabriel Bito-on on the 13th of February at 8:30pm Christian is mainly a gamer so I would assume that these would be our most important customers. Based on this interview, his archtype is that he prefers text-adventure games with extra added features and its shock factor. Because of these traits, he believes that it adds up to the immersion of the game, which helps to the main idea of games itself--to escape reality. When asked if a map or an inventory screen would only serve as clutter to the screen, he replied with no, and gave a suggestion about drop-down menus that can be utilized to minimize the clutter.
 
 This interview provided me the clarification that text-adventure games provides the setting to escape reality, gamers should be our target audience for this game, and that map or inventory on the screen is not a problem as long as we implement something to prevent it from being so.
 
-It must have: narrative aspect provides a sense of escaped reality, fourth-wall breaking, shock factor, drop-down menus, push icons Nice to have: Easy to pick up, other features adds another layer of immersion, a good story line, voice input, his major Don't care: general smoothness, his other hobbies
+Must have: narrative aspect provides a sense of escaped reality, fourth-wall breaking, shock factor, drop-down menus, push icons
+Nice to have: Easy to pick up, other features adds another layer of immersion, a good story line, voice input, his major
+Don't care: general smoothness, his other hobbies
 
 Assessment of Christian: Must have
 
