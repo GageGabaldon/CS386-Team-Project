@@ -1,4 +1,4 @@
-package com.example.cs386project;
+package com.example.csapp;
 
 import org.junit.Test;
 
