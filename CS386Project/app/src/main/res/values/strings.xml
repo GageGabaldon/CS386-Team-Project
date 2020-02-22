@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">CSApp</string>
-    <string name="csproject_the_game">CSProject: The Game</string>
-    <string name="start">Start</string>
-    <string name="title_activity_new_game_page">NewGamePage</string>
-    <string name ="charactertext"> Welcome create your character. </string>
-</resources>
