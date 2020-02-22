@@ -1,12 +1,12 @@
 Introduction:
 
-We are developing a text adventure game. We want a immersive world that tries to help the player solve problems in creative and fun ways.
+We are developing a text adventure game. We want a immersive world that tries to help the player solve problems in creative and fun ways. The world will grow with the player and allow the player to express himself in meaningful ways.
 
 
 
 Initial value proposition and consumer segments:
 
-Inital value proposition is that for escapisim, need to create.
+Initial value proposition is that for escapisim, need to create.
 
 
 
@@ -17,7 +17,25 @@ I interviewed Brian Bingham at 9:30 pm on February 14, 2020. I talked with Brain
 
 Assessment: Nice to have
 
+Interview 2:
 
+Assessment:
+
+Interview 3:
+
+Assessment:
+
+Interview 4:
+
+Assessment:
+
+Interview 5:
+
+Assessment:
+
+Interview 6:
+
+Assessment:
 
 Final value proposition and consumer segments:
 
