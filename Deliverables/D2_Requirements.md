@@ -36,19 +36,19 @@ People who will also play the game and search thoroughly for bugs and discontinu
 
 5. Minigames
 
-e. New Game Plus
+6. New Game Plus
 
 
 ###4. Non-Functional Requirements
-a. Must look appealing, immersive, and sellable to our audience
+1. Must look appealing, immersive, and sellable to our audience
 
-b. Must work on Android OS and Apple IOS
+2. Must work on Android OS and Apple IOS
 
-c. Bug Management
+3. Bug Management
 
-d. Updates based on user feedback
+4. Updates based on user feedback
 
-e. Smooth and Intuitive GUI
+5. Smooth and Intuitive GUI
 
 ###5. MVP
 For creating our MVP our main strategy will be to reference our interviews and observe overlapping opinions for deciding what to implement. Frequent specifications about important aspects in the game will be key to our MVP. Things such as smooth and intuitive UI as well as story immersion are common themes in all of our interviews thus far and are considered important to our MVP.
