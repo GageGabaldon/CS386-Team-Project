@@ -96,6 +96,16 @@ VI. Key Scenarios
 VII. Post-conditions 
 Game tested successfully w/o bugs
 
+*Vidal's Use Case*
+
+######**Use Case: **
+I. Brief Description:
+II. Actors:
+III. Preconditions: 
+IV. Basic Flow of Events:
+V. Alternative Flows:
+VI. Key Scenarios:
+VII. Post-Conditions
 ###7. User Stories
 
 
