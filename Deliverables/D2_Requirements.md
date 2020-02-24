@@ -239,7 +239,7 @@ Priority: Medium
 
 Time Estimate: We estimate this will be developing as the game is developed and may take up to 15 hours.
 
-5. As a gamer I want to build a unique character so that I can personalize my experience.
+5. As a gamer, I want to build a unique character so that I can personalize my experience.
 
 Priority Level: Medium
 
