@@ -1,4 +1,3 @@
-
 #D.2 - Requirements
 ____________________________________
 
@@ -10,7 +9,7 @@ The problem of being bored and looking for an immersive gaming experience affect
 For gamers who are looking for ways to alleviate boredom and pass time, TextAdventureGame is a text adventure game that immerses the user in a story in which they choose their own path unlike other text adventure games, our product keeps the user engaged by providing multiple choices that lead to multiple paths of gameplay.
 		
 #####c. Value Proposition
-I. *Value Proposition*: TextAdventureGame is a text adventure game that allows gamers to pass time and reduce boredom, encourages creativity and personal choice to determine the path the story leads.
+I. *Value Proposition*: TextAdventureGame is a text adventure game that allows gamers to pass time and reduce boredom. The game encourages creativity and personal choice to determine the path the story leads. Players will have the opportunity to play something more open-ended and thought provoking than most mainstream games currently available.
 		
 II. *Consumer Segment*: Gamers who are looking for an immersive text adventure.
 
@@ -27,30 +26,33 @@ People who will also play the game and search thoroughly for bugs and discontinu
 
 
 ###3. Functional Requirements
-a. Minigames
+1. Clean, Elegant User Interface
 
-b. Customizable Character
+2. Organized Infrastructure of story choices
 
-c. Fluid Gameplay
+3. Maintain User Information throughout Session ( Health Points, Inventory, Location, Made Choices, Relationships )
 
-d. Interactive Storyline
+4. Customizable Character
 
-e. New Game Plus
+5. Minigames
+
+6. New Game Plus
+
 
 ###4. Non-Functional Requirements
-a. Must look appealing, immersive, and sellable to our audience
+1. Must look appealing, immersive, and sellable to our audience
 
-b. Must work on most phones
+2. Must work on Android OS and Apple IOS
 
-c. Bug Management
+3. Bug Management
 
-d. Updates based on user feedback
+4. Updates based on user feedback
 
-e. Smooth and Intuitive GUI
+5. Smooth and Intuitive GUI
 
 ###5. MVP
-For creating our MVP our main strategy will be to reference our interviews and observe
-overlapping opinions for deciding what to implement. Common opinions about important aspects in a game will be key to our MVP. Things such as smooth and intuitive UI as well as story immersion are common themes in all of our interviews that are important to our MVP.
+For creating our MVP our main strategy will be to reference our interviews and observe overlapping opinions for deciding what to implement. Frequent specifications about important aspects in the game will be key to our MVP. Things such as smooth and intuitive UI as well as story immersion are common themes in all of our interviews thus far and are considered important to our MVP.
+More interviews may be necessary to get a larger amount of opinions regarding features. With the current focus being on the user interface and the story, we will plan to develop the UI first for demoing and testing.
 
 
 ###6. Use Cases
@@ -94,9 +96,18 @@ VI. Key Scenarios
 VII. Post-conditions 
 Game tested successfully w/o bugs
 
+*Vidal's Use Case*
+
+######**Use Case: **
+I. Brief Description:
+II. Actors:
+III. Preconditions: 
+IV. Basic Flow of Events:
+V. Alternative Flows:
+VI. Key Scenarios:
+VII. Post-Conditions
 ###7. User Stories
 
 
 ###8. Trello
 https://trello.com/b/2S8T1pBG/cs-386-project-main
-
