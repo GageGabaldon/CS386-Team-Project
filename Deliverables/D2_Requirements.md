@@ -18,10 +18,13 @@ II. *Consumer Segment*: Gamers who are looking for an immersive text adventure.
 #####a. Developers:
 Create the idea behind and implement a text adventure game playable on android. Responsibilities include learning the necessary tools (Android studio, some sort of database - probably SQL), outlining the story for the game by creating paths and and story lines that work together.
 	
-#####b. Gamers/Users/WIP
-People who will play the game and (hopefully) provide feedback to the developers. Responsibilities include playing through the game and following the storyline.
+#####b. Gamers
+people who will play the game and provide feedback regarding game play mechanics and user interaction for the developers. Responsibilities include playing through the game and following the storyline.
+
+#####c. Readers
+people who will play the game and provide feedback regarding aspects of the storyline, storytelling ability, and user interaction for the developers. Responsibilities include playing through the game and following the storyline, just like the gamers.
 	
-#####c. Testers
+#####d. Testers
 People who will also play the game and search thoroughly for bugs and discontinuity. Responsibilities include exhausting options in the game and finding bugs/issues to report to the developers. Provide assistance for creating a seamless user experience.
 
 
@@ -97,15 +100,49 @@ VII. Post-conditions
 Game tested successfully w/o bugs
 
 *Vidal's Use Case*
+######**Use Case: Interaction in Menu**
+I. Brief Description: This use case demonstrates how maneuvering through the menu will get you into the beginning of the game.
 
-######**Use Case: **
-I. Brief Description:
-II. Actors:
-III. Preconditions: 
+II. Actors: Player
+
+III. Preconditions: The player has opened the app.
+
 IV. Basic Flow of Events:
+1. Game prompts user with option to play or quit game.
+2. Player will select play.
+3. The game will begin.
+
 V. Alternative Flows:
+1. Little can happen from the players ability aside from not selecting an option. If they do not select an option, they will sit in the menu.
+2. Player selects Exit and game is exited.
+
 VI. Key Scenarios:
-VII. Post-Conditions
+1. Player selects play to start the game.
+2. Player selects exit to exit the game.
+
+IIV. Post-Conditions: Player is in a session of the game.
+
+######**Use Case: Valid input**
+I. Brief Description: This use case demonstrates how valid inputs from the user progress the story and are to be handled.
+
+II. Actors: Player
+
+III. Preconditions: The player has opened the app and started a session.
+IV. Basic Flow of Events:
+1. Game begins with displaying storyline event and prompts player for input.
+2. Player will input text to the game using implemented UI.
+3. The Player inputs text that is acceptable by the system.
+4. The Game will display another event to proceed the storyline to the player.
+5. Player inputs text to repeat back to step 2.
+
+V. Alternative Flows:
+1. Player gives invalid text as input in step 2. and is returned to step 1. to have the event displayed again.
+
+VI. Key Scenarios:
+1. Player gives valid input and progresses through games storyline.
+2. Player gives invalid input and is held in current event until valid input given.
+
+VII. Post-Conditions: Player reaches end of game.
 
 *Tommy's Use Case*
 
