@@ -61,7 +61,7 @@ More interviews may be necessary to get a larger amount of opinions regarding fe
 ###6. Use Cases
 #####a. Use Case Diagram
 
-![Use Case Diagram](CS-386-Team-Project/Deliverables/386usediagramSS.png)
+![Use Case Diagram](CS386-Team-Project/Deliverables/386usediagramSS.png)
 
 #####b. Use Case Description
 *Elijah's Use Case*
@@ -264,4 +264,4 @@ Time Estimate: 1 - 2 hours
 ###8. Trello
 https://trello.com/b/2S8T1pBG/cs-386-project-main
 
-![TrelloScreenShot](Deliverables/386trelloSS.png)
+![TrelloScreenShot](CS386-Team-Project/Deliverables/386trelloSS.png)
