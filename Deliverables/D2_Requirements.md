@@ -61,7 +61,7 @@ More interviews may be necessary to get a larger amount of opinions regarding fe
 ###6. Use Cases
 #####a. Use Case Diagram
 
-![Use Case Diagram](/Deliverables/386usediagramSS.png)
+![Use Case Diagram](/Deliverables/386usediagramSS1.png)
 
 #####b. Use Case Description
 *Elijah's Use Case*
