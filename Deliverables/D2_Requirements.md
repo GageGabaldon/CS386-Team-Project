@@ -184,10 +184,10 @@ VII. Post-Conditions: User continues on through the game sequence
 2. As a user, I want a game that can be different each time I play it so that I can enjoy the game after I finish it the first time.
 	a) We are structuring our game to have multiple paths to be taken in story progression and will take anywhere between 20 - 30 hours to implement.
 
-2. As a developer, I want constructive feedback about the story of the game so that I can create an immersive experience for users.
+3. As a developer, I want constructive feedback about the story of the game so that I can create an immersive experience for users.
 	a) We estimate this will be an ongoing piece of our game but may take ~20 hours or so
 
-3. As a tester, I want to be able to catch issues and bugs with the game so that the game can be improved for players.
+4. As a tester, I want to be able to catch issues and bugs with the game so that the game can be improved for players.
 	a) We estimate this will be developing as the game is developed and may take up to 15 hours.
 
 ###8. Trello
