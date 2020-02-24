@@ -61,7 +61,8 @@ More interviews may be necessary to get a larger amount of opinions regarding fe
 ###6. Use Cases
 #####a. Use Case Diagram
 
-<img src="UseCases.pdf">
+![Use Case Diagram](CS-386-Team-Project/Deliverables/386usediagramSS.png)
+
 #####b. Use Case Description
 *Elijah's Use Case*
 
@@ -248,8 +249,19 @@ Time Estimate: 13hrs
 
 Priority Level: High
 
-Time Management: ?
+Time Estimate: 5 -24 hours
 
+7. As a developer, I want feedback from other developers about my coding and vice versa so that we can improve our game as a team.
+
+Priority Level: High
+Time Estimate: 20 - 30 hours
+
+8. As a tester, I want to communicate with the developers with the bugs I found and carefully describe them so that they can work on it without any confusion whatsoever.
+
+Priority Level: Medium
+Time Estimate: 1 - 2 hours
 
 ###8. Trello
 https://trello.com/b/2S8T1pBG/cs-386-project-main
+
+![TrelloScreenShot](Deliverables/386trelloSS.png)
