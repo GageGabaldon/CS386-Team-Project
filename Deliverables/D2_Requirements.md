@@ -106,8 +106,46 @@ IV. Basic Flow of Events:
 V. Alternative Flows:
 VI. Key Scenarios:
 VII. Post-Conditions
+
+*Tommy's Use Case*
+
+######**Use case: Wrong input**
+I. Brief Description: This use case demonstrates how wrong inputs from the user will be handled.
+
+II. Actors: Testers, Developers
+
+III. Preconditions: Game is in development and misinputs/bugs are being smoothed out
+
+IV. Basic Flow of Events:
+
+1. Begin with game prompting for user input
+2. User will input something to the game using implemented UI
+3. The user inputs something that is invalid/doesn't make sense
+4. Prompt is displayed notifying user of invalid input and must retry
+5. User is brought back to previous screen where input is required again
+6. User inputs valid option
+7. Game continues as normal with users valid input.
+
+V. Alternative Flows:
+
+1. User correctly inputs from step #3, skip to step #6
+2. User inputs incorrectly multiple times, repeat steps #2 ~ #5
+
+VI. Key Scenarios:
+
+1. User's wrong input is handled by simply prompting again for correct input
+2. User inputs legal input from beginning
+
+VII. Post-Conditions: User continues on through the game sequence
+
+
 ###7. User Stories
 
+1. As a user, I want wrong inputs to be handled effeciently so that misclicks and typos will not drag on and be consequential to the story of the game. 
+	a) We estimate this will take around 2 hours to fully implement
+
+2. As a developer, I want constructive feedback about the story of the game so that I can create an immersive experience for users.
+	a) We estimate this will be an ongoing piece of our game but may take ~20 hours or so
 
 ###8. Trello
 https://trello.com/b/2S8T1pBG/cs-386-project-main
