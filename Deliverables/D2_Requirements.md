@@ -108,44 +108,44 @@ I. Brief Description: This use case demonstrates how maneuvering through the men
 
 II. Actors: Player
 
-III. Preconditions: The player has opened the app.
+III. Preconditions: The player has opened the app
 
 IV. Basic Flow of Events:
-1. Game prompts user with option to play or quit game.
-2. Player will select play.
-3. The game will begin.
+1. Game prompts user with option to play or quit game
+2. Player will select play
+3. The game will begin
 
 V. Alternative Flows:
-1. Little can happen from the players ability aside from not selecting an option. If they do not select an option, they will sit in the menu.
-2. Player selects Exit and game is exited.
+1. Little can happen from the players ability aside from not selecting an option. If they do not select an option, they will sit in the menu
+2. Player selects Exit and game is exited
 
 VI. Key Scenarios:
-1. Player selects play to start the game.
-2. Player selects exit to exit the game.
+1. Player selects play to start the game
+2. Player selects exit to exit the game
 
-IIV. Post-Conditions: Player is in a session of the game.
+IIV. Post-Conditions: Player is in a session of the game
 
 ######**Use Case: Valid input**
-I. Brief Description: This use case demonstrates how valid inputs from the user progress the story and are to be handled.
+I. Brief Description: This use case demonstrates how valid inputs from the user progress the story and are to be handled
 
 II. Actors: Player
 
-III. Preconditions: The player has opened the app and started a session.
+III. Preconditions: The player has opened the app and started a session
 IV. Basic Flow of Events:
-1. Game begins with displaying storyline event and prompts player for input.
-2. Player will input text to the game using implemented UI.
-3. The Player inputs text that is acceptable by the system.
-4. The Game will display another event to proceed the storyline to the player.
-5. Player inputs text to repeat back to step 2.
+1. Game begins with displaying storyline event and prompts player for input
+2. Player will input text to the game using implemented UI
+3. The Player inputs text that is acceptable by the system
+4. The Game will display another event to proceed the storyline to the player
+5. Player inputs text to repeat back to step 2
 
 V. Alternative Flows:
-1. Player gives invalid text as input in step 2. and is returned to step 1. to have the event displayed again.
+1. Player gives invalid text as input in step 2. and is returned to step 1. to have the event displayed again
 
 VI. Key Scenarios:
-1. Player gives valid input and progresses through games storyline.
-2. Player gives invalid input and is held in current event until valid input given.
+1. Player gives valid input and progresses through games storyline
+2. Player gives invalid input and is held in current event until valid input given
 
-VII. Post-Conditions: Player reaches end of game.
+VII. Post-Conditions: Player reaches end of game
 
 *Tommy's Use Case*
 
@@ -164,7 +164,7 @@ IV. Basic Flow of Events:
 4. Prompt is displayed notifying user of invalid input and must retry
 5. User is brought back to previous screen where input is required again
 6. User inputs valid option
-7. Game continues as normal with users valid input.
+7. Game continues as normal with users valid input
 
 V. Alternative Flows:
 
@@ -188,30 +188,30 @@ III. Preconditions: A client or tester has opened the app and has an idea to pro
 
 IV. Basic Flow of Events:
 
-1. User presses the suggest feature button.
-2. User types in what kind of feature it is in the top box.
-3. User types in their feature into the box.
-4. User then sends information to the developer.
-5. Developer then decides to add feature.
-6. Developer then works on feature.
-7. Contact User if feature is implemented.
-8. Request is resolved.
+1. User presses the suggest feature button
+2. User types in what kind of feature it is in the top box
+3. User types in their feature into the box
+4. User then sends information to the developer
+5. Developer then decides to add feature
+6. Developer then works on feature
+7. Contact User if feature is implemented
+8. Request is resolved
 
 V. Alternative Flows:
 
-5a. Developer does not add feature.
+5a. Developer does not add feature
 		1. User is not contacted and feature is not added to app.
 		2. Skip to 8.
 
 VI. Key Scenarios:
 
-1. Idea is worthwhile and is added to app.
-2. Idea is too hard or not a developer focus and is not added to app.
+1. Idea is worthwhile and is added to app
+2. Idea is too hard or not a developer focus and is not added to app
 
 VII. Post-Conditions:
 
 1. New Feature is added to App
-2. User contacted and thanks given.
+2. User contacted and thanks given
 
 ###7. User Stories
 
@@ -222,6 +222,13 @@ Priority: Medium
 Time Estimate: We estimate this will take around 2 hours to fully implement
 
 2. As a user, I want a game that can be different each time I play it so that I can enjoy the game after I finish it the first time.
+
+
+3. As a developer, I want constructive feedback about the story of the game so that I can create an immersive experience for users.
+	a) We estimate this will be an ongoing piece of our game but may take ~20 hours or so
+
+4. As a tester, I want to be able to catch issues and bugs with the game so that the game can be improved for players.
+	a) We estimate this will be developing as the game is developed and may take up to 15 hours.
 
 Priority: High
 
