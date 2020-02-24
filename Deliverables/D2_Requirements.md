@@ -4,26 +4,26 @@ ____________________________________
 ###1. Positioning
 #####a. Problem Statement:
 The problem of being bored and looking for an immersive gaming experience affects gamers; the impact of which is being unable to find a game or experience that helps pass time.
-		
+
 #####b. Product Position Statement:
 For gamers who are looking for ways to alleviate boredom and pass time, TextAdventureGame is a text adventure game that immerses the user in a story in which they choose their own path unlike other text adventure games, our product keeps the user engaged by providing multiple choices that lead to multiple paths of gameplay.
-		
+
 #####c. Value Proposition
 I. *Value Proposition*: TextAdventureGame is a text adventure game that allows gamers to pass time and reduce boredom. The game encourages creativity and personal choice to determine the path the story leads. Players will have the opportunity to play something more open-ended and thought provoking than most mainstream games currently available.
-		
+
 II. *Consumer Segment*: Gamers who are looking for an immersive text adventure.
 
 
 ###2. Stakeholders
 #####a. Developers:
 Create the idea behind and implement a text adventure game playable on android. Responsibilities include learning the necessary tools (Android studio, some sort of database - probably SQL), outlining the story for the game by creating paths and and story lines that work together.
-	
+
 #####b. Gamers
 people who will play the game and provide feedback regarding game play mechanics and user interaction for the developers. Responsibilities include playing through the game and following the storyline.
 
 #####c. Readers
 people who will play the game and provide feedback regarding aspects of the storyline, storytelling ability, and user interaction for the developers. Responsibilities include playing through the game and following the storyline, just like the gamers.
-	
+
 #####d. Testers
 People who will also play the game and search thoroughly for bugs and discontinuity. Responsibilities include exhausting options in the game and finding bugs/issues to report to the developers. Provide assistance for creating a seamless user experience.
 
@@ -89,14 +89,14 @@ V. Alternative Flows
 
 1. No bug is found - in step #3, if no bug was found, skip to step 11
 2. Cannot fix bug - in step #7, if the bug is not fixable, perform use case: Recode Game
-3. Developers didn't receive message - in step #5, if testers somehow was not able to relay the message about the bug, go meet them physically 
+3. Developers didn't receive message - in step #5, if testers somehow was not able to relay the message about the bug, go meet them physically
 
 VI. Key Scenarios
 
 1. Game tested successfully w/o bugs
 2. Game has game-breaking bug(s)
 
-VII. Post-conditions 
+VII. Post-conditions
 Game tested successfully w/o bugs
 
 *Vidal's Use Case*
@@ -175,20 +175,73 @@ VI. Key Scenarios:
 
 VII. Post-Conditions: User continues on through the game sequence
 
+*Gage's Use Case*
+
+I. Brief Description: Demonstrates how new features get implemented
+
+II. Actors: Client, Testers, Developers
+
+III. Preconditions: A client or tester has opened the app and has an idea to propose.
+
+IV. Basic Flow of Events:
+
+1. User presses the suggest feature button.
+2. User types in what kind of feature it is in the top box.
+3. User types in their feature into the box.
+4. User then sends information to the developer.
+5. Developer then decides to add feature.
+6. Developer then works on feature.
+7. Contact User if feature is implemented.
+8. Request is resolved.
+
+V. Alternative Flows:
+
+5a. Developer does not add feature.
+		1. User is not contacted and feature is not added to app.
+		2. Skip to 8.
+
+VI. Key Scenarios:
+
+1. Idea is worthwhile and is added to app.
+2. Idea is too hard or not a developer focus and is not added to app.
+
+VII. Post-Conditions:
+
+1. New Feature is added to App
+2. User contacted and thanks given.
 
 ###7. User Stories
 
-1. As a user, I want wrong inputs to be handled effeciently so that misclicks and typos will not drag on and be consequential to the story of the game. 
-	a) We estimate this will take around 2 hours to fully implement
+1. As a user, I want wrong inputs to be handled effeciently so that misclicks and typos will not drag on and be consequential to the story of the game.
+
+Priority: medium
+Time Estimate: We estimate this will take around 2 hours to fully implement
 
 2. As a user, I want a game that can be different each time I play it so that I can enjoy the game after I finish it the first time.
-	a) We are structuring our game to have multiple paths to be taken in story progression and will take anywhere between 20 - 30 hours to implement.
 
-2. As a developer, I want constructive feedback about the story of the game so that I can create an immersive experience for users.
-	a) We estimate this will be an ongoing piece of our game but may take ~20 hours or so
+Priority: High
+Time Estimate: Will take anywhere between 20 - 30 hours to implement.
 
-3. As a tester, I want to be able to catch issues and bugs with the game so that the game can be improved for players.
-	a) We estimate this will be developing as the game is developed and may take up to 15 hours.
+3. As a developer, I want constructive feedback about the story of the game so that I can create an immersive experience for users.
+
+Priority: Low
+Time Estimate: We estimate this will be an ongoing piece of our game but may take ~20 hours or so
+
+4. As a tester, I want to be able to catch issues and bugs with the game so that the game can be improved for players.
+
+Priority:
+Time Estimate: We estimate this will be developing as the game is developed and may take up to 15 hours.
+
+5. As a gamer I want to build a unique character so that I can personalize my experience.
+
+Priority Level: Medium
+Time Estimate: 13hrs
+
+6. As a tester, I want to be able to provide feedback and suggest ideas for the game so that I can help create a better more immersive game.
+
+Priority Level: Low
+Time Management: 5hrs
+
 
 ###8. Trello
 https://trello.com/b/2S8T1pBG/cs-386-project-main
