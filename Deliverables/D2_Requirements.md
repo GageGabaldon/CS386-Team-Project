@@ -60,6 +60,7 @@ More interviews may be necessary to get a larger amount of opinions regarding fe
 
 ###6. Use Cases
 #####a. Use Case Diagram
+![OurCaseStory]()
 #####b. Use Case Description
 *Elijah's Use Case*
 
@@ -237,10 +238,10 @@ Time Estimate: We estimate this will be developing as the game is developed and 
 Priority Level: Medium
 Time Estimate: 13hrs
 
-6. As a tester, I want to be able to provide feedback and suggest ideas for the game so that I can help create a better more immersive game.
+6. As a developer, I want to be to create interesting gameplay choices so that I can bring an immersive and creative experience to the user.
 
-Priority Level: Low
-Time Management: 5hrs
+Priority Level: High
+Time Management: ?
 
 
 ###8. Trello
