@@ -1,6 +1,7 @@
 package com.example.csproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -10,10 +11,10 @@ import android.os.Bundle;
 import android.provider.BaseColumns;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 
-import com.example.csproject.db.GameContract;
-import com.example.csproject.db.GameContractHelper;
+
+import com.example.csproject.db.AppDatabase;
+import com.example.csproject.db.Entities.Players;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,12 +30,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void createDatabase() {
-        // Create new helper
-        GameContractHelper dbHelper = new GameContractHelper(this);
 
-        // Get the database. If it does not exist, this is where it will
-        // also be created.
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+                AppDatabase.class, "database-name").build();
 
     }
 
