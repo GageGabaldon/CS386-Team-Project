@@ -7,7 +7,7 @@ import androidx.room.Query;
 import com.example.csproject.db.Entities.Players;
 
 import java.util.List;
-
+// this is list of methods that you can call to use database
 @Dao
 public interface PlayersDao {
         @Query("SELECT * FROM Players")

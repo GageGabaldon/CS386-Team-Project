@@ -3,12 +3,15 @@ package com.example.csproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-// settings class
-public class Settings extends AppCompatActivity {
+
+public class MainGameActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_main_game);
     }
+
+
+
 }

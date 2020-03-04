@@ -5,7 +5,7 @@ import android.provider.BaseColumns;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-
+// player entity in a database
 @Entity
 public class Players {
 

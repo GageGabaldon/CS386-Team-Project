@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        createDatabase();
+       // createDatabase();
     }
 
     private void createDatabase() {
@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, About.class);
         startActivity(intent);
     }
+
+    /** sends to Settings Activity */
     public void sendSettings(View view) {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
