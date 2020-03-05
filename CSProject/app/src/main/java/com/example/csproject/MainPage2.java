@@ -41,8 +41,8 @@ public class MainPage2 extends AppCompatActivity {
         playersDao.insertAll(player);
         **/
 
-        Intent intent = new Intent(this, MainGameActivity.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, MainGameActivity.class);
+        startActivity(intent2);
     }
 
     // may not be used yet

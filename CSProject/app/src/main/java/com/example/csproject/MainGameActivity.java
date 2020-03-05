@@ -13,19 +13,11 @@ import com.example.csproject.db.AppDatabase;
 public class MainGameActivity extends AppCompatActivity {
     UpdateGame upgame;
 
-    public MainGameActivity() {
-
-        // intiate database and set up a way to add a thing
-        AppDatabase db = Room.databaseBuilder(this,
-                AppDatabase.class, "database-name").allowMainThreadQueries().build();
-        upgame = new UpdateGame(db);
-
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
-
+        upgame = new UpdateGame();
     }
 
     public void clickedOption(View view)
