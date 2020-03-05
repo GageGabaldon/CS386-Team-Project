@@ -10,4 +10,5 @@
     <string name="gamemadeby">This Game Made By these Absolute Mad Lads: </string>
     <string name="madlads">Gage, Vidal, Tommy, Elijah</string>
     <string name="inputcharname">Character Name</string>
+    <string name="placeholder">placeholder</string>
 </resources>
