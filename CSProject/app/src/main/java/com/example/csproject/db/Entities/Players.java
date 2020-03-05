@@ -14,10 +14,15 @@ public class Players {
 
         public String firstName;
         public String lastName;
+        public int event;
 
         public String getFirstName() {
                 return firstName;
         }
+
+        public int getEvent(){return event;}
+
+        public void setEvent(int event){this.event = event;}
 
         public void setFirstName(String firstName) {
                 this.firstName = firstName;
@@ -30,5 +35,7 @@ public class Players {
         public void setLastName(String lastName) {
                 this.lastName = lastName;
         }
+
+
 }
 

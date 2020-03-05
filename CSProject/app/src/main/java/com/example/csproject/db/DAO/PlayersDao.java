@@ -11,7 +11,8 @@ import java.util.List;
 @Dao
 public interface PlayersDao {
         @Query("SELECT * FROM Players")
-        List<Players> getAll();
+        Players getAll();
+
 
         @Insert
         void insertAll(Players... players);
