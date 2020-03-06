@@ -10,10 +10,10 @@ public class UpdateGame {
 
     Story story;
     AppDatabase db;
-    public UpdateGame(AppDatabase pp)
+    public UpdateGame()
     {
-        int currentEvent = getCurrentEventNumber();
-        story = new Story(currentEvent);
+      //  int currentEvent = getCurrentEventNumber();
+       // story = new Story(currentEvent);
     }
 
     public int getCurrentEventNumber()
