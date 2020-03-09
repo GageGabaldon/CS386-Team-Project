@@ -29,33 +29,33 @@
   ![UML Diagram](/Deliverables/diagramfilename.png)
   
   ##### Classes:
-  - *Class Player*: attributes->( health, inventory, location, moraleStat )
+  - *Class Player*: ( attribute: health; inventory; location; morality Stat;, operation: )
   
-  - *Class PlayerStats*: A potential super class. 
+  - *Class PlayerStats*: ( attribute:, operation: reduce health; increase health; increase morality; decrease morality; ) 
   
-  - *Class World*: attributes->( story-location, player-location )
+  - *Class World*: ( attribute: story-location; player-location;, operation: update player-location; )
   
-  - *Class Item*: (item type, use item )
+  - *Class Item*: ( attribute: item type; item use state; use item;, operation: use item; )
   
-  - *Class Story*: ( event-location )
+  - *Class Story*: ( attribute: event-location;, operation: update event; )
   
-  - *Class Location*: (Name, ID, Description)
+  - *Class Location*: ( attribute: name; ID; description;, operation: )
   
-  - *Class Activities*: handles screen stuff.
+  - *Class Activities*: ( attribute:, operation: update screen; )
   
-  - *Class NPC*: (health, where they come into the story)
+  - *Class NPC*: ( attribute: health; event-location; story-location;, operation: )
   
-  - *Class Event*: ( player-dialogue/user’s choice, event-dialogue )
+  - *Class Event*: ( attribute: player-dialogue; event-dialogue; NPC's;, operation: )
   
-  - *Class UpdateGame*: (operation: update activities)
+  - *Class UpdateGame*: ( attribute:, operation: access database info; load player dialogue; load event dialogue; )
 
 
 ### Class Responsibilities
-  + **Player** class handles stuff related to the player. This includes attributes like health, 
-  where the player is, and what items the player has. We have this class to keep track of stuff the player does.
+  + **Player** class handles information related to the player. This includes attributes like health, 
+  where the player is, and what items the player has. We have this class to keep track of the player as it progresses in the story.
 
-  + **PlayerStats** class is used as a superclass for both players and NPCs. We have included this because 
-  both players and NPCs have a health stat as well as a location.
+  + **PlayerStats** class is used as a superclass for both players and NPCs. We have included this to update the health and morality score 
+  player has a health and morality stat. NPC has a health stat.
 
   + **World** class will handle the sort of “back end” of our game. World class will keep track of the player 
   and their location which will make saving progress to a database more easily achievable.
