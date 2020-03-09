@@ -26,7 +26,7 @@
 ### Model
 
   ##### UML Diagram
-  ![UML Diagram](/Deliverables/diagramfilename.png)
+  ![UML Diagram](/Deliverables/UMLDiagram.png)
   
   ##### Classes:
   - *Class Player*: ( attribute: health; inventory; location; morality Stat;, operation: )
