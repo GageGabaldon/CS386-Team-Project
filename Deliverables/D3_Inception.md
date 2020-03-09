@@ -57,17 +57,14 @@
   + **PlayerStats** class is used as a superclass for both players and NPCs. We have included this to update the health and morality score 
   player has a health and morality stat. NPC has a health stat.
 
-  + **World** class will handle the sort of “back end” of our game. World class will keep track of the player 
-  and their location which will make saving progress to a database more easily achievable.
+  + **World** class will track the location of the story and player location for our game. World class will update the players location given the current location in story based on the story class.
 
   + **Item** class will handle all the items the player can interact with, whether it is by picking the item up 
-  or having it in the inventory and actually using it, its names, and its categories.
+  or having it in the inventory and actually using it, its name, usability and type.
 
-  + **Story** class will handle anything related to the story including actual story text as well as choices that 
-  will be presented to the user. We have included this to manage the main story behind our game and keep track of 
-  what is currently going on for the user to interact with.
+  + **Story** class will handle events presented to the user. It manages the main story behind our game and keeps track of what is currently going on for the user to interact with.
 
-  + **Location** class will handle the current location in terms of the story. Location refers to where the 
+  + **Location** class will hold the name of the location, an ID to track the location, and a description to use in dialogue for the user to know where they are. Location refers to where the 
   player is currently at in the story. We have included this the make is easier to track where the player 
   is and share this to the world class for saving purposes.
 
@@ -75,14 +72,12 @@
   this to handle updating the screen when a new location is reached so we do not have to keep making new activities.
 
   + **NPC** class will handle anything to do with NPCs that the player comes across in the story. 
-  This will help keep track of recurring characters and handle health stats for combat purposes.
+  This will store information to be able to handle health stats for combat purposes.
 
-  + **Event** Class will work with handling anything to do with events happening in the story such as 
-  something requiring user input or interaction. This will include handling cases where the 
-  user makes a choice and update what happens with the location and activities class.
+  + **Event** class will contain dialogue for the player to input and dialogue for the event in the story. This will also include a list of NPC's that will be in the event.
 
   + **UpdateGame** class will work closely with the activities class to update the current state of the game. 
-  This will include things like changing the current activity and updating the user’s location.
+  This will include things like changing the current activity and updating the user interface.
  
 
 
