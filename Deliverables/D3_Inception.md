@@ -28,15 +28,25 @@ Model
   UML Diagram
   
   Classes:
+  
   Class Player: attributes->( health, inventory, location, moraleStat )
+  
   Class PlayerStats: A potential super class. 
+  
   Class World: attributes->( story-location, player-location )
+  
   Class Item: (item type, use item )
+  
   Class Story: ( event-location )
-  Class Location: (Name, ID, Description, 
+  
+  Class Location: (Name, ID, Description)
+  
   Class Activities: handles screen stuff.
+  
   Class NPC: (health, where they come into the story)
+  
   Class Event: ( player-dialogue/user’s choice, event-dialogue )
+  
   Class UpdateGame: (operation: update activities)
 
 
