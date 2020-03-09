@@ -1,25 +1,26 @@
 D.3 Analysis
 
 System Description
-  The problem of being bored and looking for an immersive gaming experience affects players; 
+  The problem of being bored and looking for an immersive gaming experience affects **players**; 
   the impact of which is being unable to find a game or experience that helps pass time. 
-  TextAdventureGame is a text adventure game that immerses the player in a story in which 
-  they can choose their own path or story. TextAdventureGame keeps users engaged by providing multiple 
-  choices to the player that ultimately decides how the story plays out. TextAdventureGame encourages 
-  creativity and personal choice to give players an open-ended story.
+  TextAdventureGame is a text adventure game that immerses the **player** in a **story** in which 
+  they can choose their own path or **story**. TextAdventureGame keeps users engaged by providing multiple 
+  choices to the **player** that ultimately decides how the **story** plays out. TextAdventureGame encourages 
+  creativity and personal choice to give **players** an open-ended story.
   
-  The player will be able to choose a name for their character before starting the game. 
-  A character has specific attributes such as their health, inventory, and current location. 
-  Once in the game, the player will be presented with elements of the story that lead to the player 
-  being presented a choice. The player will continue through the story making choices until the end 
-  of the game is reached. Along the path of the story the player will be able to interact with and combat 
-  Non Playable Characters through events that require another choice. The NPC’s have their own attributes 
-  such as health and location. The player will come across items that they can pick up and add to their inventory. 
-  These items may be used to affect other choices or change the players stats such as health.
-  As a whole, there is a world that encapsulated the current position of the story which includes the 
-  player and their attributes, as well as the current location. A separate class activities will handle the UI 
-  and update what parts of the story are displayed on the current screen as well as the possible choices. 
-  An activities and update game class will be used to update the UI and keep the buttons and other elements of the UI updated. 
+  The **player** will be able to choose a name for their character before starting the game. 
+  A character has specific attributes such as their *health*, *inventory*, and current **location**. 
+  Once in the game, the **player** will be presented with elements of the **story** that lead to the **player** 
+  being presented a choice. The **player** will continue through the **story** making choices until the end 
+  of the game is reached. Along the path of the **story** the **player** will be able to interact with and combat 
+  **Non Playable Characters** through events that require another choice. The **NPC’s** have their own attributes 
+  such as *health* and **location**. The **player** will come across **items** that they can pick up and add to the
+  *inventory*. These **items** may be used to affect other choices or change the **players** stats such as *health*.
+  As a whole, there is a world that encapsulated the current position of the **story** which includes the 
+  **player** and their attributes, as well as the current **location**. A separate class activities will handle the UI 
+  and update what parts of the **story** are displayed on the current screen as well as the possible choices. 
+  An **activities** and **update game** class will be used to update the UI and keep the buttons and other elements of
+  the UI updated. 
   
 Model
 
