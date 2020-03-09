@@ -69,7 +69,7 @@
   is and share this to the world class for saving purposes.
 
   + **Activities** class will handle the UI and what is currently being displayed on the screen. We have included 
-  this to handle updating the screen when a new location is reached so we do not have to keep making new activities.
+  this to handle updating the screen when a game starts, is loaded, or a new location is reached so we do not have to keep making new activities.
 
   + **NPC** class will handle anything to do with NPCs that the player comes across in the story. 
   This will store information to be able to handle health stats for combat purposes.
@@ -77,7 +77,7 @@
   + **Event** class will contain dialogue for the player to input and dialogue for the event in the story. This will also include a list of NPC's that will be in the event.
 
   + **UpdateGame** class will work closely with the activities class to update the current state of the game. 
-  This will include things like changing the current activity and updating the user interface.
+  This will include things like retrieving and storing the current state of the game for the Activities class to update the UI.
  
 
 
