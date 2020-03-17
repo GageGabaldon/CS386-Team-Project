@@ -13,4 +13,7 @@
     <string name="inputcharname">Enter Name</string>
     <string name="placeholder">placeholder</string>
     <string name="vertical_ellipsis">&#8942;</string>
+    <string name="tell_us_about_your_experience">Tell us about your experience</string>
+    <string name="feedbacksubject">Subject:</string>
+    <string name="send_feedback">Send Feedback</string>
 </resources>
