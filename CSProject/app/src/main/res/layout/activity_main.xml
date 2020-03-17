@@ -59,7 +59,6 @@
             android:id="@+id/about"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginBottom="40dp"
             android:layout_weight="2"
             android:background="@color/white"
             android:fontFamily="@font/roboto"
@@ -68,18 +67,29 @@
             android:paddingStart="40dp"
             android:text="@string/about" />
 
+        <Button
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="start|center_vertical"
+            android:background="@color/white"
+            android:onClick="sendFeedback"
+            android:fontFamily="@font/roboto"
+            android:text="Feedback - Give ideas to the Creators" />
+
+
     </LinearLayout>
 
     <Button
         android:layout_width="59dp"
         android:layout_height="67dp"
-        android:layout_marginEnd="24dp"
         android:background="@color/orange_primary"
         android:fontFamily="@font/roboto"
+        android:onClick="sendSettings"
         android:text="@string/vertical_ellipsis"
         android:textColor="@color/white"
         android:textSize="30sp"
-        android:onClick="sendSettings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

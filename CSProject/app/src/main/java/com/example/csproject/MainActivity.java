@@ -57,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void sendFeedback(View view) {
+        Intent intent  = new Intent(this, Feedback.class);
+        startActivity(intent);
+    }
+
 
 
 }
