@@ -21,6 +21,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
     /** sends to Settings Activity */
     public void sendSettings(View view) {
         Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
+
+    public void sendFeedback(View view) {
+        Intent intent  = new Intent(this, Feedback.class);
         startActivity(intent);
     }
 

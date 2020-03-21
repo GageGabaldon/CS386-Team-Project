@@ -4,67 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/white"
     android:visibility="visible"
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:text="@string/cs386project_the_game"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
-        android:layout_width="231dp"
-        android:layout_height="465dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.777">
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@color/orange_primary"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingTop="60dp"
+            android:text="@string/text_adventure_game"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            style="@style/borderless_button"
+            android:id="@+id/new_game"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:onClick="sendMessage"
-            android:text="@string/start_game" />
+            android:text="@string/new_game" />
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            style="@style/borderless_button"
+            android:id="@+id/load_game"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="sendMessage"
+            android:text="@string/load_game" />
+
+
+        <Button
+            style="@style/borderless_button"
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:onClick="sendAbout"
             android:text="@string/about" />
+
+        <Button
+            style="@style/borderless_button"
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="sendFeedback"
+            android:text="Feedback - Give ideas to the Creators" />
+
+
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="99dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/settings"
+        android:layout_width="59dp"
+        android:layout_height="67dp"
+        android:background="@color/orange_primary"
+        android:fontFamily="@font/roboto"
         android:onClick="sendSettings"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/vertical_ellipsis"
+        android:textColor="@color/white"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="140dp"
+        android:src="@drawable/cover_art"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
