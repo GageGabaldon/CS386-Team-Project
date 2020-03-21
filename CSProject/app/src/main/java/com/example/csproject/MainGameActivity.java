@@ -47,14 +47,12 @@ public class MainGameActivity extends AppCompatActivity {
         updateButton2(button2);
         updateButton3(button3);
         updateButton4(button4);
-        updateButton5(button5);
-        updateButton6(button6);
 
     }
 
     public void updateScreen(String text)
     {
-        TextView textview = (TextView) findViewById(R.id.maingametext);
+        TextView textview = (TextView) findViewById(R.id.main_text);
         textview.setText(text);
     }
 
@@ -82,20 +80,6 @@ public class MainGameActivity extends AppCompatActivity {
     public void updateButton4(String newButtonText)
     {
         Button button = (Button) findViewById(R.id.option4);
-
-        button.setText(newButtonText);
-    }
-
-    public void updateButton5(String newButtonText)
-    {
-        Button button = (Button) findViewById(R.id.option5);
-
-        button.setText(newButtonText);
-    }
-
-    public void updateButton6(String newButtonText)
-    {
-        Button button = (Button) findViewById(R.id.option6);
 
         button.setText(newButtonText);
     }

@@ -19,7 +19,8 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="4"
             android:background="@color/orange_primary"
             android:fontFamily="@font/roboto"
             android:gravity="center_vertical|center_horizontal"
@@ -31,51 +32,40 @@
 
 
         <Button
+            style="@style/borderless_button"
             android:id="@+id/new_game"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="@drawable/bottom_border"
-            android:fontFamily="@font/roboto"
-            android:gravity="start|center_vertical"
+            android:layout_weight="1"
             android:onClick="sendMessage"
-            android:paddingStart="40dp"
             android:text="@string/new_game" />
 
         <Button
+            style="@style/borderless_button"
             android:id="@+id/load_game"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="@drawable/bottom_border"
-            android:fontFamily="@font/roboto"
-            android:gravity="start|center_vertical"
+            android:layout_weight="1"
             android:onClick="sendMessage"
-            android:paddingStart="40dp"
             android:text="@string/load_game" />
 
 
         <Button
+            style="@style/borderless_button"
             android:id="@+id/about"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="@color/white"
-            android:fontFamily="@font/roboto"
-            android:gravity="start|center_vertical"
+            android:layout_weight="1"
             android:onClick="sendAbout"
-            android:paddingStart="40dp"
             android:text="@string/about" />
 
         <Button
+            style="@style/borderless_button"
             android:id="@+id/feedback"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:gravity="start|center_vertical"
-            android:background="@color/white"
+            android:layout_weight="1"
             android:onClick="sendFeedback"
-            android:fontFamily="@font/roboto"
             android:text="Feedback - Give ideas to the Creators" />
 
 
