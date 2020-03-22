@@ -4,5 +4,5 @@ set -xeuo pipefail
 docker run \
    -it --rm \
    -v "$PWD":/application \
-   packsdkandroiddocker.image \
+   gagegabaldon/packsdkandroiddocker.image \
    sh -c "$@"
