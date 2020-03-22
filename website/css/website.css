@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgrey;
+}
+section {
+  text-align: center;
+}
+#searchContainer {
+
+}
+#search-bar {
+  font-size: 4vw;
+  text-align: center;
+  margin: 2em auto;
+}
+#search-button {
+  margin-left: 7em;
+  font-size: 3vw;
+  background-color: white;
+  padding: 2vw 4vw;
+  border: 2px solid black;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+#search-button:hover {
+  background-color: lightblue;
+  color: white;
+}
+#display-info {
+  display: none;
+}
