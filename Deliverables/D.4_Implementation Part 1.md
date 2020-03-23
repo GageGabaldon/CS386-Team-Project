@@ -14,10 +14,27 @@ The game also includes numerous features such as:
 - And many more!
 
 [Github Link](https://github.com/GageGabaldon/CS386-Team-Project)
+
 [Trello Link](https://trello.com/b/2S8T1pBG/cs-386-project-main)
+
 ## Implemented Requirements
 
-Implementation of a clean user interface.
+**MVP**: Our MVP includes the implementation of a clean and smooth user interface which was implemented for our current version, but we did not accomplish the implementation of an immersive story yet.
+
+**User Stories**: The listed user stories have been implemented for the current version: 
+
+- As a developer, I want constructive feedback about the story of the game so that I can create an immersive experience for users. 
+- As a developer, I want feedback from other developers about my coding and vice versa so that we can improve our game as a team.
+- As a tester, I want to communicate with the developers with the bugs I found and carefully describe them so that they can work on it without any confusion whatsoever
+- As a tester, I want to be able to provide feedback and suggest ideas for the game so that I can help create a better, more immersive game.
+
+**Workload**:
+
+- Gage worked on the constructive feedback feature and implemented the feedback section of the app.  Along with working on the app design. 
+- Tommy worked on the UI and design of the app. 
+- Vidal worked on the Implementation of Requirements, Adopted Technologies, Learning/Training, and the story design for the application.
+- Elijah worked on the Licensing, Introduction, and Readme and other markdown files.
+
 
 ## Adopted Technologies
 
@@ -59,20 +76,22 @@ We also picked this specific Licensing practice because being open-source, we ar
 
 ## Readme File
 
-Readme.md - https://github.com/GageGabaldon/CS386-Team-Project/blob/master/README.md
-Contributing.md - https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CONTRIBUTING.md
-Code_of_conduct.md - https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CODE_OF_CONDUCT.md
-License.md - https://github.com/GageGabaldon/CS386-Team-Project/blob/master/LICENSE.md
+- Readme.md - https://github.com/GageGabaldon/CS386-Team-Project/blob/master/README.md
+- Contributing.md - https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CONTRIBUTING.md
+- Code_of_conduct.md - https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CODE_OF_CONDUCT.md
+- License.md - https://github.com/GageGabaldon/CS386-Team-Project/blob/master/LICENSE.md
 
 ## Look and Feel
 
-When designing the user interface we wanted something that would look clean and minimalistic with little clutter but would still have all needed functionality. We based our design heavily on the Android material design following the guidelines and rules that come along with that. There are only a few colors but this allows a uniform theme throughout the entire app. The colors are bright and contrast well which makes them pleasant to look at. The font was another thing we had to think about. We chose a default android font roboto as it followed our goals of minimalism and has a clean appearance. 
-Screenshot 1 shows the main page and color theme of the app: ![Screenshot1](/Deliverables/D4P1Screenshot1)
+When designing the user interface we wanted something that would look clean and minimalistic with little clutter but would still have all needed functionality. We based our design heavily on the Android material design following the guidelines and rules that come along with that. There are only a few colors but this allows a uniform theme throughout the entire app. The colors are bright and contrast well which makes them pleasant to look at. The font was another thing we had to think about. We chose a default android font roboto as it followed our goals of minimalism and has a clean appearance.
+
+Screenshot 1 shows the main page and color theme of the app: ![Screenshot1](/Deliverables/D4P1Screenshot1.png)
 Screenshot 2 shows the main game screen where the user will select their choices: ![Screenshot2](/Deliverables/D4P1Screenshot2.png)
 
 ## Lessons Learned
 
 We have learned that with a lot of stuff on this as well as previous deliverables that it is key to start early. A lot of the tools we are using have some sort of learning curve and tackling that early is the first step to having what we need done on time.
 Android studio has been the steepest learning curve for us all but we are working through it. Learning about styling techniques and implementing what we want the app to do with java code is something that is getting easier but still requires time.
-Demo
+
+## Demo
 Demo is listed here: https://youtu.be/nS6br85BTTM
