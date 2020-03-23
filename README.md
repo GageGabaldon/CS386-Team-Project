@@ -66,10 +66,11 @@ Once the database is implemented, make sure to test it so that it can pull in an
 
 (Add additional notes about how to deploy this on a live system)
 
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CONTRIBUTING.md) for details about the process for submitting pull requests to us.
+
+Please also read [CODE_OF_CONDUCT.md](https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CODE_OF_CONDUCT.md) for more details about our code of conduct.
 
 Our team uses [SemVer](http://semver.org/) for versioning.
 
