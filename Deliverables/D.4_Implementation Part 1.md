@@ -85,8 +85,11 @@ We also picked this specific Licensing practice because being open-source, we ar
 
 When designing the user interface we wanted something that would look clean and minimalistic with little clutter but would still have all needed functionality. We based our design heavily on the Android material design following the guidelines and rules that come along with that. There are only a few colors but this allows a uniform theme throughout the entire app. The colors are bright and contrast well which makes them pleasant to look at. The font was another thing we had to think about. We chose a default android font roboto as it followed our goals of minimalism and has a clean appearance.
 
-Screenshot 1 shows the main page and color theme of the app: ![Screenshot1](/Deliverables/D4P1Screenshot1.png)
-Screenshot 2 shows the main game screen where the user will select their choices: ![Screenshot2](/Deliverables/D4P1Screenshot2.png)
+Screenshot 1 shows the main page and color theme of the app: 
+![Screenshot1](/Deliverables/D4P1Screenshot1.png)
+
+Screenshot 2 shows the main game screen where the user will select their choices: 
+![Screenshot2](/Deliverables/D4P1Screenshot2.png)
 
 ## Lessons Learned
 
