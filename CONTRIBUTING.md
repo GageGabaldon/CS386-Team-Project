@@ -20,7 +20,7 @@ Please see below for the list of contact informations
 
 ## Code of Conduct
 
-Please see CODE_OF_CONDUCT.md for more details about our code of conduct
+Please see [CODE_OF_CONDUCT.md](https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CODE_OF_CONDUCT.md) for more details about our code of conduct
 
 ## Contact Information
 
