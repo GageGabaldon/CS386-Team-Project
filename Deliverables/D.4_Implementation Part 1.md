@@ -39,21 +39,27 @@ The game also includes numerous features such as:
 ## Adopted Technologies
 
 **Android Studio**
+
 Android studio is an integrated development environment created by Google and built from the JetBrains IntelliJ IDE. Specifically designed for Android development, it supports use of languages like Java. Our team is using Android Studio because our project will support Android devices. The software will be developed in Java, a supported language of the IDE, because the team is familiar with it and it is an object-oriented language that will be suitable for application development.
 
 **SQLite**
+
 SQLite, is a database engine that implements speed and reliability without needing configuration to use. It is widely used and built in with Android Studio. For the reason of its easy implementation with Android Studio, we have chosen to use this database for storage and access of data in our project.
 
 **Room**
+
 Room is a tool used with the SQLite database in Android Studio. It is a persistence library meant to help simplify the creation of data, its storage, and access. Our team plans to use Room to assist in our use of our database and increase efficiency in the development of our project.
 
 **Gradle**
+
 Gradle is a tool designed to automate the building of source files for programs through the use of scripts. We will implement Gradle with Android Studio for building our source files for our application to automate their construction.
 
 **Docker**
+
 Docker is a tool used to create packages of software held in virtual environments allowing for isolated running and testing of applications. By using a container to run our application, we can safely test our project as we develop it in a controlled environment.
 
 **Amazon Web Services (AWS)**
+
 Amazon Web Services is a cloud computing service allowing for cloud storage of data and the ability to emulate computers virtually. Amazon Web Services will allow for our project to have a running instance of our applications database stored remotely for use in the running of our game on mobile devices.
 
 ## Learning/training
