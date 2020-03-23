@@ -64,7 +64,9 @@ Once the database is implemented, make sure to test it so that it can pull in an
 
 ## Deployment
 
-(Add additional notes about how to deploy this on a live system)
+1. Connect phone via usb
+2. Through Android Studio, click on run to compile the run Android Studio
+3. Android Studio will automatically upload the apk to your phone and run it there
 
 ## Contributing
 
