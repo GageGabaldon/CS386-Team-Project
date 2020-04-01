@@ -1,7 +1,6 @@
 package com.example.csproject;
 
 import androidx.room.Room;
-
 import com.example.csproject.db.AppDatabase;
 import com.example.csproject.db.DAO.PlayersDao;
 import com.example.csproject.db.Entities.Players;
@@ -13,10 +12,15 @@ public class UpdateGame {
     AppDatabase db;
     public UpdateGame()
     {
-      //  int currentEvent = getCurrentEventNumber();
        // story = new Story(currentEvent);
     }
 
+    public String updateMainGameText()
+    {
+        String storytext = story.getStoryText();
+        return storytext;
+    }
+/*
     public int getCurrentEventNumber()
     {
 
@@ -27,8 +31,8 @@ public class UpdateGame {
         return player.getEvent();
 
     }
-
-    public String newButton(int buttonNum)
+*/
+    public String getButtonText(int buttonNum)
     {
         String buttontext = story.getChoices(1);
 
@@ -44,9 +48,4 @@ public class UpdateGame {
         story.newChoice(playerchoice);
     }
 
-    public String newText()
-    {
-        String text = story.getCurrentText();
-        return text;
-    }
 }

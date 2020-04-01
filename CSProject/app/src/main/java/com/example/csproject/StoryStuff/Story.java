@@ -14,7 +14,7 @@ public class Story {
         return "";
     }
 
-    public  String getCurrentText(){
+    public  String getStoryText(){
         return "";
     }
 
