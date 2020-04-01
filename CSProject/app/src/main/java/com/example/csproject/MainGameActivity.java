@@ -14,7 +14,8 @@ public class MainGameActivity extends AppCompatActivity {
     UpdateGame upgame;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
         upgame = new UpdateGame();
@@ -24,29 +25,26 @@ public class MainGameActivity extends AppCompatActivity {
     {
         Button buttonfind = (Button) findViewById(view.getId());
         String buttonoption = (String)buttonfind.getText();
-        String button1;
-        String button2;
-        String button3;
-        String button4;
-        String button5;
-        String button6;
+        String button1text;
+        String button2text;
+        String button3text;
+        String button4text;
         String newText;
 
         upgame.updateStory(buttonoption);
-        button1 = upgame.newButton(1);
-        button2 = upgame.newButton(1);
-        button3 = upgame.newButton(1);
-        button4 = upgame.newButton(1);
-        button5 = upgame.newButton(1);
-        button6 = upgame.newButton(1);
 
-        newText = upgame.newText();
+        button1text = upgame.getButtonText(1);
+        button2text = upgame.getButtonText(1);
+        button3text = upgame.getButtonText(1);
+        button4text = upgame.getButtonText(1);
+
+        newText = upgame.updateMainGameText();
 
         updateScreen(newText);
-        updateButton1(button1);
-        updateButton2(button2);
-        updateButton3(button3);
-        updateButton4(button4);
+        updateButton1(button1text);
+        updateButton2(button2text);
+        updateButton3(button3text);
+        updateButton4(button4text);
 
     }
 
@@ -58,7 +56,7 @@ public class MainGameActivity extends AppCompatActivity {
 
     public void updateButton1(String newButtonText)
     {
-        Button button = (Button) findViewById(R.id.option1);
+        Button button = (Button)findViewById(R.id.option1);
 
         button.setText(newButtonText);
     }
