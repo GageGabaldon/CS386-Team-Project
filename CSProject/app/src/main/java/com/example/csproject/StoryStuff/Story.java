@@ -1,4 +1,4 @@
-package com.example.csproject;
+package com.example.csproject.StoryStuff;
 
 public class Story {
     String storytext;
