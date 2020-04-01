@@ -18,7 +18,7 @@ public class Story {
         return "";
     }
 
-    public void newChoice(String choicemade)
+    public void progressStory(String choicemade)
     {
 
     }

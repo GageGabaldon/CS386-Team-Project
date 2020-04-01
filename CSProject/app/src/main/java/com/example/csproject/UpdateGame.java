@@ -45,7 +45,7 @@ public class UpdateGame {
 
     public void updateStory(String playerchoice)
     {
-        story.newChoice(playerchoice);
+        story.progressStory(playerchoice);
     }
 
 }
