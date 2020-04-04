@@ -18,8 +18,8 @@
 
 ### Design Principles
   **Single Responsibility Principle:** Our Location class contains its name and description with its sole function being the ability to share this information.
-  **Open/Closed Principle:** 
+  **Open/Closed Principle:** Our PlayerStats class follows the Open/Closed principle because we can create new instances of players with the same starting stats to play through the game but it is closed as these starting values will not ever be changed or modified.
   **Liskov Substitution Principle:** 
-  **Interface Segregation Principle:** 
-  **Dependency Inversion Principle:** 
+  **Interface Segregation Principle:** We used the Interface segregation with our player and NPC interfaces to avoid using one big interface. Players and NPCs have slightly different fields and methods so we gave each class a separate interface to follow this principle.
+  **Dependency Inversion Principle:** We use this principle in our UpdateGame class when handling rewriting the story and user options to the scree. This allows the user to continue playing seamlessly after making a choice and does not require them to do anything other than play the game.
 ---
