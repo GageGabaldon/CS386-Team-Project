@@ -1,16 +1,21 @@
 package com.example.csproject.Characters;
 
 
-public class Player implements PlayerStats{
+import java.util.ArrayList;
+
+public class Player implements PlayerStats
+{
 
     // fields
     int health;
-    Item inventory[];
+    ArrayList<Item> inventory = new ArrayList<>();
     int moralityscore;
     String location;
 
-    public Player(){
-
+    public Player()
+    {
+        health = 100;
+        moralityscore = 0;
     }
 
 }
