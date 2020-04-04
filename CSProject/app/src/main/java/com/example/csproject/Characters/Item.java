@@ -26,7 +26,7 @@ public class Item
         Item usedItem;
         usedItem = obj;
 
-        /*
+        /* IN PROGRESS
         depending on itemtype, use item accordingly, which means methods for using each??
         item types might include: equipment, important story item(clues), not clues but items that
                                   helps you progress, ie: a key
