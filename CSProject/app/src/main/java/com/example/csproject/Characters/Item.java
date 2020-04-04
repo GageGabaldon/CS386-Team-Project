@@ -21,7 +21,7 @@ public class Item
     /*
     Uses item in the player's current inventory space(arraylist); invoked through choices
      */
-    public Item useItem(Item obj, int inventoryIndex)
+    public Item useItem(Item obj)
     {
         Item usedItem;
         usedItem = obj;
