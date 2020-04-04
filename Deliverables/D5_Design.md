@@ -8,6 +8,8 @@
 
 ### Architecture
 
+![Architecture](/Deliverables/Architecture.png)
+
 ### Class Diagram
 
 ### Sequence Diagram
