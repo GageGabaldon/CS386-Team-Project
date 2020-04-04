@@ -7,15 +7,53 @@ public class Player implements PlayerStats
 {
 
     // fields
-    int health;
-    int moralityScore;
-    ArrayList<Item> inventory = new ArrayList<>();
+    private int health;
+    private int moralityScore;
+    ArrayList<Item> inventory;
     String location;
 
-    public Player()
+    Player()
     {
-        health = 100;
-        moralityscore = 0;
+        setHealth();
+        setMoralityScore();
+        inventory = new ArrayList<>();
     }
 
+    public void setHealth()
+    {
+        health = 100;
+    }
+
+    public void setMoralityScore()
+    {
+        moralityScore = 0;
+    }
+
+    public int getHealth()
+    {
+        return health;
+    }
+
+    public int getMoralityScore()
+    {
+        return moralityScore;
+    }
+
+    public void updateHealth(int healthChange)
+    {
+        health += healthChange;
+    }
+
+    // action being either add or remove
+    public void updateInventory(String action, Item item)
+    {
+        if (action.equals("remove"))
+        {
+            inventory.remove(item);
+        }
+        if (action.equals("add"))
+        {
+            inventory.add(item);
+        }
+    }
 }

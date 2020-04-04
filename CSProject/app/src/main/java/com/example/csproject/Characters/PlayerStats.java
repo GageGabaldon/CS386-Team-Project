@@ -2,6 +2,8 @@ package com.example.csproject.Characters;
 
 // abstract class that has playerstuff
 interface PlayerStats {
-  public int health;
-  public int moralityScore;
+  void setHealth();
+  void setMoralityScore();
+  int getHealth();
+  int getMoralityScore();
 }

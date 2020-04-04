@@ -38,7 +38,7 @@ public class Item
         // delete item from inventory arraylist in Player class if the number of it == 0
         if(usedItem.itemNumber == 0)
         {
-            player.inventory.remove(inventoryIndex);
+            player.updateInventory("remove", usedItem);
         }
 
         return usedItem;
