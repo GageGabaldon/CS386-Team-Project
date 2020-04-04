@@ -8,8 +8,8 @@ public class Player implements PlayerStats
 
     // fields
     int health;
+    int moralityScore;
     ArrayList<Item> inventory = new ArrayList<>();
-    int moralityscore;
     String location;
 
     public Player()
