@@ -8,6 +8,8 @@
 
 ### Architecture
 
+![Architecture](/Deliverables/Architecture.png)
+
 ### Class Diagram
 
 ### Sequence Diagram
@@ -15,5 +17,9 @@
 ### Design Patterns
 
 ### Design Principles
-
+  **Single Responsibility Principle:** Our Location class contains its name and description with its sole function being the ability to share this information.
+  **Open/Closed Principle:** 
+  **Liskov Substitution Principle:** 
+  **Interface Segregation Principle:** 
+  **Dependency Inversion Principle:** 
 ---
