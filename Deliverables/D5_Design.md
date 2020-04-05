@@ -30,5 +30,6 @@
   <br/>We used the Interface segregation with our player and NPC interfaces to avoid using one big interface. Players and NPCs have slightly different fields and methods so we gave each class a separate interface to follow this principle.
   
   <br/>**Dependency Inversion Principle:** 
-  <br/>We use this principle in our UpdateGame class when handling rewriting the story and user options to the scree. This allows the user to continue playing seamlessly after making a choice and does not require them to do anything other than play the game.
+  <br/>We use this principle in our UpdateGame class when handling rewriting the story and user options to the screen. This allows the user to continue playing seamlessly after making a choice and does not require them to do anything other than play the game.
+
 ---
