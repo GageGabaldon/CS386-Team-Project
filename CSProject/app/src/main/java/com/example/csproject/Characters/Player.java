@@ -7,16 +7,24 @@ public class Player implements PlayerStats
 {
 
     // fields
-    private int health;
+    private static maxHealth;
+    public int health;
     private int moralityScore;
-    ArrayList<Item> inventory;
-    String location;
+
+    public ArrayList<Item> inventory;
+    public String location;
 
     Player()
     {
+        setMaxHealth();
         setHealth();
         setMoralityScore();
         inventory = new ArrayList<>();
+    }
+
+    public void setmaxHealth()
+    {
+        health = 100;
     }
 
     public void setHealth()

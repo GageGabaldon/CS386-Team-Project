@@ -3,7 +3,7 @@ package com.example.csproject.Characters;
 
 interface UseItemMethod
 {
-    Item getItem(Item usedItem);
+    Item executeItemType(Item usedItem);
 
     static UseItemMethod equipmentMethod()
     {
