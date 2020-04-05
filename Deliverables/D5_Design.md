@@ -18,6 +18,18 @@ In our architecture we have two main components the server and the android app. 
 
 ### Design Patterns
 
+1. **Singleton**: *Creational* - One and only one instance of the Player class should exist. It is static and private to prevent some of the attributes from being manipulated nor accessed by other classes. We did Singleton because we want to control the instantiation of this Player class so we only have one each game.
+
+![Singleton](/Deliverables/Singleton.png)
+
+2. **Composite**: *Structural* - Due to the structural hierarchy of what characters have, it is convenient to use Composite to build a structural tree to represent the hierarchy. Composite classes such as NPC and Player sharing and implementing each individual methods CharacterStats has and manipulatin them as needed. 
+
+![Composite](/Deliverables/Composite.png)
+
+3. **Strategy**: *Behavioral* - There are different item types in the game, and in order for the player to use them, there are different methods for each individual item type that is implemented through an interface called UseItemMethod. Instead of a traditional brute-force method with ifs or even switches, it might be more readable for others to use this kind of approach.
+
+![Strategy](/Deliverables/Strategy.png)
+
 ### Design Principles
   <br/>**Single Responsibility Principle:**
   <br/>Our Location class contains its name and description with its sole function being the ability to share this information.
