@@ -9,7 +9,7 @@
 ### Architecture
 
 ![Architecture](/Deliverables/art.png)
-In our architecture we have two main components the server and the android app. For the android app every dotted line represents a  class that contains another class. The main components of the app are Story Components, Character, and Game Activity. The story components uses a data retrieval package to get information. The packages in the main app components are the same as the major packages but are more refined in the details and represents more dependencies. Our app also uses the server to get information from the database. 
+In our architecture we have two main components the server and the android app. For the android app every dotted line represents a  class that contains another class. The main components of the app are Story Components, Character, and Game Activity. The story components uses a data retrieval package to get information. The packages in the main app components are the same as the major packages but are more refined in the details and represents more dependencies. Our app also uses the server to get information from the database.
 
 
 ### Class Diagram
