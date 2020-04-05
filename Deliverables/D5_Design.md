@@ -8,7 +8,9 @@
 
 ### Architecture
 
-![Architecture](/Deliverables/Architecture.png)
+![Architecture](/Deliverables/art.png)
+In our architecture we have two main components the server and the android app. For the android app every dotted line represents a  class that contains another class. The main components of the app are Story Components, Character, and Game Activity. The story components uses a data retrieval package to get information. The packages in the main app components are the same as the major packages but are more refined in the details and represents more dependencies. Our app also uses the server to get information from the database. 
+
 
 ### Class Diagram
 
@@ -17,19 +19,19 @@
 ### Design Patterns
 
 ### Design Principles
-  <br/>**Single Responsibility Principle:** 
+  <br/>**Single Responsibility Principle:**
   <br/>Our Location class contains its name and description with its sole function being the ability to share this information.
-  
-  <br/>**Open/Closed Principle:** 
+
+  <br/>**Open/Closed Principle:**
   <br/>Our PlayerStats class follows the Open/Closed principle because we can create new instances of players with the same starting stats to play through the game but it is closed as these starting values will not ever be changed or modified.
-  
-  <br/>**Liskov Substitution Principle:** 
+
+  <br/>**Liskov Substitution Principle:**
   <br/> The event class follows this principle as different events will be triggered along with different parts of the story and allow substitution into the story without the entire story being rewritten.
-  
-  <br/>**Interface Segregation Principle:** 
+
+  <br/>**Interface Segregation Principle:**
   <br/>We used the Interface segregation with our player and NPC interfaces to avoid using one big interface. Players and NPCs have slightly different fields and methods so we gave each class a separate interface to follow this principle.
-  
-  <br/>**Dependency Inversion Principle:** 
+
+  <br/>**Dependency Inversion Principle:**
   <br/>We use this principle in our UpdateGame class when handling rewriting the story and user options to the screen. This allows the user to continue playing seamlessly after making a choice and does not require them to do anything other than play the game.
 
 ---
