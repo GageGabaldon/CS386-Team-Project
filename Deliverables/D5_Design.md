@@ -24,7 +24,7 @@
   <br/>Our PlayerStats class follows the Open/Closed principle because we can create new instances of players with the same starting stats to play through the game but it is closed as these starting values will not ever be changed or modified.
   
   <br/>**Liskov Substitution Principle:** 
-  <br/>
+  <br/> The event class follows this principle as different events will be triggered along with different parts of the story and allow substitution into the story without the entire story being rewritten.
   
   <br/>**Interface Segregation Principle:** 
   <br/>We used the Interface segregation with our player and NPC interfaces to avoid using one big interface. Players and NPCs have slightly different fields and methods so we gave each class a separate interface to follow this principle.
