@@ -58,7 +58,7 @@ VII. Post-Conditions: Player reaches end of the game.
 
 ### Design Patterns
 
-1. **Singleton**: *Creational* - One and only one instance of the Player class should exist. Some attributes static and private to prevent some of the it from being manipulated nor accessed by other classes. We did Singleton because we want to control the instantiation of this Player class so we only have one each game.
+1. **Singleton**: *Creational* - One and only one instance of the Player class should exist. Some attributes are static and private to prevent some of it from being manipulated nor accessed by other classes. We did Singleton because we want to control the instantiation of this Player class so we only have one each game.
 
 ![Singleton](/Deliverables/Singleton.png)
 
