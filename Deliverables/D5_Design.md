@@ -9,7 +9,7 @@
 ### Architecture
 
 ![Architecture](/Deliverables/art.png)
-In our architecture we have two main components the server and the android app. For the android app every dotted line represents a  class that contains another class. The main components of the app are Story Components, Character, and Game Activity. The story components uses a data retrieval package to get information. The packages in the main app components are the same as the major packages but are more refined in the details and represents more dependencies. Our app also uses the server to get information from the database.
+In our architecture, we have two main components the server and the android app. For the android application, every dotted line represents a class that contains another class. The main components of the app are Story Components, Character, and Game Activity. The story components uses a data retrieval package to get information. The packages in the main app components are the same as the major packages, but are more refined in the details and represents more dependencies. Our app also uses the server to get information from the database.
 
 
 ### Class Diagram
@@ -55,7 +55,7 @@ VII. Post-Conditions: Player reaches end of the game.
 
 ### Design Patterns
 
-1. **Singleton**: *Creational* - One and only one instance of the Player class should exist. It is static and private to prevent some of the attributes from being manipulated nor accessed by other classes. We did Singleton because we want to control the instantiation of this Player class so we only have one each game.
+1. **Singleton**: *Creational* - One and only one instance of the Player class should exist. Some attributes static and private to prevent some of the it from being manipulated nor accessed by other classes. We did Singleton because we want to control the instantiation of this Player class so we only have one each game.
 
 ![Singleton](/Deliverables/Singleton.png)
 
