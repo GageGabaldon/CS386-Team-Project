@@ -13,6 +13,7 @@ In our architecture we have two main components the server and the android app. 
 
 
 ### Class Diagram
+![ClassDiagram](/Deliverables/RevisedUML.png)
 
 ### Sequence Diagram
 
@@ -43,7 +44,7 @@ V. Alternative Flows:
 4.2.1  There are no available stories
 4.2.2 The system displays message of completion of game
 4.2.3 The system returns to menu
-      
+
 
 VI. Key Scenarios:
 Player makes a choice and progresses through the game's current storyline.
@@ -58,7 +59,7 @@ VII. Post-Conditions: Player reaches end of the game.
 
 ![Singleton](/Deliverables/Singleton.png)
 
-2. **Composite**: *Structural* - Due to the structural hierarchy of what characters have, it is convenient to use Composite to build a structural tree to represent the hierarchy. Composite classes such as NPC and Player sharing and implementing each individual methods CharacterStats has and manipulatin them as needed. 
+2. **Composite**: *Structural* - Due to the structural hierarchy of what characters have, it is convenient to use Composite to build a structural tree to represent the hierarchy. Composite classes such as NPC and Player sharing and implementing each individual methods CharacterStats has and manipulatin them as needed.
 
 ![Composite](/Deliverables/Composite.png)
 
