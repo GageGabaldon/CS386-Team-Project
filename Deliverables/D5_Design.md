@@ -16,6 +16,43 @@ In our architecture we have two main components the server and the android app. 
 
 ### Sequence Diagram
 
+![SequenceDiagram](/Deliverables/StoryUpdateSequenceDiagram.png)
+
+Use Case: Update Story
+I. Brief Description: Demonstrates the process to updating the current event in the story of the game
+
+II. Actors: Player
+
+III. Preconditions: The player has opened the app and started a session
+
+IV. Flow of Events:
+1. The system retrieves the current events description and available choices for the current story
+2. The system displays the description and available choices
+3. The Player will select one choice displayed on screen
+4. The system will process the selected choice.
+5. The system will access the next event file.
+6. The system will loop back to step 1.
+
+V. Alternative Flows:
+4.1 The current event completed is the last in the story
+4.2 The system retrieves available stories
+4.3 The system displays the available stories as choices for the player
+4.4 The player selects a story
+4.5 The system returns to step 1.
+
+4.2.1  There are no available stories
+4.2.2 The system displays message of completion of game
+4.2.3 The system returns to menu
+      
+
+VI. Key Scenarios:
+Player makes a choice and progresses through the game's current storyline.
+Player completes the current storyline and starts a new storyline.
+Player has no stories left to play so the game ends and returns to the menu.
+
+VII. Post-Conditions: Player reaches end of the game.
+
+
 ### Design Patterns
 
 1. **Singleton**: *Creational* - One and only one instance of the Player class should exist. It is static and private to prevent some of the attributes from being manipulated nor accessed by other classes. We did Singleton because we want to control the instantiation of this Player class so we only have one each game.
