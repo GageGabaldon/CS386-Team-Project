@@ -59,7 +59,7 @@ VII. Post-Conditions: Player reaches end of the game.
 
 ![Singleton](/Deliverables/Singleton.png)
 
-2. **Composite**: *Structural* - Due to the structural hierarchy of what characters have, it is convenient to use Composite to build a structural tree to represent the hierarchy. Composite classes such as NPC and Player sharing and implementing each individual methods CharacterStats has and manipulatin them as needed.
+2. **Composite**: *Structural* - Due to the structural hierarchy of what characters have, it is convenient to use Composite to build a structural tree to represent the hierarchy. Composite classes such as NPC and Player sharing and implementing each individual methods CharacterStats has and manipulating them as needed.
 
 ![Composite](/Deliverables/Composite.png)
 
