@@ -52,7 +52,6 @@ Player has no stories left to play so the game ends and returns to the menu.
 
 VII. Post-Conditions: Player reaches end of the game.
 
-
 ### Design Patterns
 
 1. **Singleton**: *Creational* - One and only one instance of the Player class should exist. It is static and private to prevent some of the attributes from being manipulated nor accessed by other classes. We did Singleton because we want to control the instantiation of this Player class so we only have one each game.
