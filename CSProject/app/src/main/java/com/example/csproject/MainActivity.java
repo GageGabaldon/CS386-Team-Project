@@ -19,45 +19,40 @@ import com.example.csproject.db.Entities.Players;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
-
-
-
+public class MainActivity extends AppCompatActivity
+{
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
        // createDatabase();
     }
 
-    private void createDatabase() {
-
-        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class, "database-name").build();
-
-    }
-
-
     /** Called when the user taps the Send button */
-    public void sendMessage(View view) {
+    public void sendMessage(View view)
+    {
         Intent intent = new Intent(this, MainPage2.class);
         startActivity(intent);
     }
 
     /** sends to about activity */
-    public void sendAbout(View view) {
+    public void sendAbout(View view)
+    {
         Intent intent = new Intent(this, About.class);
         startActivity(intent);
     }
 
     /** sends to Settings Activity */
-    public void sendSettings(View view) {
+    public void sendSettings(View view)
+    {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
     }
 
-    public void sendFeedback(View view) {
+    public void sendFeedback(View view)
+    {
         Intent intent  = new Intent(this, Feedback.class);
         startActivity(intent);
     }

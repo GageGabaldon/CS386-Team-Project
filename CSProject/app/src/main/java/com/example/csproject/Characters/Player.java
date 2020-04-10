@@ -7,7 +7,7 @@ public class Player implements PlayerStats
 {
 
     // fields
-    private static maxHealth;
+    private final int MAXHEALTH;
     public int health;
     private int moralityScore;
 
@@ -16,15 +16,10 @@ public class Player implements PlayerStats
 
     Player()
     {
-        setMaxHealth();
+        MAXHEALTH = 100;
         setHealth();
         setMoralityScore();
         inventory = new ArrayList<>();
-    }
-
-    public void setmaxHealth()
-    {
-        health = 100;
     }
 
     public void setHealth()
@@ -40,6 +35,11 @@ public class Player implements PlayerStats
     public int getHealth()
     {
         return health;
+    }
+
+    public int getMaxHealth()
+    {
+        return MAXHEALTH;
     }
 
     public int getMoralityScore()

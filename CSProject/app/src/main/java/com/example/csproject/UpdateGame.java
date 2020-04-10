@@ -1,15 +1,11 @@
 package com.example.csproject;
 
-import androidx.room.Room;
-import com.example.csproject.db.AppDatabase;
-import com.example.csproject.db.DAO.PlayersDao;
-import com.example.csproject.db.Entities.Players;
+
 import com.example.csproject.StoryStuff.Story;
 
 public class UpdateGame {
 
     Story story;
-    AppDatabase db;
     public UpdateGame()
     {
        // story = new Story(currentEvent);

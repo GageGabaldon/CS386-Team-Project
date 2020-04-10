@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 import com.example.csproject.db.AppDatabase;
 
-public class MainGameActivity extends AppCompatActivity {
+public class MainGameActivity extends AppCompatActivity
+{
     UpdateGame upgame;
 
     @Override

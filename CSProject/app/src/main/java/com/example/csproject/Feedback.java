@@ -8,14 +8,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class Feedback extends AppCompatActivity {
+public class Feedback extends AppCompatActivity
+{
 
-    String[] addresses = {"textadventuregame@gmail.com"};
+    String[] addresses = {"gag252@gmail.com"};
     String subject;
     String body;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
     }
@@ -34,13 +36,15 @@ public class Feedback extends AppCompatActivity {
 
     }
 
-    public void composeEmail(String[] addresses, String subject, String body) {
+    public void composeEmail(String[] addresses, String subject, String body)
+    {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("*/*");
         intent.putExtra(Intent.EXTRA_EMAIL, addresses);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(android.content.Intent.EXTRA_TEXT, body);
-        if (intent.resolveActivity(getPackageManager()) != null) {
+        if (intent.resolveActivity(getPackageManager()) != null)
+        {
             startActivity(intent);
         }
     }

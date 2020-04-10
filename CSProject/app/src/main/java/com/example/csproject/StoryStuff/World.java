@@ -8,6 +8,6 @@ public class World
 
     public Location updatePlayerLocation(Story currentLocation)
     {
-
+        return null;
     }
 }

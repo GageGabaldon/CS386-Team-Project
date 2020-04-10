@@ -5,25 +5,26 @@ import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
 import com.example.csproject.db.AppDatabase;
 import com.example.csproject.db.DAO.PlayersDao;
-import com.example.csproject.db.Entities.Players;
 
-public class MainPage2 extends AppCompatActivity {
+public class MainPage2 extends AppCompatActivity
+{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page2);
 
     }
 
     /** On button click saves play name to database and sends to a different activity*/
-    public void sendMessage(View view) {
+    public void sendMessage(View view)
+    {
         EditText edittext = (EditText) findViewById(R.id.editText);
 
         // intiate database and set up a way to add a thing
@@ -46,7 +47,8 @@ public class MainPage2 extends AppCompatActivity {
     }
 
     // may not be used yet
-    private AppDatabase createDatabase() {
+    private AppDatabase createDatabase()
+    {
 
         AppDatabase db = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class, "database-name").build();
