@@ -7,7 +7,8 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 // player entity in a database
 @Entity
-public class Players {
+public class Players
+{
 
         @PrimaryKey
         public int uid;
