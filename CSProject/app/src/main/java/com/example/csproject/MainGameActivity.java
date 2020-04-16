@@ -24,15 +24,15 @@ public class MainGameActivity extends AppCompatActivity
 
     public void clickedOption(View view)
     {
-        Button buttonfind = (Button) findViewById(view.getId());
-        String buttonoption = (String)buttonfind.getText();
+        int buttonnumber = getButton(view.getId());
+
         String button1text;
         String button2text;
         String button3text;
         String button4text;
         String newText;
 
-        upgame.updateStory(buttonoption);
+        upgame.updateStory(buttonnumber);
 
         button1text = upgame.getButtonText(1);
         button2text = upgame.getButtonText(1);
@@ -83,4 +83,24 @@ public class MainGameActivity extends AppCompatActivity
         button.setText(newButtonText);
     }
 
+    public int getButton(int integer)
+    {
+        if(integer == R.id.option1)
+        {
+            return 1;
+        }
+        if (integer == R.id.option2)
+        {
+            return 2;
+        }
+        if(integer == R.id.option3)
+        {
+            return 3;
+        }
+        if(integer == R.id.option4)
+        {
+            return 4;
+        }
+        return -1;
+    }
 }
