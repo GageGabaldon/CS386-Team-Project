@@ -39,9 +39,9 @@ public class UpdateGame {
         return buttontext;
     }
 
-    public void updateStory(String playerchoice)
+    public void updateStory(int buttonchoice)
     {
-        story.progressStory(playerchoice);
+        story.progressStory(buttonchoice);
     }
 
 }
