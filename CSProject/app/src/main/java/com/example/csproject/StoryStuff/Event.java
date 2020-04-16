@@ -16,6 +16,10 @@ public class Event
     // buffer stores data for event or choices temporarily
     private DataAccess accessBuffer = new DataAccess();
 
+    /**
+     *
+     * @param newID This is used in
+     */
     public void setEventID( int newID )
     {
         eventID = newID;
@@ -26,26 +30,44 @@ public class Event
         return eventID;
     }
 
+    /**
+     *
+     * @return returns description as String object
+     */
     public String getDescription()
     {
         return eventDescription;
     }
 
+    /**
+     *
+     * @return returns String object array of size & capacity 4
+     */
     public String[] getChoices()
     {
         return choices;
     }
 
-    public void updateDescription( int currentStory, int currentEventID )
+    /**
+     * Uses the data access class object to retrieve data from the files in plot folder
+     * @param currentStoryID is the ID for the current story, used with hashtable to find correct folder name
+     * @param currentEventID is the ID for the current event, used with hashtable to find correct filename
+     */
+    public void updateDescription( int currentStoryID, int currentEventID )
     {
         // eventBuffer will get string from file, and return the value to the eventDescription
-        eventDescription = accessBuffer.getData( currentStory, currentEventID );
+        eventDescription = accessBuffer.getEventDesription( currentStoryID, currentEventID );
     }
 
-    public void updateChoices( int currentStory, int currentEventID )
+    /**
+     * Updates the available choices for the event using data access class object.
+     * @param currentStoryID is the ID for the current story, used with hashtable to find correct folder name
+     * @param currentEventID is the ID for the current event, used with hashtable to find correct filename
+     */
+    public void updateChoices( int currentStoryID, int currentEventID )
     {
         // choiceBuffer will return a string array which will need to be passed out to each choice
-        String[] tempChoices = accessBuffer.getData( currentStory, currentEventID );
+        String[] tempChoices = accessBuffer.getEventChoice( currentStoryID, currentEventID );
         int cIndex = 0;
         for( String choice : tempChoices )
         {
@@ -63,7 +85,7 @@ public class Event
     {
      // verify choices
         // function: verifyChoices -> Temporarily: provide next event in story
-        eventID = currentEventID++;
+        setEventID( currentEventID++ );
         // uses updateChoices and updateDescription
         updateDescription( currentStory, eventID );
         updateChoices( currentStory, eventID );

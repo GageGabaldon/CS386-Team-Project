@@ -20,23 +20,22 @@ public class Story {
         currentEvent.updateCurrentEvent( currentStoryID, 0, 0 );
     }
 
+    /**
+     *
+     * @return returns the story ID
+     */
     public int getCurrentStoryID()
     {
         return currentStoryID;
     }
 
+    /**
+     *
+     * @return returns the event ID for the current event
+     */
     public int getEventID()
     {
         return currentEvent.getEventID();
-    }
-    public String getCurrentDescription()
-    {
-        return currentEvent.getDescription();
-    }
-
-    public String[] getCurrentChoices()
-    {
-        return currentEvent.getChoices();
     }
 
     /**
