@@ -3,12 +3,13 @@ package com.example.csproject.Characters;
 
 import java.util.ArrayList;
 
-public class Player implements PlayerStats
+public class Player
 {
 
     // fields
-    private final int MAXHEALTH;
-    public int health;
+    private String name;
+    private final int MAXHEALTH = 100;
+    private int health;
     private int moralityScore;
 
     public ArrayList<Item> inventory;
@@ -16,20 +17,20 @@ public class Player implements PlayerStats
 
     Player()
     {
-        MAXHEALTH = 100;
-        setHealth();
-        setMoralityScore();
+        name = "";
+        health = MAXHEALTH;
+        moralityScore = 0;
         inventory = new ArrayList<>();
     }
 
-    public void setHealth()
+    public void setName(String name)
     {
-        health = 100;
+        this.name = name;
     }
 
-    public void setMoralityScore()
+    public String getName()
     {
-        moralityScore = 0;
+        return name;
     }
 
     public int getHealth()
@@ -37,9 +38,13 @@ public class Player implements PlayerStats
         return health;
     }
 
-    public int getMaxHealth()
+    public void updateHealth(int healthChange)
     {
-        return MAXHEALTH;
+        health += healthChange;
+        if(health > MAXHEALTH)
+        {
+            health = MAXHEALTH;
+        }
     }
 
     public int getMoralityScore()
@@ -47,10 +52,11 @@ public class Player implements PlayerStats
         return moralityScore;
     }
 
-    public void updateHealth(int healthChange)
+    public void updateMoralityScore(int moralityScoreChange)
     {
-        health += healthChange;
+        moralityScore += moralityScoreChange;
     }
+
 
     // action being either add or remove
     public void updateInventory(String action, Item item)
