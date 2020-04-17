@@ -3,13 +3,9 @@ package com.example.csproject.Characters;
 
 import java.util.ArrayList;
 
-/**
- * Handles Everything related to the player including their health, name,
- * moralityScore
- *
- */
 public class Player
 {
+
     // fields
     private String name;
     private final int MAXHEALTH = 100;
@@ -21,15 +17,10 @@ public class Player
 
     Player()
     {
-        name = "PLAYER";
+        name = "";
         health = MAXHEALTH;
         moralityScore = 0;
         inventory = new ArrayList<>();
-    }
-
-    public String getName()
-    {
-        return name;
     }
 
     public void setName(String name)
@@ -37,14 +28,23 @@ public class Player
         this.name = name;
     }
 
+    public String getName()
+    {
+        return name;
+    }
+
     public int getHealth()
     {
         return health;
     }
 
-    public int getMaxHealth()
+    public void updateHealth(int healthChange)
     {
-        return MAXHEALTH;
+        health += healthChange;
+        if(health > MAXHEALTH)
+        {
+            health = MAXHEALTH;
+        }
     }
 
     public int getMoralityScore()
@@ -57,23 +57,15 @@ public class Player
         moralityScore += moralityScoreChange;
     }
 
-    public void updateHealth(int healthChange)
-    {
-        health += healthChange;
-        if (health > MAXHEALTH)
-        {
-            health = MAXHEALTH;
-        }
-    }
 
     // action being either add or remove
     public void updateInventory(String action, Item item)
     {
-        if (action.toLowerCase().equals("remove"))
+        if (action.equals("remove"))
         {
             inventory.remove(item);
         }
-        if (action.toLowerCase().equals("add"))
+        if (action.equals("add"))
         {
             inventory.add(item);
         }

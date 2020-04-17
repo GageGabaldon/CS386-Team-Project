@@ -24,7 +24,7 @@ public class MainGameActivity extends AppCompatActivity
 
     public void clickedOption(View view)
     {
-        int buttonNumber = getButton(view.getId());
+        int buttonnumber = getButton(view.getId());
 
         String button1text;
         String button2text;
@@ -32,7 +32,7 @@ public class MainGameActivity extends AppCompatActivity
         String button4text;
         String newText;
 
-        upgame.updateStory(buttonNumber);
+        upgame.updateStory(buttonnumber);
 
         button1text = upgame.getButtonText(1);
         button2text = upgame.getButtonText(1);
