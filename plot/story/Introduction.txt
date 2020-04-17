@@ -1,0 +1,1 @@
+Welcome to Text Adventure Game. In this game you will tell a story based on the decisions you make. Each choice you make can change your path in the event you are in at the time.
