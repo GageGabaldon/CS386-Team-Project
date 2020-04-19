@@ -108,7 +108,7 @@ public class Event
         Still in the process of finding a cool and efficient way to decide what the player can do next
         given their choices made thus far, the current event, and perhaps other factors.
          */
-        // return next event
-        return -1;
+        // For now will return the next event based on the number selected for the current event
+        return choicesMade[ choicesMade.length - 1 ];
     }
 }
