@@ -15,16 +15,7 @@ public class Story {
         storyDirectory = "Introduction";
         currentEvent = new Event( storyDirectory );
     }
-
-    /**
-     *
-     * @return returns the story ID
-     */
-    public String getCurrentStory()
-    {
-        return storyDirectory;
-    }
-
+    
     /**
      *
      * @return returns the event ID for the current event
