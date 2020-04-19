@@ -80,8 +80,12 @@ public class Event
         {
             if( choice != null )
             {
-                choices[cIndex] = choice;
-                choicePath[ cIndex ] = tempChoices[1][cIndex];
+                choices[ cIndex ] = choice;
+                choicePath[ cIndex ] = tempChoices[ 1 ][ cIndex ];
+            }
+            else
+            {
+                choices[ cIndex ] = "";
             }
             cIndex++;
         }
@@ -99,8 +103,18 @@ public class Event
         //If the new path is the end of the story, set directory to our main hub, the local precinct
         if( eventFileName == "Story End" )
         {
-            storyDir = "Precinct";
-            eventFileName = "Home";
+            storyDir = "Dreams";
+            eventFileName = "dreamsbeginning.txt";
+        }
+        else if( eventFileName == "Enter Name" )
+        {
+            storyDir = "CoffeeShop";
+            eventFileName = "CoffeeShopOutro.txt";
+        }
+        else if( eventFileName == "Coffee Intro" )
+        {
+            storyDir = "CoffeeShop";
+            eventFileName = "CoffeeShopIntro.txt";
         }
         // uses updateChoices and updateDescription
         updateDescription( storyDir );
