@@ -18,11 +18,11 @@ At any given point in the game, the user will have a text prompt displayed on th
     
     * Elijah reviewed and approved this pull request
     
-2. We made progress implementing stories into our game. This is shown in our main game and is the story and the text that the user will interact with.
+2. We have also implemented stories into our game. This is shown in our main game and is the story and the text that the user will interact with.
 
     * Trello card: https://trello.com/c/Gqb0hX1J
     
-    * Vidal implemented the story that we currently have in our game: https://github.com/GageGabaldon/CS386-Team-Project/pull/44
+    * Vidal and Gage have implemented the stories we currently have in our game: https://github.com/GageGabaldon/CS386-Team-Project/pull/44 and https://github.com/GageGabaldon/CS386-Team-Project/pull/50
     
     * Gage reviewed and approved this pull request
     
