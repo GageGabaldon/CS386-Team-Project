@@ -32,6 +32,10 @@ public class World
 
     }
 
+    /**
+     *
+     * @return
+     */
     public String getCurrentDescription()
     {
         return currentStory.getEventDescription();
