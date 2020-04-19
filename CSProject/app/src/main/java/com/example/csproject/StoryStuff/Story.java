@@ -53,5 +53,15 @@ public class Story {
         currentEvent.updateCurrentEvent( currentStoryID, choiceMade, currentEvent.getEventID() );
     }
 
+    public String getEventDescription()
+    {
+        return currentEvent.getDescription();
+    }
+
+    public String[] getAvailableChoices()
+    {
+        return currentEvent.getChoices();
+    }
+
     // Missing NPC methods for now.
 }

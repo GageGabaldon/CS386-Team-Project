@@ -83,6 +83,26 @@ public class World
         return currentStory.getEventID() < fileNameKeys.size();
     }
 
+    public String getCurrentDescription()
+    {
+        return currentStory.getEventDescription();
+    }
+
+    public String[] getChoices()
+    {
+        return currentStory.getAvailableChoices();
+    }
+
+    public int getEventID()
+    {
+        return currentStory.getEventID();
+    }
+
+    public int getStoryID()
+    {
+        return currentStory.getCurrentStoryID();
+    }
+
     public void updatePlayer()
         {
 
