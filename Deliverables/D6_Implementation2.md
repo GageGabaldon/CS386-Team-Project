@@ -26,7 +26,9 @@ At any given point in the game, the user will have a text prompt displayed on th
     
     * Gage reviewed and approved this pull request
     
-    * ![Screenshot1](/Deliverables/D6_Screenshot1.png)
+    * Screenshot of how stories are displayed
+    
+    ![Screenshot1](/Deliverables/D6_Screenshot1.png)
     
 ### 3. Demo
 
