@@ -65,7 +65,7 @@ public class World
     * adds current story to played stories array if not already in it, then updates the events for the current story.
     * If there are no events left, the story needs to end and return to the "hub" or precinct.
      */
-    public void updateStory( ArrayList<Integer> choicesMade, int currentEventID )
+    public void updateStory( int currentEventID )
     {
         if( !playedStories.contains( currentStory ) )
             playedStories.add( currentStory.getCurrentStoryID() );
@@ -84,7 +84,7 @@ public class World
     }
 
     public void updatePlayer()
-    {
+        {
 
     }
 }
