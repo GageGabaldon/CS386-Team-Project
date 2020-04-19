@@ -25,26 +25,18 @@ public class MainGameActivity extends AppCompatActivity
     public void clickedOption(View view)
     {
         int buttonnumber = getButton(view.getId());
-        String button1text;
-        String button2text;
-        String button3text;
-        String button4text;
         String newText;
-
         upgame.updateStory(buttonnumber);
 
-        button1text = upgame.getButtonText(1);
-        button2text = upgame.getButtonText(1);
-        button3text = upgame.getButtonText(1);
-        button4text = upgame.getButtonText(1);
+        String[] choices = upgame.getChoices();
 
         newText = upgame.updateMainGameText();
 
         updateScreen(newText);
-        updateButton1(button1text);
-        updateButton2(button2text);
-        updateButton3(button3text);
-        updateButton4(button4text);
+        updateButton1(choices[1]);
+        updateButton2(choices[2]);
+        updateButton3(choices[3]);
+        updateButton4(choices[4]);
 
     }
 

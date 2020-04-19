@@ -8,35 +8,16 @@ public class UpdateGame {
     World world;
     public UpdateGame()
     {
-       // world = new Story(currentEvent);
+        world = new World();
     }
 
     public String updateMainGameText()
     {
-        String world = world.getStoryText();
-        return world;
+        return world.getCurrentDescription();
     }
-/*
-    public int getCurrentEventNumber()
+    public String[] getChoices()
     {
-
-        PlayersDao playersDao = db.playersDao();
-
-        Players player = playersDao.getAll();
-
-        return player.getEvent();
-
-    }
-*/
-    public String getButtonText(int buttonNum)
-    {
-        String buttontext = world.getChoices(1);
-
-        if(buttontext == null)
-        {
-            return null;
-        }
-        return buttontext;
+        return world.getChoices();
     }
 
     public void updateStory(int buttonchoice)
