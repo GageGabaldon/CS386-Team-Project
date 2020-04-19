@@ -9,25 +9,33 @@ public class Event
     This class is in charge of providing the description of the event and the choices available for
     this event. This object will be updated constantly, member states will change.
      */
-    private int eventID;
-    private String eventDescription = "";
-    private String[] choices = new String[ 4 ];
-
+    private String eventFileName;
+    private String eventDescription;
+    private String[] choices;
+    private String[] choicePath;
     // buffer stores data for event or choices temporarily
-    private DataAccess accessBuffer = new DataAccess();
+    private DataAccess accessBuffer;
 
+    Event( String storyDirectory )
+    {
+        eventFileName = "Introduction";
+        choices = new String[ 4 ];
+        choicePath = new String[ 4 ];
+        accessBuffer = new DataAccess();
+        updateDescription( storyDirectory );
+        updateChoices( storyDirectory );
+    }
     /**
      *
-     * @param newID This is used in
      */
-    public void setEventID( int newID )
+    public void setEventFileName( String newFileName )
     {
-        eventID = newID;
+        eventFileName = newFileName;
     }
 
-    public int getEventID()
+    public String getEventFileName()
     {
-        return eventID;
+        return eventFileName;
     }
 
     /**
@@ -50,28 +58,31 @@ public class Event
 
     /**
      * Uses the data access class object to retrieve data from the files in plot folder
-     * @param currentStoryID is the ID for the current story, used with hashtable to find correct folder name
-     * @param currentEventID is the ID for the current event, used with hashtable to find correct filename
+     *
      */
-    public void updateDescription( int currentStoryID, int currentEventID )
+    public void updateDescription( String storyDir )
     {
         // eventBuffer will get string from file, and return the value to the eventDescription
-        eventDescription = accessBuffer.getEventDesription( currentStoryID, currentEventID );
+        eventDescription = accessBuffer.getEventDescription( storyDir, eventFileName );
     }
 
     /**
      * Updates the available choices for the event using data access class object.
-     * @param currentStoryID is the ID for the current story, used with hashtable to find correct folder name
-     * @param currentEventID is the ID for the current event, used with hashtable to find correct filename
+     *
      */
-    public void updateChoices( int currentStoryID, int currentEventID )
+    public void updateChoices( String storyDir )
     {
-        // choiceBuffer will return a string array which will need to be passed out to each choice
-        String[] tempChoices = accessBuffer.getEventChoice( currentStoryID, currentEventID );
+        // choiceBuffer will return a 2d string array which will need to be passed out to each choice
+        // and choice path index in. first index is choices, second is choice paths
+        String[][] tempChoices = accessBuffer.getEventChoices( storyDir, eventFileName );
         int cIndex = 0;
-        for( String choice : tempChoices )
+        for( String choice : tempChoices[0] )
         {
-            choices[ cIndex ] = choice;
+            if( choice != null )
+            {
+                choices[cIndex] = choice;
+                choicePath[ cIndex ] = tempChoices[1][cIndex];
+            }
             cIndex++;
         }
     }
@@ -81,34 +92,18 @@ public class Event
     * Updates description and choices available for the player.
     * Returns the ID for the next event.
      */
-    public void updateCurrentEvent( int currentStory, int choiceMade, int currentEventID )
+    public void updateCurrentEvent( String storyDir, int choice )
     {
-     // verify choices
-        // function: verifyChoices -> Temporarily: provide next event in story
-        setEventID( currentEventID++ );
-        // uses updateChoices and updateDescription
-        updateDescription( currentStory, eventID );
-        updateChoices( currentStory, eventID );
-    }
-
-    /**
-    * Method uses world factors to verify the next event(s) the player can proceed to
-    * **Unfinished, bypass for now**
-     */
-    public int verifyChoice( int[] choicesMade )
-    {
-        // computes next event possible based on all previously
-        int playerMoralStanding = 0;
-        for( int choice : choicesMade )
+        //update the event file name with verifyChoice otherwise
+        eventFileName = choicePath[ choice ];
+        //If the new path is the end of the story, set directory to our main hub, the local precinct
+        if( eventFileName == "Story End" )
         {
-            playerMoralStanding += choice;
+            storyDir = "Precinct";
+            eventFileName = "Home";
         }
-        /*
-        NOTICE:
-        Still in the process of finding a cool and efficient way to decide what the player can do next
-        given their choices made thus far, the current event, and perhaps other factors.
-         */
-        // For now will return the next event based on the number selected for the current event
-        return choicesMade[ choicesMade.length - 1 ];
+        // uses updateChoices and updateDescription
+        updateDescription( storyDir );
+        updateChoices( storyDir );
     }
 }

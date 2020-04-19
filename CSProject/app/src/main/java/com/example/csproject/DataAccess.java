@@ -17,78 +17,86 @@ public class DataAccess
     }
     /** Get Event description
      *
-     * @param filename
+     * @param fileName
+     * @param folderName
      * @return
      */
-    public String getEventDescription(String filename)
+    public String getEventDescription( String folderName, String fileName)
     {
-        String filepath = thefilepath + filename;
-        File f = new File(filepath);
-        String output = "";
-        int c = 0;
-        char endingchar = '1';
+        String filepath = thefilepath + folderName + fileName;
+        File eventFile = new File(filepath);
+        String description = "";
         try
         {
-            FileReader fr=new FileReader(f);           //Creation of File Reader object
-            BufferedReader br=new BufferedReader(fr);  //Creation of BufferedReader object
-            while((c = br.read()) != -1)               //Read char by Char
+            //Creation of File Reader object and buffer reader object
+            BufferedReader stringBuffer = new BufferedReader( new FileReader( eventFile ) );
+            //Getting line from buffer
+            String currentLine;
+            int firstChar = 0;
+            //While line exists
+            while( ( currentLine = stringBuffer.readLine() ) != null
+                    && !( currentLine.charAt( firstChar ) < 53
+                            && currentLine.charAt( firstChar ) > 48 ) )
             {
-                char character = (char) c;             //converting integer to char
-                if(character == endingchar)
-                {
-                    return output;
-                }
-                output += character;                                    //adding char to String
+                //concatenate line to description string
+                description.concat( currentLine );
             }
         }
         catch(IOException e)
         {
-            return "NOT FOUND";
+            return null;
         }
-        return output;
+        return description;
     }
 
     /** Get the events choices of a text file.
      *
-     * @param filename
-     * @param choicenum
+     * @param folderName
+     * @param fileName
      * @return
      */
-    public String getEventChoice(String filename, int choicenum)
+    public String[][] getEventChoices( String folderName, String fileName )
     {
-        String filepath = thefilepath + filename;
-        File f = new File(filepath);
-        String output = "";
-        int c = 0;
-        char startchar = (char)(choicenum + '0');
-        char endingchar = (char)((choicenum + 1)+ '0');
-        Boolean startread = false;                                          // flag if you get to the part of file
+        String filepath = thefilepath + folderName + fileName;
+        File eventFile = new File(filepath);
+        String[] choiceArray = new String[ 4 ];
+        String[] choicePath = new String[ 4 ];
+        final char PATH_DELIMITER = '@';
+
         try
         {
-            FileReader fr = new FileReader(f);                              //Creation of File Reader object
-            BufferedReader br = new BufferedReader(fr);                     //Creation of BufferedReader object
-            while((c = br.read()) != -1)                                    //Read char by Char
+            //Creation of File Reader object and buffer reader object
+            BufferedReader stringBuffer = new BufferedReader( new FileReader( eventFile ) );
+            //Getting line from buffer
+            String currentLine;
+            int charIndex = 0;
+            int choiceNum = 0;
+            //While line exists
+            while( ( currentLine = stringBuffer.readLine() ) != null )
             {
-                char character = (char) c;                                  //converting integer to char
-                if(character == startchar)
+                //index through choices from text file
+                if( currentLine.charAt( charIndex ) < 53 && currentLine.charAt( charIndex ) > 48 )
                 {
-                    startread = true;
-                }
-                if(character == endingchar)
-                {
-                    return output;
-                }
-                // used to insert characters
-                if(startread == true && character != '1' && character != '2' && character != '3' && character != '4')
-                {
-                    output += character;                                        //adding char to String
+                    //counts length of characters in choice. Stops at @
+                    while (currentLine.charAt(charIndex) != PATH_DELIMITER) {
+                        charIndex++;
+                    }
+                    choiceArray[ choiceNum ] = currentLine.substring( 1, charIndex );
+                    //step to next character after delimiter
+                    ++charIndex;
+                    //store remainder of line ( file name ) to choices path
+                    choicePath[ choiceNum ] = currentLine.substring( charIndex );
+                    //increment choice num to next index in array
+                    choiceNum++;
+                    //Reset charIndex to 0 for next line
+                    charIndex = 0;
                 }
             }
         }
         catch(IOException e)
         {
-            return "NOT FOUND";
+            return null;
         }
-        return output;
+        return new String[][] { choiceArray, choicePath };
     }
 }
