@@ -2,21 +2,21 @@ package com.example.csproject.Characters;
 
 import java.util.ArrayList;
 
-public class Item
+public class Item implements UseItemMethod
 {
     // fields
     String itemName;
     String itemDescription;
 
 
-    UseItemMethod itemType;
+    String itemType;
     Boolean itemState;
     int itemNumber;
 
     Player player = new Player();
 
     // constructor
-    public Item(String itemName, String itemDescription, UseItemMethod itemType)
+    public Item(String itemName, String itemDescription, String itemType)
     {
         this.itemType = itemType;
         this.itemName = itemName;
@@ -46,10 +46,11 @@ public class Item
         this.itemDescription = itemDescription;
     }
 
-    public void setItemType(UseItemMethod itemType)
+    public void setItemType(String itemType)
     {
         this.itemType = itemType;
     }
+
     /*
     Uses item in the player's current inventory space(arraylist); invoked through choices
      */
@@ -57,13 +58,21 @@ public class Item
     {
         Item usedItem;
         usedItem = obj;
+        usedItem.itemType = objType;
 
-
-        /* IN PROGRESS
-        depending on itemtype, use item accordingly, which means methods for using each??
-        item types might include: equipment, important story item(clues), not clues but items that
-                                  helps you progress, ie: a key
-         */
+        switch(objType)
+        {
+            case "HealItem":
+                UseItemMethod.healMethod();
+                break;
+            case "ClueItem":
+                //progress through the story?
+                UseItemMethod.clueMethod();
+                break;
+            case "EquipmentMethod":
+                //add to status?
+                UseItemMethod.equipmentMethod();
+        }
 
         usedItem.itemState = true;
         usedItem.itemNumber--;

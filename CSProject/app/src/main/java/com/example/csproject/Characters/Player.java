@@ -9,7 +9,7 @@ public class Player
     // fields
     private String name;
     private final int MAXHEALTH = 100;
-    private int health;
+    public int health;
     private int moralityScore;
 
     public ArrayList<Item> inventory;
