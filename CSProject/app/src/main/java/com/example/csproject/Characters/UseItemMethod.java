@@ -1,24 +1,24 @@
 package com.example.csproject.Characters;
 
 
-interface UseItemMethod
+public interface UseItemMethod
 {
-    Item executeItemType(Item usedItem);
 
-    static UseItemMethod equipmentMethod()
+    Player player = new Player();
+    Item useItem(Item obj, String objType);
+
+    static void equipmentMethod()
     {
         //in progress
-        return usedItem -> usedItem;
     }
 
-    static UseItemMethod clueMethod()
+    static void clueMethod()
     {
         //in progress
-        return usedItem -> usedItem;
     }
 
-    static UseItemMethod defaultMethod()
+    static void healMethod()
     {
-        return usedItem -> usedItem;
+        player.health += 20;
     }
 }
