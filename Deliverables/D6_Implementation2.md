@@ -10,13 +10,13 @@
   
   https://trello.com/b/2S8T1pBG/cs-386-project-main
 ### 2. Implemented requirements
-  We implemented a way for the user to personalize their own game experience by allowing the player to create their own character with a name of their choice and other componenets such as a morality score and an inventory.
+1. We implemented a way for the user to personalize their own game experience by allowing the player to create their own character with a name of their choice and other componenets such as a morality score and an inventory.
   
-    - Trello card: https://trello.com/c/0NHbFDrD
+  * Trello card: https://trello.com/c/0NHbFDrD
     
-    - Gage started the implementation of this class and Tommy finished it: https://github.com/GageGabaldon/CS386-Team-Project/pull/45
+  * Gage started the implementation of this class and Tommy finished it: https://github.com/GageGabaldon/CS386-Team-Project/pull/45
     
-    - Elijah reviewed and approved this pull request
+  * Elijah reviewed and approved this pull request
     
 ### 3. Demo
 
