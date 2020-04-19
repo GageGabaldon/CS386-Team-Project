@@ -1,10 +1,29 @@
 package com.example.csproject;
 
+import android.os.Environment;
+
 import java.io.*;
 public class DataAccess
 {
-    public static String getEventDescription(File f)
+    String thefilepath = Environment.getExternalStorageDirectory().getAbsolutePath();
+    String path = getClass().getClassLoader().getResource(".").getPath();
+    public DataAccess()
     {
+        thefilepath = "";
+    }
+    public String getPath()
+    {
+        return path;
+    }
+    /** Get Event description
+     *
+     * @param filename
+     * @return
+     */
+    public String getEventDescription(String filename)
+    {
+        String filepath = thefilepath + filename;
+        File f = new File(filepath);
         String output = "";
         int c = 0;
         char endingchar = '1';
@@ -29,8 +48,16 @@ public class DataAccess
         return output;
     }
 
-    public static String getEventChoice(File f, int choicenum)
+    /** Get the events choices of a text file.
+     *
+     * @param filename
+     * @param choicenum
+     * @return
+     */
+    public String getEventChoice(String filename, int choicenum)
     {
+        String filepath = thefilepath + filename;
+        File f = new File(filepath);
         String output = "";
         int c = 0;
         char startchar = (char)(choicenum + '0');
