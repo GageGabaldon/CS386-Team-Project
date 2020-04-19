@@ -7,35 +7,31 @@ public class Story {
     array and currentStoryID
      */
     private Event currentEvent;
-    private ArrayList<Integer> unplayableEvents;
-    private int currentStoryID;
+    private String storyDirectory;
 
 
-    public Story( int newStoryID )
+    Story()
     {
-        currentStoryID = newStoryID;
-        currentEvent = new Event();
-        unplayableEvents = new ArrayList<>();
-        // using 0 for choice made and eventID, because this is the start of the story.
-        currentEvent.updateCurrentEvent( currentStoryID, 0, 0 );
+        storyDirectory = "Introduction";
+        currentEvent = new Event( storyDirectory );
     }
 
     /**
      *
      * @return returns the story ID
      */
-    public int getCurrentStoryID()
+    public String getCurrentStory()
     {
-        return currentStoryID;
+        return storyDirectory;
     }
 
     /**
      *
      * @return returns the event ID for the current event
      */
-    public int getEventID()
+    public String getEventFileName()
     {
-        return currentEvent.getEventID();
+        return currentEvent.getEventFileName();
     }
 
     /**
@@ -45,12 +41,8 @@ public class Story {
      */
     public void updateEvents( int choiceMade )
     {
-        // adds current event to unplayable events
-        if( !unplayableEvents.contains( currentEvent.getEventID() ) )
-        unplayableEvents.add( currentEvent.getEventID() );
-
         // updates current event
-        currentEvent.updateCurrentEvent( currentStoryID, choiceMade, currentEvent.getEventID() );
+        currentEvent.updateCurrentEvent( storyDirectory, choiceMade );
     }
 
     public String getEventDescription()
