@@ -1,20 +1,20 @@
 package com.example.csproject;
 
 
-import com.example.csproject.StoryStuff.Story;
+import com.example.csproject.StoryStuff.World;
 
 public class UpdateGame {
 
-    Story story;
+    World world;
     public UpdateGame()
     {
-       // story = new Story(currentEvent);
+       // world = new Story(currentEvent);
     }
 
     public String updateMainGameText()
     {
-        String storytext = story.getStoryText();
-        return storytext;
+        String world = world.getStoryText();
+        return world;
     }
 /*
     public int getCurrentEventNumber()
@@ -30,7 +30,7 @@ public class UpdateGame {
 */
     public String getButtonText(int buttonNum)
     {
-        String buttontext = story.getChoices(1);
+        String buttontext = world.getChoices(1);
 
         if(buttontext == null)
         {
@@ -41,7 +41,7 @@ public class UpdateGame {
 
     public void updateStory(int buttonchoice)
     {
-        story.progressStory(buttonchoice);
+        world.updateStory(buttonchoice);
     }
 
 }

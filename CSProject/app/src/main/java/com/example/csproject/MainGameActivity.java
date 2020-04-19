@@ -25,7 +25,6 @@ public class MainGameActivity extends AppCompatActivity
     public void clickedOption(View view)
     {
         int buttonnumber = getButton(view.getId());
-
         String button1text;
         String button2text;
         String button3text;

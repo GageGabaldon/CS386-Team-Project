@@ -3,7 +3,7 @@ package com.example.csproject;
 import java.io.*;
 public class DataAccess
 {
-    public static String getEventDesription(File f)
+    public static String getEventDescription(File f)
     {
         String output = "";
         int c = 0;
