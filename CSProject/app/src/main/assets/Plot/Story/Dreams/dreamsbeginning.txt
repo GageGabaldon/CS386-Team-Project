@@ -5,30 +5,25 @@ You search the area shivering as you do so from the cold.
 You find the scratch marks on the floor that appears to be what woke you up. Aside from that you see a small hap of clothes and a small
 rope hanging of the edge of this building.
 
+
+
 1
 Investigate rope.
 
-& 
+&
 dreamschoice1.txt
-
 2 
 Investigate clothes.
 
 &
 dreamschoice2.txt
-
 3
 Take another look around.
-
-& 
+&
 dreamschoice3.txt
-
 4
 Investigate your bed.
-
 &
 dreamschoice4.txt
-
-
 
 
