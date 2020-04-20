@@ -25,6 +25,7 @@ public class DataAccess
     public String getEventDescription( String folderName, String fileName)
     {
         String path = filepath + folderName + fileName;
+        Log.d("Filepathing", path);
         // this is the text of the file.
         String text = null;
         String description = "";
@@ -57,6 +58,7 @@ public class DataAccess
      */
     public String[] getEventChoices( String folderName, String fileName ){
         String path = filepath + folderName + fileName;
+        Log.d("Filepathing", path);
         String[] choiceArray = new String[] { "", "", "", "" };
 
         final char PATH_DELIMITER = '@';
@@ -110,6 +112,7 @@ public class DataAccess
     {
 
         String path = filepath + folderName + fileName;
+        Log.d("Filepathingisforlosers", path);
         String[] choicePath = new String[] { "", "", "", "" };
         final char PATH_DELIMITER = '@';
         // this is the file in text form.
@@ -154,6 +157,7 @@ public class DataAccess
         {
             Log.d( "Invalid String Element: file path", filePath );
         }
+        Log.d("Choicepath", choicePath[0]);
         return choicePath;
     }
 }
