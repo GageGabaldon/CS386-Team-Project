@@ -87,6 +87,10 @@ public class Event
             {
                 choices[ cIndex ] = choice;
             }
+            else
+            {
+                choices[ cIndex ] = "";
+            }
 
             cIndex++;
         }
@@ -101,6 +105,10 @@ public class Event
             if( path != "" )
             {
                 choicePath[ cIndex ] = path;
+            }
+            else
+            {
+                choicePath[ cIndex ] = "";
             }
 
             cIndex++;
@@ -137,7 +145,7 @@ public class Event
             storyDirectory = "Warehouse/";
             eventFileName = "WarehouseIntro.txt";
         }
-        else if( eventFileName.compareTo( "End Story" ) == 0 )
+        else if( eventFileName.compareTo( "Story End" ) == 0 )
         {
             storyDirectory = "Hub/";
             eventFileName = "Precinct.txt";
