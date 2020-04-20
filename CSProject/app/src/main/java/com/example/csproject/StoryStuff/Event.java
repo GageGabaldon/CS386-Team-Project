@@ -80,14 +80,11 @@ public class Event
         int cIndex = 0;
         for( String choice : tempChoices )
         {
-            if( choice != null )
+            if( choice != "" )
             {
                 choices[ cIndex ] = choice;
             }
-            else
-            {
-                choices[ cIndex ] = "";
-            }
+
             cIndex++;
         }
     }
@@ -98,14 +95,11 @@ public class Event
         int cIndex = 0;
         for( String path : tempPaths )
         {
-            if( path != null )
+            if( path != "" )
             {
                 choicePath[ cIndex ] = path;
             }
-            else
-            {
-                choicePath[ cIndex ] = "";
-            }
+
             cIndex++;
         }
     }
