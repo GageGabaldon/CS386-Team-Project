@@ -76,18 +76,35 @@ public class Event
     {
         // choiceBuffer will return a 2d string array which will need to be passed out to each choice
         // and choice path index in. first index is choices, second is choice paths
-        String[][] tempChoices = accessBuffer.getEventChoices( storyDir, eventFileName );
+        String[] tempChoices = accessBuffer.getEventChoices( storyDir, eventFileName );
         int cIndex = 0;
-        for( String choice : tempChoices[0] )
+        for( String choice : tempChoices )
         {
             if( choice != null )
             {
                 choices[ cIndex ] = choice;
-                choicePath[ cIndex ] = tempChoices[ 1 ][ cIndex ];
             }
             else
             {
                 choices[ cIndex ] = "";
+            }
+            cIndex++;
+        }
+    }
+
+    public void updateChoicePaths( String storyDir )
+    {
+        String[] tempPaths = accessBuffer.getChoicePaths( storyDir, eventFileName );
+        int cIndex = 0;
+        for( String path : tempPaths )
+        {
+            if( path != null )
+            {
+                choicePath[ cIndex ] = path;
+            }
+            else
+            {
+                choicePath[ cIndex ] = "";
             }
             cIndex++;
         }
@@ -121,5 +138,6 @@ public class Event
         // uses updateChoices and updateDescription
         updateDescription( storyDir );
         updateChoices( storyDir );
+        updateChoicePaths( storyDir );
     }
 }

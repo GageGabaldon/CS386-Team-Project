@@ -55,9 +55,62 @@ public class DataAccess
      * @param fileName
      * @return
      */
-    public String[][] getEventChoices( String folderName, String fileName ){
+    public String[] getEventChoices( String folderName, String fileName ){
         String path = filepath + folderName + fileName;
         String[] choiceArray = new String[ 4 ];
+
+        final char PATH_DELIMITER = '@';
+        // this is the file in text form.
+        String text = null;
+        AssetManager am = context.getAssets();
+        InputStream isr;
+        try{
+            isr = am.open(path);
+            int size = isr.available();
+            byte[] buffer = new byte[size];
+            isr.read(buffer);
+            isr.close();
+            text = new String(buffer);
+            Log.d("bye", text);
+        }
+        catch (IOException c)
+        {
+            Log.d("error", "errors");
+        }
+        int index = 0;
+        int choiceNum = 0;
+        if( text != null ) {
+            //while characters are available to read
+            while ( index < text.length() ) {
+                //reached choice otherwise keep indexing
+                if (text.charAt( index ) < 53 && text.charAt( index ) > 48)
+                {
+                    ++index;
+                    while( text.charAt( index ) != PATH_DELIMITER )
+                    {
+                        choiceArray[ choiceNum ] += text.charAt( index );
+                        index++;
+                    }
+                    //increment choice num to next index in array
+                    choiceNum++;
+                }
+                ++index;
+            }
+
+        }
+
+        for( String choice : choiceArray )
+        {
+            Log.d( "Invalid String Element: player choice", choice );
+        }
+
+        return choiceArray;
+    }
+
+    public String[] getChoicePaths( String folderName, String fileName )
+    {
+
+        String path = filepath + folderName + fileName;
         String[] choicePath = new String[ 4 ];
         final char PATH_DELIMITER = '@';
         // this is the file in text form.
@@ -77,37 +130,31 @@ public class DataAccess
         {
             Log.d("error", "errors");
         }
-        int superIndex = 0;
+        int index = 0;
         int choiceNum = 0;
         if( text != null ) {
             //while characters are available to read
-            while ( superIndex < text.length() ) {
+            while ( index < text.length() ) {
                 //reached choice otherwise keep indexing
-                if (text.charAt( superIndex ) < 53 && text.charAt( superIndex ) > 48) {
-                    //counts length of characters in choice. Stops at @
-                    int subIndex = superIndex;
-                    while ( text.charAt(subIndex) != PATH_DELIMITER )
-                        ++subIndex;
-                    //increments index off integer 1/2/3/4
-                    ++superIndex;
-                    //stores the choice substring in array
-                    choiceArray[choiceNum] = text.substring( superIndex, subIndex);
-                    //step to next character after delimiter
-                    ++subIndex;
-                    //sets the super index to equal sub for further stepping
-                    superIndex = subIndex;
-                    //gets the file path at end of choice
-                    while( text.charAt( subIndex ) != '\n' )
-                        ++subIndex;
-                    //store remainder of string line ( file name ) to choices path
-                    choicePath[choiceNum] = text.substring( superIndex, subIndex );
+                if (text.charAt( index ) == PATH_DELIMITER )
+                {
+                    ++index;
+                    while( text.charAt( index ) != '\n' )
+                    {
+                        choicePath[ choiceNum ] += text.charAt( index );
+                        index++;
+                    }
                     //increment choice num to next index in array
                     choiceNum++;
                 }
-                ++superIndex;
+                ++index;
             }
-        }
 
-        return new String[][] { choiceArray, choicePath };
+        }
+        for( String filePath : choicePath )
+        {
+            Log.d( "Invalid String Element: file path", filePath );
+        }
+        return choicePath;
     }
 }
