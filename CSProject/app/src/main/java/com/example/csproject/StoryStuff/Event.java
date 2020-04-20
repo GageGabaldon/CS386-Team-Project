@@ -115,7 +115,7 @@ public class Event
         //update the event file name with verifyChoice otherwise
         eventFileName = choicePath[ choice ];
         //If the new path is the end of the story, set directory to our main hub, the local precinct
-        if( eventFileName == "Story End" )
+        if( eventFileName == "Dreams" )
         {
             storyDir = "Dreams/";
             eventFileName = "dreamsbeginning.txt";
@@ -125,10 +125,15 @@ public class Event
             storyDir = "CoffeeShop/";
             eventFileName = "CoffeeShopOutro.txt";
         }
-        else if( eventFileName == "Coffee Intro" )
+        else if( eventFileName == "Warehouse" )
         {
-            storyDir = "CoffeeShop/";
-            eventFileName = "CoffeeShopIntro.txt";
+            storyDir = "Warehouse/";
+            eventFileName = "WarehouseIntro.txt";
+        }
+        else if( eventFileName == "End Story" )
+        {
+            storyDir = "Hub/";
+            eventFileName = "Precinct.txt";
         }
         // uses updateChoices and updateDescription
         updateDescription( storyDir );

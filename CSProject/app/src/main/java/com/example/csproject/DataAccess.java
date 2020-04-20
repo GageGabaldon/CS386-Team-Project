@@ -98,7 +98,6 @@ public class DataAccess
                 }
                 ++index;
             }
-
         }
 
         for( String choice : choiceArray )
