@@ -26,6 +26,7 @@ public class Event
         accessBuffer = new DataAccess(context);
         updateDescription( storyDirectory );
         updateChoices( storyDirectory );
+        updateChoicePaths(storyDirectory);
     }
     /**
      *

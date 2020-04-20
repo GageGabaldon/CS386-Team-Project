@@ -34,6 +34,7 @@ public class MainGameActivity extends AppCompatActivity
     public void clickedOption(View view)
     {
         int buttonnumber = getButton(view.getId());
+        Log.d("ActualButton", buttonnumber+ "");
         Button button = (Button)findViewById(view.getId());
         if(button.getText() != "")
         {
