@@ -30,9 +30,17 @@ At any given point in the game, the user will have a text prompt displayed on th
     
     ![Screenshot1](/Deliverables/D6_Screenshot1.png)
     
+3. We implemented a way that allows us to read a text file to be accessed for the main text view of the game that displays the story to the user
+    
+    * Trello card: https://trello.com/c/KCXxFNGn
+    
+    * Gage implemented the methods and class required for accessing the data: https://github.com/GageGabaldon/CS386-Team-Project/pull/55
+    
+    * Elijah reviewed and approved this request
+    
 ### 3. Demo
 
-### 4. Code Quality
+### 4. Code Quality 
 In terms of code quality the biggest thing we were concerned with was maintaining readable code that we would all understand and be able to work off of individually. In practice this included keeping similar styling conventions such as uniformly indented code blocks and use of camel case in naming of methods, variables, etc. 
 
 Along with this we used Git's pull requests as a way for our QA to ensure that updates stayed uniform to the conventions we had been using. We also made it a point to document code that may be confusing at first with descriptive comments that help someone other than the author explictly understand what is happening. By following these practices and working together as a team, we have been able to maintain high quality code.
