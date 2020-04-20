@@ -3,23 +3,27 @@ package com.example.csproject;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.csproject.db.AppDatabase;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class MainGameActivity extends AppCompatActivity
 {
     UpdateGame upgame;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
-        upgame = new UpdateGame();
+        upgame = new UpdateGame(MainGameActivity.this);
     }
 
     public void clickedOption(View view)

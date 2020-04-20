@@ -1,20 +1,21 @@
 package com.example.csproject;
 
-import android.os.Environment;
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.util.Log;
 
 import java.io.*;
+
 public class DataAccess
 {
-    String thefilepath = Environment.getExternalStorageDirectory().getAbsolutePath();
-    String path = getClass().getClassLoader().getResource(".").getPath();
-    public DataAccess()
+    String filepath;
+    Context context;
+    public DataAccess(Context context)
     {
-        thefilepath = "";
+        filepath = "Plot/Story/";
+        this.context = context;
     }
-    public String getPath()
-    {
-        return path;
-    }
+
     /** Get Event description
      *
      * @param fileName
@@ -23,30 +24,25 @@ public class DataAccess
      */
     public String getEventDescription( String folderName, String fileName)
     {
-        String filepath = thefilepath + folderName + fileName;
-        File eventFile = new File(filepath);
-        String description = "";
-        try
-        {
-            //Creation of File Reader object and buffer reader object
-            BufferedReader stringBuffer = new BufferedReader( new FileReader( eventFile ) );
-            //Getting line from buffer
-            String currentLine;
-            int firstChar = 0;
-            //While line exists
-            while( ( currentLine = stringBuffer.readLine() ) != null
-                    && !( currentLine.charAt( firstChar ) < 53
-                            && currentLine.charAt( firstChar ) > 48 ) )
-            {
-                //concatenate line to description string
-                description.concat( currentLine );
-            }
+        String path = filepath + folderName + fileName;
+        // this is the text of the file.
+        String text;
+        AssetManager am = context.getAssets();
+        InputStream isr;
+        try{
+            isr = am.open(path);
+            int size = isr.available();
+            byte[] buffer = new byte[size];
+            isr.read(buffer);
+            isr.close();
+            text = new String(buffer);
+            Log.d("bye", text);
         }
-        catch(IOException e)
+        catch (IOException c)
         {
-            return null;
+            Log.d("error", "errors");
         }
-        return description;
+        return null;
     }
 
     /** Get the events choices of a text file.
@@ -55,48 +51,26 @@ public class DataAccess
      * @param fileName
      * @return
      */
-    public String[][] getEventChoices( String folderName, String fileName )
-    {
-        String filepath = thefilepath + folderName + fileName;
-        File eventFile = new File(filepath);
-        String[] choiceArray = new String[ 4 ];
-        String[] choicePath = new String[ 4 ];
-        final char PATH_DELIMITER = '@';
+    public String[][] getEventChoices( String folderName, String fileName ){
+        String path = filepath + folderName + fileName;
+        // this is the file in text form.
+        String text;
+        AssetManager am = context.getAssets();
+        InputStream isr;
+        try{
+            isr = am.open(path);
+            int size = isr.available();
+            byte[] buffer = new byte[size];
+            isr.read(buffer);
+            isr.close();
+            text = new String(buffer);
+            Log.d("bye", text);
+        }
+        catch (IOException c)
+        {
+            Log.d("error", "errors");
+        }
 
-        try
-        {
-            //Creation of File Reader object and buffer reader object
-            BufferedReader stringBuffer = new BufferedReader( new FileReader( eventFile ) );
-            //Getting line from buffer
-            String currentLine;
-            int charIndex = 0;
-            int choiceNum = 0;
-            //While line exists
-            while( ( currentLine = stringBuffer.readLine() ) != null )
-            {
-                //index through choices from text file
-                if( currentLine.charAt( charIndex ) < 53 && currentLine.charAt( charIndex ) > 48 )
-                {
-                    //counts length of characters in choice. Stops at @
-                    while (currentLine.charAt(charIndex) != PATH_DELIMITER) {
-                        charIndex++;
-                    }
-                    choiceArray[ choiceNum ] = currentLine.substring( 1, charIndex );
-                    //step to next character after delimiter
-                    ++charIndex;
-                    //store remainder of line ( file name ) to choices path
-                    choicePath[ choiceNum ] = currentLine.substring( charIndex );
-                    //increment choice num to next index in array
-                    choiceNum++;
-                    //Reset charIndex to 0 for next line
-                    charIndex = 0;
-                }
-            }
-        }
-        catch(IOException e)
-        {
-            return null;
-        }
-        return new String[][] { choiceArray, choicePath };
+        return null;
     }
 }

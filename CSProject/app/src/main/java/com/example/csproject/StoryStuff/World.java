@@ -1,5 +1,7 @@
 package com.example.csproject.StoryStuff;
 
+import android.content.Context;
+
 import java.util.ArrayList;
 
     /**
@@ -12,12 +14,12 @@ public class World
     //private Player player;
     private Story currentStory;
 
-    public World()
+    public World(Context context)
     {
         // Story object is created which instantiates the first event in the story, adds story to
         //played stories array list
-        currentStory = new Story();
-        playedStories.add( currentStory.getEventFileName() );
+        currentStory = new Story(context);
+        playedStories.add( currentStory.getEventFileName());
     }
 
     /**

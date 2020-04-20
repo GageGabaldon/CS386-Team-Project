@@ -1,4 +1,6 @@
 package com.example.csproject.StoryStuff;
+import android.content.Context;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -10,10 +12,10 @@ public class Story {
     private String storyDirectory;
 
 
-    Story()
+    public Story(Context context)
     {
-        storyDirectory = "Introduction";
-        currentEvent = new Event( storyDirectory );
+        storyDirectory = "Introduction/";
+        currentEvent = new Event( storyDirectory, context);
     }
     
     /**

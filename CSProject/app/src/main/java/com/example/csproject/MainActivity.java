@@ -5,6 +5,7 @@ import androidx.room.Room;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -16,6 +17,8 @@ import android.view.View;
 import com.example.csproject.db.AppDatabase;
 import com.example.csproject.db.Entities.Players;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,8 +29,6 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-       // createDatabase();
     }
 
     /** Called when the user taps the Send button */

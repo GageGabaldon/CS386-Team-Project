@@ -1,5 +1,7 @@
 package com.example.csproject.StoryStuff;
 
+import android.content.Context;
+
 import com.example.csproject.DataAccess;
 
 
@@ -16,12 +18,12 @@ public class Event
     // buffer stores data for event or choices temporarily
     private DataAccess accessBuffer;
 
-    Event( String storyDirectory )
+    public Event( String storyDirectory, Context context)
     {
-        eventFileName = "Introduction";
+        eventFileName = "Introduction.txt";
         choices = new String[ 4 ];
         choicePath = new String[ 4 ];
-        accessBuffer = new DataAccess();
+        accessBuffer = new DataAccess(context);
         updateDescription( storyDirectory );
         updateChoices( storyDirectory );
     }
