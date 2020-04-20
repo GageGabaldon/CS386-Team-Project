@@ -34,19 +34,22 @@ public class MainGameActivity extends AppCompatActivity
     public void clickedOption(View view)
     {
         int buttonnumber = getButton(view.getId());
-        String newText;
-        upgame.updateStory(buttonnumber);
+        Button button = (Button)findViewById(view.getId());
+        if(button.getText() != "")
+        {
+            String newText;
+            upgame.updateStory(buttonnumber);
 
-        String[] choices = upgame.getChoices();
+            String[] choices = upgame.getChoices();
 
-        newText = upgame.updateMainGameText();
+            newText = upgame.updateMainGameText();
 
-        updateScreen(newText);
-        updateButton1(choices[0]);
-        updateButton2(choices[1]);
-        updateButton3(choices[2]);
-        updateButton4(choices[3]);
-
+            updateScreen(newText);
+            updateButton1(choices[0]);
+            updateButton2(choices[1]);
+            updateButton3(choices[2]);
+            updateButton4(choices[3]);
+        }
     }
 
     /** This will setup the screen when you first launch app
@@ -123,19 +126,19 @@ public class MainGameActivity extends AppCompatActivity
     {
         if(integer == R.id.option1)
         {
-            return 1;
+            return 0;
         }
         if (integer == R.id.option2)
         {
-            return 2;
+            return 1;
         }
         if(integer == R.id.option3)
         {
-            return 3;
+            return 2;
         }
         if(integer == R.id.option4)
         {
-            return 4;
+            return 3;
         }
         return -1;
     }
