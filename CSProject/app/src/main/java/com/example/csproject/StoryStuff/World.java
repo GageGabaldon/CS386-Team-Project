@@ -19,6 +19,7 @@ public class World
         // Story object is created which instantiates the first event in the story, adds story to
         //played stories array list
         currentStory = new Story(context);
+        playedStories = new ArrayList<>();
         playedStories.add( currentStory.getEventFileName());
     }
 
