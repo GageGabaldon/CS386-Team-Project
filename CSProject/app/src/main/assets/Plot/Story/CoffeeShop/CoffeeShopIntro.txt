@@ -1,5 +1,5 @@
 You find yourself waiting in line in a coffee shop. The barista states "I can help whoever is next.". You notice you are now at the front of the line and so you take a step forward to the counter. The barista asks "What would you like, detective?".
-1Black Coffee@CoffeeShopPath1.txt
-2Hot Mocha@CoffeeShopPath2.txt
-3Iced Mocha Frapuccino with whipped cream and chocolate syrup drizzle@CoffeeShopPath3.txt
-4Egg Sandwich@CoffeeShopPath4.txt
+1Black Coffee@CoffeeShopPathOne.txt
+2Hot Mocha@CoffeeShopPathTwo.txt
+3Iced Mocha Frapuccino with whipped cream and chocolate syrup drizzle@CoffeeShopPathThree.txt
+4Egg Sandwich@CoffeeShopPathFour.txt

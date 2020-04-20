@@ -81,23 +81,21 @@ public class DataAccess
         }
         int index = 0;
         int choiceNum = 0;
-        if( text != null ) {
-            //while characters are available to read
-            while ( index < text.length() && choiceNum < 4 ) {
-                //reached choice otherwise keep indexing
-                if (text.charAt( index ) < 53 && text.charAt( index ) > 48)
+        //while characters are available to read
+        while ( index < text.length() && choiceNum < 4 ) {
+            //reached choice otherwise keep indexing
+            if (text.charAt( index ) < 53 && text.charAt( index ) > 48)
+            {
+                index++;
+                while( text.charAt( index ) != PATH_DELIMITER )
                 {
-                    ++index;
-                    while( text.charAt( index ) != PATH_DELIMITER )
-                    {
-                        choiceArray[ choiceNum ] += text.charAt( index );
-                        index++;
-                    }
-                    //increment choice num to next index in array
-                    choiceNum++;
+                    choiceArray[ choiceNum ] += text.charAt( index );
+                    index++;
                 }
-                ++index;
+                //increment choice num to next index in array
+                choiceNum++;
             }
+            ++index;
         }
 
         for( String choice : choiceArray )
@@ -134,25 +132,24 @@ public class DataAccess
         }
         int index = 0;
         int choiceNum = 0;
-        if( text != null ) {
-            //while characters are available to read
-            while ( index < text.length() && choiceNum < 4 ) {
-                //reached choice otherwise keep indexing
-                if (text.charAt( index ) == PATH_DELIMITER )
-                {
-                    ++index;
-                    while( text.charAt( index ) != '\n' )
-                    {
-                        choicePath[ choiceNum ] += text.charAt( index );
-                        index++;
-                    }
-                    //increment choice num to next index in array
-                    choiceNum++;
-                }
-                ++index;
-            }
 
+        //while characters are available to read
+        while ( index < text.length() && choiceNum < 4 ) {
+            //reached choice otherwise keep indexing
+            if (text.charAt( index ) == PATH_DELIMITER )
+            {
+                ++index;
+                while( text.charAt( index ) != '\n' )
+                {
+                    choicePath[ choiceNum ] += text.charAt( index );
+                    index++;
+                }
+                //increment choice num to next index in array
+                choiceNum++;
+            }
+            ++index;
         }
+
         for( String filePath : choicePath )
         {
             Log.d( "Invalid String Element: file path", filePath );
