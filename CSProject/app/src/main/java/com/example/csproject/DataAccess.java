@@ -83,7 +83,7 @@ public class DataAccess
         int choiceNum = 0;
         if( text != null ) {
             //while characters are available to read
-            while ( index < text.length() ) {
+            while ( index < text.length() && choiceNum < 4 ) {
                 //reached choice otherwise keep indexing
                 if (text.charAt( index ) < 53 && text.charAt( index ) > 48)
                 {
@@ -136,7 +136,7 @@ public class DataAccess
         int choiceNum = 0;
         if( text != null ) {
             //while characters are available to read
-            while ( index < text.length() ) {
+            while ( index < text.length() && choiceNum < 4 ) {
                 //reached choice otherwise keep indexing
                 if (text.charAt( index ) == PATH_DELIMITER )
                 {
