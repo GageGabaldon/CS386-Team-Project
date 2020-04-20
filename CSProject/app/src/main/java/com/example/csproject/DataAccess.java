@@ -57,7 +57,7 @@ public class DataAccess
      */
     public String[] getEventChoices( String folderName, String fileName ){
         String path = filepath + folderName + fileName;
-        String[] choiceArray = new String[ 4 ];
+        String[] choiceArray = new String[] { "", "", "", "" };
 
         final char PATH_DELIMITER = '@';
         // this is the file in text form.
@@ -111,7 +111,7 @@ public class DataAccess
     {
 
         String path = filepath + folderName + fileName;
-        String[] choicePath = new String[ 4 ];
+        String[] choicePath = new String[] { "", "", "", "" };
         final char PATH_DELIMITER = '@';
         // this is the file in text form.
         String text = null;
