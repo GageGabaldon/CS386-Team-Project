@@ -9,7 +9,6 @@ public class Story {
     array and currentStoryID
      */
     private Event currentEvent;
-    private String storyDirectory;
 
     /** Constructor for story
      *
@@ -17,7 +16,7 @@ public class Story {
      */
     public Story(Context context)
     {
-        storyDirectory = "Introduction/";
+        String storyDirectory = "Introduction/";
         currentEvent = new Event( storyDirectory, context);
     }
     
@@ -38,7 +37,7 @@ public class Story {
     public void updateEvents( int choiceMade )
     {
         // updates current event
-        currentEvent.updateCurrentEvent( storyDirectory, choiceMade );
+        currentEvent.updateCurrentEvent( choiceMade );
     }
 
     /** returns event description

@@ -13,6 +13,7 @@ public class Event
      */
     private String eventFileName;
     private String eventDescription;
+    private String storyDirectory;
     private String[] choices;
     private String[] choicePath;
     // buffer stores data for event or choices temporarily
@@ -21,12 +22,13 @@ public class Event
     public Event( String storyDirectory, Context context)
     {
         eventFileName = "Introduction.txt";
+        this.storyDirectory = storyDirectory;
         choices = new String[ 4 ];
         choicePath = new String[ 4 ];
         accessBuffer = new DataAccess(context);
-        updateDescription( storyDirectory );
-        updateChoices( storyDirectory );
-        updateChoicePaths(storyDirectory);
+        updateDescription( this.storyDirectory );
+        updateChoices( this.storyDirectory );
+        updateChoicePaths( this.storyDirectory );
     }
     /**
      *
@@ -110,39 +112,39 @@ public class Event
     * Updates description and choices available for the player.
     * Returns the ID for the next event.
      */
-    public void updateCurrentEvent( String storyDir, int choice )
+    public void updateCurrentEvent( int choice )
     {
         //update the event file name with verifyChoice otherwise
         eventFileName = choicePath[ choice ];
         //If the new path is the end of the story, set directory to our main hub, the local precinct
         if( eventFileName.compareTo( "Dreams" ) == 0 )
         {
-            storyDir = "Dreams/";
+            storyDirectory = "Dreams/";
             eventFileName = "dreamsbeginning.txt";
         }
         else if( eventFileName.compareTo( "Coffee Intro" ) == 0 )
         {
-            storyDir = "CoffeeShop/";
+            storyDirectory = "CoffeeShop/";
             eventFileName = "CoffeeShopIntro.txt";
         }
         else if( eventFileName.compareTo( "Enter Name" ) == 0 )
         {
-            storyDir = "CoffeeShop/";
+            storyDirectory = "CoffeeShop/";
             eventFileName = "CoffeeShopOutro.txt";
         }
         else if( eventFileName.compareTo( "Warehouse" ) == 0 )
         {
-            storyDir = "Warehouse/";
+            storyDirectory = "Warehouse/";
             eventFileName = "WarehouseIntro.txt";
         }
         else if( eventFileName.compareTo( "End Story" ) == 0 )
         {
-            storyDir = "Hub/";
+            storyDirectory = "Hub/";
             eventFileName = "Precinct.txt";
         }
         // uses updateChoices and updateDescription
-        updateDescription( storyDir );
-        updateChoices( storyDir );
-        updateChoicePaths( storyDir );
+        updateDescription( storyDirectory );
+        updateChoices( storyDirectory );
+        updateChoicePaths( storyDirectory );
     }
 }
