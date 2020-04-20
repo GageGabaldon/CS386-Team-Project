@@ -1,14 +1,16 @@
 package com.example.csproject;
 
 
+import android.content.Context;
 import com.example.csproject.StoryStuff.World;
+
 
 public class UpdateGame {
 
     World world;
-    public UpdateGame()
+    public UpdateGame(Context context)
     {
-        world = new World();
+        world = new World(context);
     }
 
     public String updateMainGameText()
