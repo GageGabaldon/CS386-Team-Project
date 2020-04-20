@@ -40,7 +40,7 @@ At any given point in the game, the user will have a text prompt displayed on th
     * Elijah reviewed and approved this request
     
 ### 3. Demo
-
+Demo link: https://youtu.be/VFwdZ7A9Eno
 ### 4. Code Quality 
 In terms of code quality, the biggest thing we were concerned with was maintaining readable code that we would all understand and be able to work off of individually. In practice, this included keeping similar styling conventions such as uniformly indented code blocks and use of camel case in naming of methods, variables, etc. 
 
