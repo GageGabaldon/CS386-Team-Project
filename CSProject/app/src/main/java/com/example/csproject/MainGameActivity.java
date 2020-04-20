@@ -24,8 +24,13 @@ public class MainGameActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
         upgame = new UpdateGame(MainGameActivity.this);
+        setupGame();
     }
 
+    /** Button onclick method
+     *
+     * @param view
+     */
     public void clickedOption(View view)
     {
         int buttonnumber = getButton(view.getId());
@@ -37,19 +42,40 @@ public class MainGameActivity extends AppCompatActivity
         newText = upgame.updateMainGameText();
 
         updateScreen(newText);
-        updateButton1(choices[1]);
-        updateButton2(choices[2]);
-        updateButton3(choices[3]);
-        updateButton4(choices[4]);
+        updateButton1(choices[0]);
+        updateButton2(choices[1]);
+        updateButton3(choices[2]);
+        updateButton4(choices[3]);
 
     }
 
+    /** This will setup the screen when you first launch app
+     *
+     */
+    public void setupGame()
+    {
+        String[] choices = upgame.getChoices();
+        updateScreen(upgame.updateMainGameText());
+        updateButton1(choices[0]);
+        updateButton2(choices[1]);
+        updateButton3(choices[2]);
+        updateButton4(choices[3]);
+    }
+
+    /** Updates main screen text
+     *
+     * @param text
+     */
     public void updateScreen(String text)
     {
         TextView textview = (TextView) findViewById(R.id.main_text);
         textview.setText(text);
     }
 
+    /** updates button
+     *
+     * @param newButtonText
+     */
     public void updateButton1(String newButtonText)
     {
         Button button = (Button)findViewById(R.id.option1);
@@ -57,20 +83,30 @@ public class MainGameActivity extends AppCompatActivity
         button.setText(newButtonText);
     }
 
+    /** updates button
+     *
+     * @param newButtonText
+     */
     public void updateButton2(String newButtonText)
     {
         Button button = (Button) findViewById(R.id.option2);
 
         button.setText(newButtonText);
     }
-
+    /** updates button
+     *
+     * @param newButtonText
+     */
     public void updateButton3(String newButtonText)
     {
         Button button = (Button) findViewById(R.id.option3);
 
         button.setText(newButtonText);
     }
-
+    /** updates button
+     *
+     * @param newButtonText
+     */
     public void updateButton4(String newButtonText)
     {
         Button button = (Button) findViewById(R.id.option4);
@@ -78,6 +114,11 @@ public class MainGameActivity extends AppCompatActivity
         button.setText(newButtonText);
     }
 
+    /** returns the button corresponding to the type of button clicked.
+     *
+     * @param integer
+     * @return
+     */
     public int getButton(int integer)
     {
         if(integer == R.id.option1)

@@ -11,14 +11,17 @@ public class Story {
     private Event currentEvent;
     private String storyDirectory;
 
-
+    /** Constructor for story
+     *
+     * @param context
+     */
     public Story(Context context)
     {
         storyDirectory = "Introduction/";
         currentEvent = new Event( storyDirectory, context);
     }
     
-    /**
+    /** returns eventfile name
      *
      * @return returns the event ID for the current event
      */
@@ -38,11 +41,19 @@ public class Story {
         currentEvent.updateCurrentEvent( storyDirectory, choiceMade );
     }
 
+    /** returns event description
+     *
+     * @return
+     */
     public String getEventDescription()
     {
         return currentEvent.getDescription();
     }
 
+    /** returns event choices
+     *
+     * @return
+     */
     public String[] getAvailableChoices()
     {
         return currentEvent.getChoices();
