@@ -5,12 +5,15 @@ import androidx.room.Room;
 
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.csproject.db.AppDatabase;
+
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,8 +26,13 @@ public class MainGameActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
+        // initialization
         upgame = new UpdateGame(MainGameActivity.this);
         setupGame();
+
+        // setting up text view to scroll
+        TextView tv = (TextView)findViewById(R.id.main_text);
+        tv.setMovementMethod(new ScrollingMovementMethod());
     }
 
     /** Button onclick method
@@ -34,7 +42,6 @@ public class MainGameActivity extends AppCompatActivity
     public void clickedOption(View view)
     {
         int buttonnumber = getButton(view.getId());
-        Log.d("ActualButton", buttonnumber+ "");
         Button button = (Button)findViewById(view.getId());
         if(button.getText() != "")
         {

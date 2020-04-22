@@ -33,7 +33,6 @@ public class Feedback extends AppCompatActivity
 
         composeEmail(addresses, subject, body);
 
-
     }
 
     public void composeEmail(String[] addresses, String subject, String body)

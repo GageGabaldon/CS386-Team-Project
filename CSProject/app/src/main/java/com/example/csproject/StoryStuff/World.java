@@ -2,6 +2,8 @@ package com.example.csproject.StoryStuff;
 
 import android.content.Context;
 
+import com.example.csproject.Characters.Player;
+
 import java.util.ArrayList;
 
     /**
@@ -11,13 +13,14 @@ import java.util.ArrayList;
 public class World
 {
     private ArrayList<String> playedStories;
-    //private Player player;
+    private Player player;
     private Story currentStory;
 
     public World(Context context)
     {
         // Story object is created which instantiates the first event in the story, adds story to
         //played stories array list
+        player = new Player();
         currentStory = new Story(context);
         playedStories = new ArrayList<>();
         playedStories.add( currentStory.getEventFileName());
@@ -49,8 +52,8 @@ public class World
         return currentStory.getAvailableChoices();
     }
 
-    public void updatePlayer()
+    public void updatePlayer(String name)
     {
-
+        player.setName(name);
     }
 }

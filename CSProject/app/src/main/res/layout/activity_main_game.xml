@@ -19,6 +19,7 @@
             android:layout_height="0dp"
             android:layout_weight="3"
             android:background="@color/orange_primary"
+            android:scrollbars = "vertical"
             android:fontFamily="@font/roboto"
             android:paddingTop="20dp"
             android:paddingStart="10dp"

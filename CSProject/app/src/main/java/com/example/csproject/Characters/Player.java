@@ -15,7 +15,7 @@ public class Player
     public ArrayList<Item> inventory;
     public String location;
 
-    Player()
+    public Player()
     {
         name = "";
         health = MAXHEALTH;

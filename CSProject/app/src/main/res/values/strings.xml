@@ -1,16 +1,15 @@
 <resources>
-    <string name="app_name">CSProject</string>
+    <string name="app_name">TAG</string>
     <string name="text_adventure_game">Text Adventure Game</string>
     <string name="load_game">Load Game - Resume Where You Left Off</string>
     <string name="new_game">New Game - Start Your Adventure</string>
     <string name="start_game">Start Game</string>
     <string name="about">About - Learn About the Creators</string>
-    <string name="char_intro">Hello there!
-        tell us about yourself</string>
+    <string name="char_intro">Wait whats my name again.</string>
     <string name="youfool">You absolute baffoon. You absolute fool their are no settings. </string>
     <string name="gamemadeby">This Game Made By these Absolute Mad Lads: </string>
-    <string name="madlads">Gage, Vidal, Tommy, Elijah</string>
-    <string name="inputcharname">Enter Name</string>
+    <string name="madlads">Gage Gabaldon &#032; &#032; Vidal Martinez  &#032;&#032; Tommy Whitney &#032;&#032;  Elijah Macaranas </string>
+    <string name="inputcharname">My Name?</string>
     <string name="placeholder">placeholder</string>
     <string name="vertical_ellipsis">&#8942;</string>
     <string name="tell_us_about_your_experience">Tell us about your experience</string>

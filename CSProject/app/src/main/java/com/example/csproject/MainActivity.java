@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity
     /** Called when the user taps the Send button */
     public void sendMessage(View view)
     {
-        Intent intent = new Intent(this, MainPage2.class);
+        Intent intent = new Intent(this, MainGameActivity.class);
         startActivity(intent);
     }
 
@@ -52,12 +52,14 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    /** sends to feedback Activity
+     *
+     * @param view
+     */
     public void sendFeedback(View view)
     {
         Intent intent  = new Intent(this, Feedback.class);
         startActivity(intent);
     }
-
-
 
 }

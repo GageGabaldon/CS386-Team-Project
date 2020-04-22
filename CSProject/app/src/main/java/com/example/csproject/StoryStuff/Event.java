@@ -1,8 +1,11 @@
 package com.example.csproject.StoryStuff;
 
 import android.content.Context;
-
+import android.content.Intent;
+import android.util.Log;
 import com.example.csproject.DataAccess;
+import com.example.csproject.MainGameActivity;
+import com.example.csproject.MainPage2;
 
 
 public class Event
@@ -16,11 +19,13 @@ public class Event
     private String storyDirectory;
     private String[] choices;
     private String[] choicePath;
+    private Context context;
     // buffer stores data for event or choices temporarily
     private DataAccess accessBuffer;
 
     public Event( String storyDirectory, Context context)
     {
+        this.context = context;
         eventFileName = "Introduction.txt";
         this.storyDirectory = storyDirectory;
         choices = new String[ 4 ];
@@ -30,19 +35,11 @@ public class Event
         updateChoices( this.storyDirectory );
         updateChoicePaths( this.storyDirectory );
     }
-    /**
-     *
-     */
-    public void setEventFileName( String newFileName )
-    {
-        eventFileName = newFileName;
-    }
 
     public String getEventFileName()
     {
         return eventFileName;
     }
-
     /**
      *
      * @return returns description as String object
@@ -68,7 +65,7 @@ public class Event
     public void updateDescription( String storyDir )
     {
         // eventBuffer will get string from file, and return the value to the eventDescription
-        eventDescription = accessBuffer.getEventDescription( storyDir, eventFileName );
+        eventDescription = accessBuffer.getEventDescription( storyDir, eventFileName);
     }
 
     /**
@@ -79,7 +76,7 @@ public class Event
     {
         // choiceBuffer will return a 2d string array which will need to be passed out to each choice
         // and choice path index in. first index is choices, second is choice paths
-        String[] tempChoices = accessBuffer.getEventChoices( storyDir, eventFileName );
+        String[] tempChoices = accessBuffer.getEventChoices( storyDir, eventFileName);
         int cIndex = 0;
         for( String choice : tempChoices )
         {
@@ -98,7 +95,7 @@ public class Event
 
     public void updateChoicePaths( String storyDir )
     {
-        String[] tempPaths = accessBuffer.getChoicePaths( storyDir, eventFileName );
+        String[] tempPaths = accessBuffer.getChoicePaths( storyDir, eventFileName);
         int cIndex = 0;
         for( String path : tempPaths )
         {
@@ -123,8 +120,9 @@ public class Event
     public void updateCurrentEvent( int choice )
     {
         //update the event file name with verifyChoice otherwise
-        eventFileName = choicePath[ choice ];
+        eventFileName = choicePath[ choice ].trim();
         //If the new path is the end of the story, set directory to our main hub, the local precinct
+
         if( eventFileName.compareTo( "Dreams" ) == 0 )
         {
             storyDirectory = "Dreams/";
@@ -137,8 +135,10 @@ public class Event
         }
         else if( eventFileName.compareTo( "Enter Name" ) == 0 )
         {
+
             storyDirectory = "CoffeeShop/";
             eventFileName = "CoffeeShopOutro.txt";
+            changeIntent();
         }
         else if( eventFileName.compareTo( "Warehouse" ) == 0 )
         {
@@ -154,5 +154,11 @@ public class Event
         updateDescription( storyDirectory );
         updateChoices( storyDirectory );
         updateChoicePaths( storyDirectory );
+    }
+
+    public void changeIntent()
+    {
+        Intent intent = new Intent(context, MainPage2.class);
+        context.startActivity(intent);
     }
 }
