@@ -15,7 +15,27 @@ public class DataAccess
         filepath = "Plot/Story/";
         this.context = context;
     }
-
+    public String readFile(String path)
+    {
+        String text = null;
+        AssetManager am = context.getAssets();
+        InputStream isr;
+        try{
+            isr = am.open(path);
+            int size = isr.available();
+            byte[] buffer = new byte[size];
+            isr.read(buffer);
+            isr.close();
+            text = new String(buffer);
+            Log.d("The text description", text);
+        }
+        catch (IOException c)
+        {
+            Log.d("error", "Could not find File");
+            return null;
+        }
+        return text;
+    }
     /** Get Event description
      *
      * @param fileName
@@ -27,23 +47,8 @@ public class DataAccess
         String path = filepath + folderName + fileName;
         Log.d("Filepathing", path);
         // this is the text of the file.
-        String text = null;
+        String text =  readFile(path);
         String description = "";
-        AssetManager am = context.getAssets();
-        InputStream isr;
-        try{
-            isr = am.open(path);
-            int size = isr.available();
-            byte[] buffer = new byte[size];
-            isr.read(buffer);
-            isr.close();
-            text = new String(buffer);
-            Log.d("bye", text);
-        }
-        catch (IOException c)
-        {
-            Log.d("error", "errors");
-        }
         if( text != null )
         description = text.substring( 0, text.lastIndexOf( "1" ) );
 
@@ -63,22 +68,8 @@ public class DataAccess
 
         final char PATH_DELIMITER = '@';
         // this is the file in text form.
-        String text = null;
-        AssetManager am = context.getAssets();
-        InputStream isr;
-        try{
-            isr = am.open(path);
-            int size = isr.available();
-            byte[] buffer = new byte[size];
-            isr.read(buffer);
-            isr.close();
-            text = new String(buffer);
-            Log.d("bye", text);
-        }
-        catch (IOException c)
-        {
-            Log.d("error", "errors");
-        }
+        String text = readFile(path);
+
         int index = 0;
         int choiceNum = 0;
         //while characters are available to read
@@ -114,22 +105,7 @@ public class DataAccess
         String[] choicePath = new String[] { "", "", "", "" };
         final char PATH_DELIMITER = '@';
         // this is the file in text form.
-        String text = null;
-        AssetManager am = context.getAssets();
-        InputStream isr;
-        try{
-            isr = am.open(path);
-            int size = isr.available();
-            byte[] buffer = new byte[size];
-            isr.read(buffer);
-            isr.close();
-            text = new String(buffer);
-            Log.d("bye", text);
-        }
-        catch (IOException c)
-        {
-            Log.d("error", "errors");
-        }
+        String text = readFile(path);
         int index = 0;
         int choiceNum = 0;
 
