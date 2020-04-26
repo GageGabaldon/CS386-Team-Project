@@ -1,0 +1,4 @@
+So you arrive back at the platform. The cold desolate sea is still in turmoil and the clouds are still thundering. You look back at your bed and think it looks really comfy.
+
+1Sleep@falseend.txt
+2Up The Stairs@walkupagain.txt

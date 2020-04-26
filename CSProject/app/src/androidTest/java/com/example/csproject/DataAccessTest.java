@@ -24,7 +24,7 @@ public class DataAccessTest
     String[] exampleEvent = {"Continue...", "", "", ""};
     String[] examplePaths = {"Coffee Intro", "", "", ""};
 
-    
+
     @Test
     public void testGetDescription()
     {
@@ -46,4 +46,5 @@ public class DataAccessTest
         outputarray = da.getChoicePaths(foldername, filename);
         assertArrayEquals(examplePaths, outputarray);
     }
+
 }

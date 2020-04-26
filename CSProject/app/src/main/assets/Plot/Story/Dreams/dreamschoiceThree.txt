@@ -1,4 +1,9 @@
-WIP Story Reached End
+You make another look around at the scene before you and stand amazed at the turmoil around you. The sky is loud and the sea is raging. However the platform is mostly protected from the worse of it.
+You take another look at the platform and notice the same things you noticed before. The rope, the clothes, and the bed. You see that the metal seems to be some
+grey metal that you haven't seen before that shimmers with a cold dark property. Looking out into the distance you see nothing important. As you look around you notice the strange clouds above your head
+swirling in a unnatural way.
 
->Return to story start@dreamsbeginning.txt
->Leave story@Story End
+>Look At Bed@dreamschoiceFour.txt
+>Weird Clouds@dreamsclouds.txt
+>Walk Over To Rope@dreamschoiceOne.txt
+>Approach Clothes@dreamschoiceTwo.txt

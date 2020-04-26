@@ -1,0 +1,6 @@
+You start booking away from the door scared that whatever lives here is not a friendly folk. Suddenly a voice whispers from your right ear, "Hey".
+You startled by the voice slow down and notice that a puff of cloud is right next to you. Noticing the cloud was the one you spoke. You mutter "Hey".
+The cloud then whispers again like a light wind, "What are you doing here".
+
+1I Have No Idea@explanation.txt
+2Why Are You A Cloud@seniorcloud.txt
