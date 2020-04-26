@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.csproject.Characters.Player;
+
 
 public class MainPage2 extends AppCompatActivity
 {
@@ -20,9 +22,9 @@ public class MainPage2 extends AppCompatActivity
     /** On button click saves play name to database and sends to a different activity*/
     public void sendMessage(View view)
     {
-        EditText edittext = (EditText) findViewById(R.id.editText);
+        EditText edittext = findViewById(R.id.editText);
         String textString = edittext.getText().toString();
-        upgame.setPlayerName(textString);
+        Player.getInstance().setName(textString);
         finish();
     }
 

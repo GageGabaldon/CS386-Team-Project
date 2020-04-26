@@ -13,7 +13,6 @@ public class Item implements UseItemMethod
     Boolean itemState;
     int itemNumber;
 
-    Player player = new Player();
 
     // constructor
     public Item(String itemName, String itemDescription, String itemType)
@@ -80,7 +79,7 @@ public class Item implements UseItemMethod
         // delete item from inventory arraylist in Player class if the number of it == 0
         if(usedItem.itemNumber == 0)
         {
-            player.updateInventory("remove", usedItem);
+            Player.getInstance().updateInventory("remove", usedItem);
         }
 
         return usedItem;
