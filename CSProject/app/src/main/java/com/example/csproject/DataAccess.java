@@ -65,8 +65,8 @@ public class DataAccess
 
         String description = "";
 
-        if( text != null )
-            description = text.substring( 0, text.lastIndexOf( "1" ) );
+        if( filetext != null )
+            description = filetext.substring( 0, filetext.lastIndexOf( "1" ) );
         else
             return null;
 
