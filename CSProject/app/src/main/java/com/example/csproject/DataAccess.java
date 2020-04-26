@@ -29,10 +29,8 @@ public class DataAccess
             text = new String(buffer);
             Log.d("The text description", text);
         }
-        catch (IOException c)
-        {
-            Log.d("error", "Could not find File");
-            return null;
+        catch (IOException c){
+            Log.d("\n\nIO Exception: ", "Could not find File");
         }
         return text;
     }
@@ -45,12 +43,14 @@ public class DataAccess
     public String getEventDescription( String folderName, String fileName)
     {
         String path = filepath + folderName + fileName;
-        Log.d("Filepathing", path);
+        Log.d("File Path Used: ", path);
         // this is the text of the file.
         String text =  readFile(path);
         String description = "";
         if( text != null )
-        description = text.substring( 0, text.lastIndexOf( "1" ) );
+            description = text.substring( 0, text.lastIndexOf( "1" ) );
+        else
+            return null;
 
         return description;
     }
@@ -63,23 +63,23 @@ public class DataAccess
      */
     public String[] getEventChoices( String folderName, String fileName ){
         String path = filepath + folderName + fileName;
-        Log.d("Filepathing", path);
+        Log.d("File Path Used: ", path);
         String[] choiceArray = new String[] { "", "", "", "" };
 
         final char PATH_DELIMITER = '@';
         // this is the file in text form.
         String text = readFile(path);
+        if( text == null )
+            return null;
 
         int index = 0;
         int choiceNum = 0;
         //while characters are available to read
-        while ( index < text.length() && choiceNum < 4 ) {
+        while ( index < text.length() && choiceNum < 4 ){
             //reached choice otherwise keep indexing
-            if (text.charAt( index ) < 53 && text.charAt( index ) > 48)
-            {
+            if (text.charAt( index ) < 53 && text.charAt( index ) > 48){
                 index++;
-                while( text.charAt( index ) != PATH_DELIMITER )
-                {
+                while( text.charAt( index ) != PATH_DELIMITER ){
                     choiceArray[ choiceNum ] += text.charAt( index );
                     index++;
                 }
@@ -89,11 +89,6 @@ public class DataAccess
             ++index;
         }
 
-        for( String choice : choiceArray )
-        {
-            Log.d( "Invalid String Element: player choice", choice );
-        }
-
         return choiceArray;
     }
 
@@ -101,23 +96,24 @@ public class DataAccess
     {
 
         String path = filepath + folderName + fileName;
-        Log.d("Filepathingisforlosers", path);
+        Log.d("File Path Used: ", path);
         String[] choicePath = new String[] { "", "", "", "" };
         final char PATH_DELIMITER = '@';
         // this is the file in text form.
         String text = readFile(path);
+
+        if( text == null )
+            return null;
         int index = 0;
         int choiceNum = 0;
 
         //while characters are available to read
-        while ( index < text.length() && choiceNum < 4 ) {
+        while ( index < text.length() && choiceNum < 4 ){
             //reached choice otherwise keep indexing
-            if (text.charAt( index ) == PATH_DELIMITER )
-            {
+            if (text.charAt(index) == PATH_DELIMITER){
                 ++index;
-                while( text.charAt( index ) != '\n' )
-                {
-                    choicePath[ choiceNum ] += text.charAt( index );
+                while (text.charAt(index) != '\n'){
+                    choicePath[choiceNum] += text.charAt(index);
                     index++;
                 }
                 //increment choice num to next index in array
@@ -126,11 +122,6 @@ public class DataAccess
             ++index;
         }
 
-        for( String filePath : choicePath )
-        {
-            Log.d( "Invalid String Element: file path", filePath );
-        }
-        Log.d("Choicepath", choicePath[0]);
         return choicePath;
     }
 }
