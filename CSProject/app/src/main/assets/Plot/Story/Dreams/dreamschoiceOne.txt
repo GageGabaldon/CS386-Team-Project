@@ -2,7 +2,7 @@ You gently walk over to the rope being extraordinarily careful when going to the
 very angry darkened sea. You don't see anything highly remarkable but for a lone buoy with a rather weak light to illuminate the dark ocean surrounding it.
 While looking a mighty gust of wind sweeps you away from the edge and you flop right on the platform once more. Upon lying on the floor you notice a strange cloud formation above your platform.
 
-
-1Investigate Clothes@dreamschoice2.txt
+1Investigate Clothes@dreamschoicetwo.txt
 2What Weird Clouds@dreamsclouds.txt
-3Investigate Bed@dreamschoice4.txt
+3Investigate Bed@dreamschoicefour.txt
+

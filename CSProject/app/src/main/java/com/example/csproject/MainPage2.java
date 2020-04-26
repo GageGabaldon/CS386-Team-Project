@@ -26,5 +26,4 @@ public class MainPage2 extends AppCompatActivity
         finish();
     }
 
-
 }
