@@ -1,0 +1,2 @@
+Welcome to Text Adventure Game. In this game you make your own story based on the decisions you make. Each choice you make will define your path and what you see. Enjoy!
+1Continue...@Coffee Intro

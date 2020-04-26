@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_primary"
+
+    tools:context=".Feedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/feedbackinfo"
+            android:background="@color/orange_primary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="@string/tell_us_about_your_experience"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:text="@string/feedbacksubject"
+            android:fontFamily="@font/roboto_thin"
+            android:textSize="30sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:inputType="textEmailSubject"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:layout_weight=".2"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:text="Content:"
+            android:fontFamily="@font/roboto_thin"
+            android:textSize="30sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textLongMessage"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:layout_gravity="top"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_margin="30dp"
+            android:background="@color/orange_primary"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:onClick="sendFeedbackInfo"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="@string/send_feedback" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
