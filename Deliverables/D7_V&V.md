@@ -43,6 +43,23 @@
 ---
 
 #### Script:
+*Tasks to give:*
+- Answer any questions that might pertain to the game's performance and design
+- Test all event choices & check if they lead where they are supposed to go
+- Check if there are any typos or grammatical errors in the events of the game
+- Test if you can send any feedback to the database by pushing the "FEEDBACK: Give ideas to the creators" button
+- Give any direct feedback to us developers if any (story, design, wording, etc)
+
+*Data to be collected:*
+- Answers to the questions asked about our game
+- Direct feedback from the user evaluating if any
+- Results from the tests we asked the user to perform
+
+*Questions to be asked:*
+- On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state?
+- On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
+- Is there any thing you can see right now that we can improve on? If so, what?
+- How do you feel about the interface of the game?
 
 #### Results:
 
