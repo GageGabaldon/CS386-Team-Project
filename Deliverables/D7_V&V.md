@@ -81,31 +81,43 @@ Proof of accepted test:
 
 ##### User 1
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
+
   -*Answer*
 - On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
+
   -*Answer*
 - Is there any thing you can see right now that we can improve on? If so, what?
+
   -*Answer*
 - How do you feel about the interface of the game?
+
   -*Answer*
 
 ##### User 2
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
+  
   -*Answer*
 - On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
+
   -*Answer*
 - Is there any thing you can see right now that we can improve on? If so, what?
+
   -*Answer*
 - How do you feel about the interface of the game?
+
   -*Answer*
   
-  ##### User 3
+##### User 3
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
+
   -*Answer*
 - On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
+
   -*Answer*
 - Is there any thing you can see right now that we can improve on? If so, what?
+
   -*Answer*
 - How do you feel about the interface of the game?
+
   -*Answer*
 #### Reflections:
