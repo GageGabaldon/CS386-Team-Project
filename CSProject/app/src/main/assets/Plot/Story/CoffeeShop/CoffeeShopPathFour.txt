@@ -1,2 +1,2 @@
 "If you say so! I'll heat up an egg sandwich in just a moment." the barista says. She then asks "Can I get a name?".
-1Continue...@AcceptName.txt
+>Continue...@AcceptName.txt

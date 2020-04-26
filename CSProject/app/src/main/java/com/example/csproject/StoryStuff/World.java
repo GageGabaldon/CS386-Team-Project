@@ -46,7 +46,7 @@ public class World
     {
         String descriptionIncludingName = currentStory.getEventDescription();
         Log.d("Name in Description: ", Player.getInstance().getName());
-        return descriptionIncludingName.replaceAll( "playerName", Player.getInstance().getName() );
+        return descriptionIncludingName.replaceAll( "playerName", Player.getInstance().getName().trim() );
     }
 
     public String[] getChoices()

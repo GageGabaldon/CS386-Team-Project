@@ -1,2 +1,2 @@
 The man you know to be Detective Cage asks, "playerName, on your way back to the precinct so soon? Mind if I tag along?".
-1Continue...@Story End
+>Continue...@Story End

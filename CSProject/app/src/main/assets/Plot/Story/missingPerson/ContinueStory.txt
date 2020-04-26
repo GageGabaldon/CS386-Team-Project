@@ -4,7 +4,7 @@ She gave a lot of information on her father. He is up early every morning, works
 He doesn't appear to ever leave a span of 6 blocks, a small radius to work with. What is so hard is he was well liked by friends and coworkers, and he didn't have any bad habits. He apparently doesn't drink, smoke, have any history of criminal behavior, and hasn't even been in a car related collision for 26 years.
 I have a few places to start this up. Where do I start?
 
-1Hardware store@HardwareStore.txt
-2His home@MissingPHouse.txt
-3Burgar place next door@BurgerShop.txt
-4Find his daughter@GetDaughter.txt
+>Hardware store@HardwareStore.txt
+>His home@MissingPHouse.txt
+>Burger place next door@BurgerShop.txt
+>Find his daughter@GetDaughter.txt

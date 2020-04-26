@@ -1,2 +1,2 @@
 "Don't worry about it you say." You quicly say. You grab the food and walk off toward the door.
-1Continue...@CoffeeShopOutro.txt
+>Continue...@CoffeeShopOutro.txt

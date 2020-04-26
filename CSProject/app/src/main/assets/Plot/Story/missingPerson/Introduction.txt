@@ -1,5 +1,5 @@
 This man has been missing for a while. Last seen two weeks ago with no leads on where he went. His daughter was constantly calling for the first week after he was reported missing.
 Come to think of it, she hasn't come up or called in for some time. Should I look into this?
 
-1I want to help her and it is weird she hasn't said anything in a week...@ContinueStory.txt
-2Nah this isn't worth my time...@Story End
+>This is what I should work on...@ContinueStory.txt
+>Nah this isn't worth my time...@Story End

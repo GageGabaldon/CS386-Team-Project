@@ -1,2 +1,2 @@
 You give him a quick panicked look and bolt for the door before he can say anything more.
-1Continue!@Story End
+>Continue!@Story End

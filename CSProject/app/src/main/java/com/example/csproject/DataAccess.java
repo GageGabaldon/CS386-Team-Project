@@ -64,11 +64,11 @@ public class DataAccess
         // this is the text of the file.
         String fileText =  readFile(path);
 
-        String description = "";
+        String description;
 
         if( fileText != null )
         {
-            description = fileText.substring(0, fileText.lastIndexOf("1"));
+            description = fileText.substring(0, fileText.indexOf(">"));
         }
         else
         {
@@ -101,7 +101,7 @@ public class DataAccess
         while ( index < text.length() && choiceNum < 4 )
         {
             //reached choice otherwise keep indexing
-            if (text.charAt( index ) < 53 && text.charAt( index ) > 48)
+            if (text.charAt( index ) ==  '>')
             {
                 index++;
                 while( text.charAt( index ) != PATH_DELIMITER ){
