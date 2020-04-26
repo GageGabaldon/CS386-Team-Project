@@ -1,0 +1,4 @@
+"I have an order for playerName!" the barista hollars.
+
+1Pick up order@CoffeeShopOutro.txt
+2Leave without grabbing order@CoffeeShopAlternateBeforeOutro.txt

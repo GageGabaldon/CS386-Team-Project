@@ -133,12 +133,12 @@ public class Event
             storyDirectory = "CoffeeShop/";
             eventFileName = "CoffeeShopIntro.txt";
         }
+        else if( eventFileName.compareTo( ""))
         else if( eventFileName.compareTo( "Enter Name" ) == 0 )
         {
 
             storyDirectory = "CoffeeShop/";
             eventFileName = "CoffeeShopOutro.txt";
-            changeIntent();
         }
         else if( eventFileName.compareTo( "Warehouse" ) == 0 )
         {

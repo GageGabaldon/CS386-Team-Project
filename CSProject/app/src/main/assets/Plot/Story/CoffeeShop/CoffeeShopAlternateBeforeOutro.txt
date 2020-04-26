@@ -1,0 +1,6 @@
+You start to walk towards the door without grabbing your order when you are interrupted by a man calling your attention. "Hey, looks like you didn't grab your food, playerName."
+As you turn around he continues "Yup. I thought that was you, detective. It has been a while...".
+
+1Accept your order@GetFood.txt
+2Refuse the order@RefuseFood.txt
+3Have an existential crisis@Exos.txt
