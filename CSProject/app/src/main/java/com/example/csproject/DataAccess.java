@@ -47,7 +47,7 @@ public class DataAccess
             Log.d("\n\nIO Exception: ", "Could not find File");
             return null;
         }
-        return readText;
+        return readText.concat( "\n " );
     }
 
     /** Get Event description

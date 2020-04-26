@@ -58,6 +58,10 @@ public class Event
         return choices;
     }
 
+    public void setEventFileName( String newFileName )
+    {
+        eventFileName = newFileName;
+    }
     /**
      * Uses the data access class object to retrieve data from the files in plot folder
      *
@@ -123,22 +127,20 @@ public class Event
         eventFileName = choicePath[ choice ].trim();
         //If the new path is the end of the story, set directory to our main hub, the local precinct
 
-        if( eventFileName.compareTo( "Dreams" ) == 0 )
-        {
-            storyDirectory = "Dreams/";
-            eventFileName = "dreamsbeginning.txt";
-        }
-        else if( eventFileName.compareTo( "Coffee Intro" ) == 0 )
+        if( eventFileName.compareTo( "Coffee Intro" ) == 0 )
         {
             storyDirectory = "CoffeeShop/";
             eventFileName = "CoffeeShopIntro.txt";
         }
-        else if( eventFileName.compareTo( ""))
-        else if( eventFileName.compareTo( "Enter Name" ) == 0 )
+        else if( eventFileName.compareTo( "Missing Person" ) == 0 )
         {
-
-            storyDirectory = "CoffeeShop/";
-            eventFileName = "CoffeeShopOutro.txt";
+            storyDirectory = "missingPerson/";
+            eventFileName = "Introduction.txt";
+        }
+        else if( eventFileName.compareTo( "Dreams" ) == 0 )
+        {
+            storyDirectory = "Dreams/";
+            eventFileName = "dreamsbeginning.txt";
         }
         else if( eventFileName.compareTo( "Warehouse" ) == 0 )
         {
@@ -149,6 +151,15 @@ public class Event
         {
             storyDirectory = "Hub/";
             eventFileName = "Precinct.txt";
+        }
+        else if( eventFileName.compareTo( "AcceptName.txt" ) == 0 )
+        {
+            changeIntent();
+        }
+        else if( eventFileName.compareTo( "No Replay" ) == 0 )
+        {
+            storyDirectory = "Hub/";
+            eventFileName = "noReplay.txt";
         }
         // uses updateChoices and updateDescription
         updateDescription( storyDirectory );

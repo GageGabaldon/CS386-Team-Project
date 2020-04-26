@@ -40,6 +40,11 @@ public class Story {
         currentEvent.updateCurrentEvent( choiceMade );
     }
 
+    public void setCurrentEventFileName( String newFileName )
+    {
+        currentEvent.setEventFileName( newFileName );
+    }
+
     /** returns event description
      *
      * @return

@@ -31,8 +31,10 @@ public class World
      */
     public void updateStory( int choice )
     {
-        if( !playedStories.contains( currentStory ) )
+        if( !playedStories.contains( currentStory.getEventFileName() ) )
             playedStories.add( currentStory.getEventFileName() );
+        else
+            currentStory.setCurrentEventFileName( "No Replay" );
         currentStory.updateEvents( choice );
     }
 
