@@ -15,26 +15,41 @@ public class DataAccess
         filepath = "Plot/Story/";
         this.context = context;
     }
+
+    /** Reads the file and returns a string of the file
+     *
+     * @param path
+     * @return fileasstring
+     */
     public String readFile(String path)
     {
-        String text;
+        String readText;
+
         AssetManager am = context.getAssets();
+
         InputStream isr;
         try{
             isr = am.open(path);
+
             int size = isr.available();
+
             byte[] buffer = new byte[size];
+
             isr.read(buffer);
+
             isr.close();
-            text = new String(buffer);
-            Log.d("The text description", text);
+
+            readText = new String(buffer);
+
+            Log.d( "The text description", readText );
         }
         catch (IOException c){
             Log.d("\n\nIO Exception: ", "Could not find File");
             return null;
         }
-        return text;
+        return readText;
     }
+
     /** Get Event description
      *
      * @param fileName
@@ -44,12 +59,15 @@ public class DataAccess
     public String getEventDescription( String folderName, String fileName)
     {
         String path = filepath + folderName + fileName;
+
         Log.d("File Path Used: ", path);
         // this is the text of the file.
-        String text =  readFile(path);
+        String fileText =  readFile(path);
+
         String description = "";
-        if( text != null )
-            description = text.substring( 0, text.lastIndexOf( "1" ) );
+
+        if( fileText != null )
+            description = fileText.substring( 0, fileText.lastIndexOf( "1" ) );
         else
             return null;
 

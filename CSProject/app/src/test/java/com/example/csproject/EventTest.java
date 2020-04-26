@@ -1,4 +1,12 @@
 package com.example.csproject;
 
-public class EventTest {
+import org.junit.Test;
+
+public class EventTest
+{
+    @Test
+    public void testUpdateChoices()
+    {
+
+    }
 }

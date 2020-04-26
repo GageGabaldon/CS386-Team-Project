@@ -1,34 +1,34 @@
-#D.2 - Requirements
+# D.2 - Requirements
 ____________________________________
 
-###1. Positioning
-#####a. Problem Statement:
+### 1. Positioning
+##### a. Problem Statement:
 The problem of being bored and looking for an immersive gaming experience affects gamers; the impact of which is being unable to find a game or experience that helps pass time.
 
-#####b. Product Position Statement:
+##### b. Product Position Statement:
 For gamers who are looking for ways to alleviate boredom and pass time, TextAdventureGame is a text adventure game that immerses the user in a story in which they choose their own path unlike other text adventure games, our product keeps the user engaged by providing multiple choices that lead to multiple paths of gameplay.
 
-#####c. Value Proposition
+##### c. Value Proposition
 I. *Value Proposition*: TextAdventureGame is a text adventure game that allows gamers to pass time and reduce boredom. The game encourages creativity and personal choice to determine the path the story leads. Players will have the opportunity to play something more open-ended and thought provoking than most mainstream games currently available.
 
 II. *Consumer Segment*: Gamers who are looking for an immersive text adventure.
 
 
-###2. Stakeholders
-#####a. Developers:
+### 2. Stakeholders
+##### a. Developers:
 Create the idea behind and implement a text adventure game playable on android. Responsibilities include learning the necessary tools (Android studio, some sort of database - probably SQL), outlining the story for the game by creating paths and and story lines that work together.
 
-#####b. Gamers
+##### b. Gamers
 people who will play the game and provide feedback regarding game play mechanics and user interaction for the developers. Responsibilities include playing through the game and following the storyline.
 
-#####c. Readers
+##### c. Readers
 people who will play the game and provide feedback regarding aspects of the storyline, storytelling ability, and user interaction for the developers. Responsibilities include playing through the game and following the storyline, just like the gamers.
 
-#####d. Testers
+##### d. Testers
 People who will also play the game and search thoroughly for bugs and discontinuity. Responsibilities include exhausting options in the game and finding bugs/issues to report to the developers. Provide assistance for creating a seamless user experience.
 
 
-###3. Functional Requirements
+### 3. Functional Requirements
 1. Clean, Elegant User Interface
 
 2. Organized Infrastructure of story choices
@@ -42,7 +42,7 @@ People who will also play the game and search thoroughly for bugs and discontinu
 6. New Game Plus
 
 
-###4. Non-Functional Requirements
+### 4. Non-Functional Requirements
 1. Must look appealing, immersive, and sellable to our audience
 
 2. Must work on Android OS and Apple IOS
@@ -53,20 +53,20 @@ People who will also play the game and search thoroughly for bugs and discontinu
 
 5. Smooth and Intuitive GUI
 
-###5. MVP
+### 5. MVP
 For creating our MVP our main strategy will be to reference our interviews and observe overlapping opinions for deciding what to implement. Frequent specifications about important aspects in the game will be key to our MVP. Things such as smooth and intuitive UI as well as story immersion are common themes in all of our interviews thus far and are considered important to our MVP.
 More interviews may be necessary to get a larger amount of opinions regarding features. With the current focus being on the user interface and the story, we will plan to develop the UI first for demoing and testing.
 
 
-###6. Use Cases
-#####a. Use Case Diagram
+### 6. Use Cases
+##### a. Use Case Diagram
 
 ![Use Case Diagram](/Deliverables/386usediagramSS1.png)
 
-#####b. Use Case Description
+##### b. Use Case Description
 *Elijah's Use Case*
 
-######**Use Case: Test Game**
+###### **Use Case: Test Game**
 
 I. Brief Description: The use case demonstrates how the testers find bugs in the game & how the developers deal with said bugs
 
@@ -103,7 +103,7 @@ VII. Post-conditions
 Game tested successfully w/o bugs
 
 *Vidal's Use Case*
-######**Use Case: Interaction in Menu**
+###### **Use Case: Interaction in Menu**
 I. Brief Description: This use case demonstrates how maneuvering through the menu will get you into the beginning of the game.
 
 II. Actors: Player
@@ -125,7 +125,7 @@ VI. Key Scenarios:
 
 IIV. Post-Conditions: Player is in a session of the game
 
-######**Use Case: Valid input**
+###### **Use Case: Valid input**
 I. Brief Description: This use case demonstrates how valid inputs from the user progress the story and are to be handled
 
 II. Actors: Player
@@ -149,7 +149,7 @@ VII. Post-Conditions: Player reaches end of game
 
 *Tommy's Use Case*
 
-######**Use case: Wrong input**
+###### **Use case: Wrong input**
 I. Brief Description: This use case demonstrates how wrong inputs from the user will be handled.
 
 II. Actors: Testers, Developers
@@ -213,7 +213,7 @@ VII. Post-Conditions:
 1. New Feature is added to App
 2. User contacted and thanks given
 
-###7. User Stories
+### 7. User Stories
 
 1. As a user, I want wrong inputs to be handled effeciently so that misclicks and typos will not drag on and be consequential to the story of the game.
 
@@ -268,7 +268,7 @@ Time Estimate: 20 - 30 hours
 Priority Level: Medium
 Time Estimate: 1 - 2 hours
 
-###8. Trello
+### 8. Trello
 https://trello.com/b/2S8T1pBG/cs-386-project-main
 
 ![TrelloScreenShot](/Deliverables/386trelloSS.png)
