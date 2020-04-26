@@ -161,7 +161,6 @@ public class Event
             storyDirectory = "Hub/";
             eventFileName = "noReplay.txt";
         }
-        // uses updateChoices and updateDescription
         updateDescription( storyDirectory );
         updateChoices( storyDirectory );
         updateChoicePaths( storyDirectory );

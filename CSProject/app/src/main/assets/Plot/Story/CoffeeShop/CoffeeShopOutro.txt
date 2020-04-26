@@ -1,2 +1,3 @@
 The man you know to be Detective Cage asks, "playerName, on your way back to the precinct so soon? Mind if I tag along?".
->Continue...@Story End
+>Actually, I don't like you...@NotFriends.txt
+>Yeah, he's a good guy...@AreFriends.txt
