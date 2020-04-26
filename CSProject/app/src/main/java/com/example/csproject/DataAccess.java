@@ -67,10 +67,14 @@ public class DataAccess
         String description = "";
 
         if( fileText != null )
-            description = fileText.substring( 0, fileText.lastIndexOf( "1" ) );
+        {
+            description = fileText.substring(0, fileText.lastIndexOf("1"));
+        }
         else
+        {
             return null;
-        return description;
+        }
+        return description.trim();
     }
 
     /** Get the events choices of a text file.
