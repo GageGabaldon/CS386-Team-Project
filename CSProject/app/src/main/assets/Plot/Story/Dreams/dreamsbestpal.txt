@@ -2,5 +2,5 @@ You decide to see what the creature is all about. As the door opens you gaze upo
 "Hey". You startled a bit that a cloud just said hey, you reel back a bit and mutter the words "Sup". The cloud starts then starts shuttering and a gurgle of
 little thundering emits from the creature much like a laugh. He then speaks again saying, "What are you doing here".
 
-1I Have No Idea@explantation.txt
-2Why Are You A Cloud@seniorcloud.txt
+>I Have No Idea@explantation.txt
+>Why Are You A Cloud@seniorcloud.txt
