@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.Log;
 
+import com.example.csproject.Characters.Player;
+
 import java.io.*;
 
 public class DataAccess
@@ -70,7 +72,7 @@ public class DataAccess
         else
             return null;
 
-        return description;
+        return description.trim();
     }
 
     /** Get the events choices of a text file.
@@ -106,7 +108,7 @@ public class DataAccess
             }
             ++index;
         }
-
+        choiceArray = redoArrayBasedOnItemRequirements(choiceArray);
         return choiceArray;
     }
 
@@ -141,5 +143,45 @@ public class DataAccess
         }
 
         return choicePath;
+    }
+    public String[] redoArrayBasedOnItemRequirements(String[] array)
+    {
+        String substring;
+        int index;
+        int substringindex;
+        for (index = 0; index < 4; index++)
+        {
+            if(array[index].contains("&"))
+            {
+                substringindex = array[index].indexOf("&");
+                substring = array[index].substring(substringindex);
+                if(changePlayer(substring))
+                {
+                    array[index] = array[index].substring(0, substringindex);
+                }
+                else
+                    {
+                        array[index] = "";
+                    }
+            }
+        }
+
+        return array;
+    }
+
+    public boolean changePlayer(String string)
+    {
+        String substring;
+        if(string.contains("NEED"))
+        {
+            substring = string.replace("Need", "");
+            return false;
+        }
+        if(string.contains("ADD"))
+        {
+            substring = string.replace("ADD", "");
+            return true;
+        }
+        return false;
     }
 }

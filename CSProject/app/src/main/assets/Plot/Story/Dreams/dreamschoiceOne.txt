@@ -1,8 +1,9 @@
-You gently walk over to the rope being extraordinarily careful when going to the edge. You peer over the structure and see a rope descending into a
+You gently walk over to the rope being extraordinarily careful when going to the edge. You peer over the structure and see the metal platform
+descends dow a ways like a huge metal can and see the rope descending into a
 very angry darkened sea. You don't see anything highly remarkable but for a lone buoy with a rather weak light to illuminate the dark ocean surrounding it.
-While looking a mighty gust of wind sweeps you away from the edge and you flop right on the platform once more. Upon lying on the floor you notice a strange cloud formation above your platform.
+While looking a mighty gust of wind sweeps you away from the edge and you flop right on the platform once more. Upon lying on the floor you notice strange cloud formation above your platform.
 
 1Investigate Clothes@dreamschoiceTwo.txt
 2What Weird Clouds@dreamsclouds.txt
 3Investigate Bed@dreamschoiceFour.txt
-
+4Climb Down Anyway@dreamsclimbdown.txt

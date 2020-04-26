@@ -7,7 +7,7 @@ rope hanging of the edge of this building.
 
 
 
-1Investigate rope@dreamschoiceOne.txt
-2Investigate clothes@dreamschoiceTwo.txt
-3Take another look around@dreamschoiceThree.txt
+1Investigate Rope@dreamschoiceOne.txt
+2Investigate Clothes@dreamschoiceTwo.txt
+3Take Another Look Around@dreamschoiceThree.txt
 4Investigate your bed@dreamschoiceFour.txt
