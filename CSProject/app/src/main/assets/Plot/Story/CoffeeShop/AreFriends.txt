@@ -1,0 +1,3 @@
+"Of course! You're a good friend." You say as you walk out the door with the detective.
+
+>Leave with Detective Cage@Story End
