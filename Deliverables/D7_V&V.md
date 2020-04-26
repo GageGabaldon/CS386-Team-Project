@@ -21,23 +21,39 @@
 
 #### 2.2 Integration Tests
 
-##### 2.1.1
+##### 2.2.1
 
-##### 2.1.2
+##### 2.2.2
 
-##### 2.1.3
+##### 2.2.3
 
-##### 2.1.4
+##### 2.2.4
 
 #### 2.3 Acceptance Tests
 
-##### 2.1.1
+##### 2.3.1
 
-##### 2.1.2
+We used Espresso for our acceptance tests as it is already integrated in Android Studio and allowed us to easily test our UI.
 
-##### 2.1.3
+##### 2.3.2
 
-##### 2.1.4
+Acceptance Tests
+
+https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src/androidTest/java/com/example/csproject
+
+##### 2.3.3
+
+New Game acceptance test
+
+https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CSProject/app/src/androidTest/java/com/example/csproject/NewGameAcceptanceTest.java
+
+This acceptance test tests that when the user starts a new game, the correct text and buttons are displayed to the correct views on the screen. This confirms that the game starts out correctly with no errors.
+
+##### 2.3.4
+
+Proof of accepted test:
+
+![Screenshot1](/Deliverables/newGameTest.png)
 
 ### 3. Validation (user evaluation)
 ---
