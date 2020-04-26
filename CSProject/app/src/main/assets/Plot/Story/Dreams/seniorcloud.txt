@@ -1,4 +1,4 @@
 The cloud shrugs his "shoulders" and mutters "Why are you not cloud". He then tells you if you want to know more come inside the house and have a talk.
 You decide that might as well talk to the cloud.
 
-1Continue...@explantation.txt
+>Continue...@explantation.txt

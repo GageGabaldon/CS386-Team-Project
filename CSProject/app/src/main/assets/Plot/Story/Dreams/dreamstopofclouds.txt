@@ -1,6 +1,6 @@
 As you rush up the stair cas you are suddenly crash into a solid door. As you get up from falling you start to notice your surrounding area. A beautiful innate door
 you ran into. The house the door is attached to made with cloud walls in a quaint little house. As you look thought the window you see a creature rise up and approach the door.
 
-1Rush Away@runaway.txt
-2Stand Your Ground@dreamsbestpal.txt
-3Nope Walk Back Down@backatplatform.txt
+>Rush Away@runaway.txt
+>Stand Your Ground@dreamsbestpal.txt
+>Nope Walk Back Down@backatplatform.txt
