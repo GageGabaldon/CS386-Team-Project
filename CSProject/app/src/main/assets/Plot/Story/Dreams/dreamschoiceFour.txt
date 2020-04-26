@@ -1,4 +1,5 @@
-WIP Story Reached End
+You approach your bed.It seems like your normal bed with your normal black blanket and your normal ... body pillow. You take a look at the ground and see the
+deep skid marks into the metal. Looking around you see some other marks into the metal and conclude that you were dropped here. Confused you look above you and see clouds swirling above you.
 
->Return to story start@dreamsbeginning.txt
->Leave story@Story End
+>Weird Clouds@dreamsclouds.txt
+>Bed Looks Comfy@falseend.txt

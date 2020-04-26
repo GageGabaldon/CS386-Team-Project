@@ -21,23 +21,39 @@
 
 #### 2.2 Integration Tests
 
-##### 2.1.1
+##### 2.2.1
 
-##### 2.1.2
+##### 2.2.2
 
-##### 2.1.3
+##### 2.2.3
 
-##### 2.1.4
+##### 2.2.4
 
 #### 2.3 Acceptance Tests
 
-##### 2.1.1
+##### 2.3.1
 
-##### 2.1.2
+We used Espresso for our acceptance tests as it is already integrated in Android Studio and allowed us to easily test our UI.
 
-##### 2.1.3
+##### 2.3.2
 
-##### 2.1.4
+Acceptance Tests
+
+https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src/androidTest/java/com/example/csproject
+
+##### 2.3.3
+
+New Game acceptance test
+
+https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CSProject/app/src/androidTest/java/com/example/csproject/NewGameAcceptanceTest.java
+
+This acceptance test tests that when the user starts a new game, the correct text and buttons are displayed to the correct views on the screen. This confirms that the game starts out correctly with no errors.
+
+##### 2.3.4
+
+Proof of accepted test:
+
+![Screenshot1](/Deliverables/newGameTest.png)
 
 ### 3. Validation (user evaluation)
 ---
@@ -63,4 +79,45 @@
 
 #### Results:
 
+##### User 1 - Noelia
+- On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
+
+  *8. The game seemed interesting and the story intriguing. The UI was easy to use and intuitive.*
+- On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
+
+  *5. She said the story was creative and immersive. There was a good amount of choice that let her feel like she had control over what was going on. The story is well written.*
+- Is there any thing you can see right now that we can improve on? If so, what?
+
+  *Sometimes the wording was confusing. There were still small gramatical errors in the text that could have been fixed. Sometimes there was a lot of information at once which made remebering the finer details a little difficult.*
+- How do you feel about the interface of the game?
+
+  *The game looks and works fine, sometimes there is just a lot of information and text on the screen at once. The buttons and choices are concise and straightforward.*
+
+##### User 2
+- On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
+  
+  *Answer*
+- On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
+
+  *Answer*
+- Is there any thing you can see right now that we can improve on? If so, what?
+
+  *Answer*
+- How do you feel about the interface of the game?
+
+  *Answer*
+  
+##### User 3
+- On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
+
+  *Answer*
+- On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
+
+  *Answer*
+- Is there any thing you can see right now that we can improve on? If so, what?
+
+  *Answer*
+- How do you feel about the interface of the game?
+
+  *Answer*
 #### Reflections:

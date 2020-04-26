@@ -6,8 +6,7 @@ You find the scratch marks on the floor that appears to be what woke you up. Asi
 rope hanging of the edge of this building.
 
 
-
->Investigate rope@dreamschoiceOne.txt
->Investigate clothes@dreamschoiceTwo.txt
->Take another look around@dreamschoiceThree.txt
->Investigate your bed@dreamschoiceFour.txt
+>Investigate Rope@dreamschoiceOne.txt
+>Investigate Clothes@dreamschoiceTwo.txt
+>Take Another Look Around@dreamschoiceThree.txt
+>Investigate Your Bed@dreamschoiceFour.txt

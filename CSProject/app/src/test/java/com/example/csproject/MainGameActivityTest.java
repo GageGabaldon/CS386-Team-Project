@@ -1,21 +1,15 @@
 package com.example.csproject;
 
-import android.content.Context;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-
+import static org.mockito.Mockito.*;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class MainGameActivityTest
 {
     MainGameActivity mg;
-    @Mock
-    Context context;
-    @Mock
     UpdateGame upgame;
 
     @Test
@@ -25,15 +19,15 @@ public class MainGameActivityTest
         int expected = 0;
         assertEquals(expected, mg.getButton(R.id.option1));
     }
+
     @Test
-    public void testUpdateText()
+    public void testupdatescreen()
     {
-
+        upgame = mock(UpdateGame.class);
+        String[] array ={"Continue...", "", "", ""};
+        when(upgame.getChoices()).thenReturn(array);
+        when(upgame.updateMainGameText()).thenReturn("Welcome to Text Adventure Game. In this game you make your own story based on the decisions you make. Each choice you make will define your path and what you see. Enjoy!");
+        mg = new MainGameActivity();
+        mg.setupGame();
     }
-    @Test
-    public void testUpdateButtons()
-    {
-
-    }
-
 }
