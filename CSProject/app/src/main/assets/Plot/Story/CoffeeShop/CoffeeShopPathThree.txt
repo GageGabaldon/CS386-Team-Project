@@ -1,2 +1,2 @@
 "Oh interesting. One iced mocha frapuccino with whipped cream and chocolate syrup drizzle coming up!" the barista says. She then asks "Can I get a name?".
-1Continue...@Enter Name
+>Continue...@AcceptName.txt

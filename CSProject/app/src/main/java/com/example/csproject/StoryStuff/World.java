@@ -1,6 +1,7 @@
 package com.example.csproject.StoryStuff;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.example.csproject.Characters.Player;
 
@@ -13,14 +14,12 @@ import java.util.ArrayList;
 public class World
 {
     private ArrayList<String> playedStories;
-    private Player player;
     private Story currentStory;
 
     public World(Context context)
     {
         // Story object is created which instantiates the first event in the story, adds story to
         //played stories array list
-        player = new Player();
         currentStory = new Story(context);
         playedStories = new ArrayList<>();
         playedStories.add( currentStory.getEventFileName());
@@ -32,10 +31,11 @@ public class World
      */
     public void updateStory( int choice )
     {
-        if( !playedStories.contains( currentStory ) )
+        if( !playedStories.contains( currentStory.getEventFileName() ) )
             playedStories.add( currentStory.getEventFileName() );
+        else
+            currentStory.setCurrentEventFileName( "No Replay" );
         currentStory.updateEvents( choice );
-
     }
 
     /**
@@ -44,7 +44,9 @@ public class World
      */
     public String getCurrentDescription()
     {
-        return currentStory.getEventDescription();
+        String descriptionIncludingName = currentStory.getEventDescription();
+        Log.d("Name in Description: ", Player.getInstance().getName());
+        return descriptionIncludingName.replaceAll( "playerName", Player.getInstance().getName().trim() );
     }
 
     public String[] getChoices()
@@ -54,6 +56,6 @@ public class World
 
     public void updatePlayer(String name)
     {
-        player.setName(name);
+        Player.getInstance().setName(name);
     }
 }

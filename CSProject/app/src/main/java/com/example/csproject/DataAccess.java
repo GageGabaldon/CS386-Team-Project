@@ -25,7 +25,7 @@ public class DataAccess
      */
     public String readFile(String path)
     {
-        String readtext = null;
+        String readText;
 
         AssetManager am = context.getAssets();
 
@@ -41,14 +41,15 @@ public class DataAccess
 
             isr.close();
 
-            readtext = new String(buffer);
+            readText = new String(buffer);
 
-            Log.d("The text description", readtext);
+            Log.d( "The text description", readText );
         }
         catch (IOException c){
             Log.d("\n\nIO Exception: ", "Could not find File");
+            return null;
         }
-        return readtext;
+        return readText.concat( "\n " );
     }
 
     /** Get Event description
@@ -63,15 +64,19 @@ public class DataAccess
 
         Log.d("File Path Used: ", path);
         // this is the text of the file.
-        String filetext =  readFile(path);
+        String fileText =  readFile(path);
 
-        String description = "";
+        String description;
 
-        if( filetext != null )
-            description = filetext.substring( 0, filetext.lastIndexOf( "1" ) );
+        if( fileText != null )
+        {
+            description = fileText.substring(0, fileText.indexOf(">"));
+        }
         else
+        {
             return null;
 
+        }
         return description.trim();
     }
 
@@ -81,7 +86,8 @@ public class DataAccess
      * @param fileName
      * @return
      */
-    public String[] getEventChoices( String folderName, String fileName ){
+    public String[] getEventChoices( String folderName, String fileName )
+    {
         String path = filepath + folderName + fileName;
         Log.d("File Path Used: ", path);
         String[] choiceArray = new String[] { "", "", "", "" };
@@ -95,9 +101,11 @@ public class DataAccess
         int index = 0;
         int choiceNum = 0;
         //while characters are available to read
-        while ( index < text.length() && choiceNum < 4 ){
+        while ( index < text.length() && choiceNum < 4 )
+        {
             //reached choice otherwise keep indexing
-            if (text.charAt( index ) < 53 && text.charAt( index ) > 48){
+            if (text.charAt( index ) ==  '>')
+            {
                 index++;
                 while( text.charAt( index ) != PATH_DELIMITER ){
                     choiceArray[ choiceNum ] += text.charAt( index );
@@ -128,11 +136,14 @@ public class DataAccess
         int choiceNum = 0;
 
         //while characters are available to read
-        while ( index < text.length() && choiceNum < 4 ){
+        while ( index < text.length() && choiceNum < 4 )
+        {
             //reached choice otherwise keep indexing
-            if (text.charAt(index) == PATH_DELIMITER){
+            if (text.charAt(index) == PATH_DELIMITER)
+            {
                 ++index;
-                while (text.charAt(index) != '\n'){
+                while (text.charAt(index) != '\n')
+                {
                     choicePath[choiceNum] += text.charAt(index);
                     index++;
                 }

@@ -1,1 +1,4 @@
-testing the file read
+testing the file read [description]
+
+>choice1@path from choice1
+>choice2@path from choice2

@@ -1,0 +1,4 @@
+WIP Story Reached End
+
+>Return to story start@WarehouseIntro.txt
+>Leave story@Story End

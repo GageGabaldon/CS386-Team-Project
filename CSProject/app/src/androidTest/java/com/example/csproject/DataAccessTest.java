@@ -29,7 +29,7 @@ public class DataAccessTest
     public void testGetDescription()
     {
         output = da.getEventDescription(foldername, filename);
-        assertTrue(exampleoutput.equals(output.trim()));
+        assertTrue(exampleoutput.equals(output));
     }
 
     @Test

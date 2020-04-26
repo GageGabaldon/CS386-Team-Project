@@ -1,0 +1,6 @@
+You ponder for a moment whether you truly wanted this for yourself. What are you doing here? Is this real life? It feels like some sort of game.
+No, there is no point to this. I shouldn't be here. Then again...no...no...I will go on with this. You focus back in on the scene. The man is staring at you quizzically.
+
+>Change the subject by offering the food to him@OfferFood.txt
+>Tell him not to worry@Relax.txt
+>Tell him you need to leave@QuickLeave.txt

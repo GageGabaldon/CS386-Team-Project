@@ -1,0 +1,3 @@
+He extends out the order with a slight grin on his face. As you take it and walk towards the door, you thank him.
+
+>Continue...@CoffeeShopOutro.txt

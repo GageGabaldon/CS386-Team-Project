@@ -1,31 +1,36 @@
 package com.example.csproject.Characters;
 
 
+import android.util.Log;
+
 import java.util.ArrayList;
 
-public class Player
+public final class Player
 {
-
+    private static final Player player = new Player();
     // fields
     private String name;
     private final int MAXHEALTH = 100;
-    public int health;
+    private int health;
     private int moralityScore;
 
     public ArrayList<Item> inventory;
-    public String location;
 
-    public Player()
+    private Player()
     {
-        name = "";
+        name = "Detective";
         health = MAXHEALTH;
         moralityScore = 0;
         inventory = new ArrayList<>();
     }
-
-    public void setName(String name)
+    public static Player getInstance()
     {
-        this.name = name;
+        return player;
+    }
+    public void setName(String newName)
+    {
+        name = newName;
+        Log.d("Player's Name Set: ", name );
     }
 
     public String getName()

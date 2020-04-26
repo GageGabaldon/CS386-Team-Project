@@ -1,2 +1,2 @@
 "Great choice. I will have a hot mocha ready for you in just a minute!" the barista says. She then asks "Can I get a name?".
-1Continue...@Enter Name
+>Continue...@AcceptName.txt

@@ -2,4 +2,4 @@ The clouds start swirling around you and a stairs of darkened clouds descend int
 You head up the light and soft stairs. The stairs were a long flight up but as you become closer to the loud echoing storm clouds. You begun to hear a low rumbling and then suddenly ....
 CAACHOW. A crack of lightning arcs to the sea right in front of you. You frightened by the lightning climb the staircase in a hurry.
 
-1Continue...@dreamstopofclouds.txt
+>Continue...@dreamstopofclouds.txt

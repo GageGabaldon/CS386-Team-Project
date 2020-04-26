@@ -1,0 +1,10 @@
+This needs to be done. There is a daughter out there without her father not to mention a man that could be in serious trouble.
+Where to start...he was last seen outside his place of business, a hardware store. He didn't even close up shop. He left at noon. He spent a lot of his time around a coffee shop. The coffee shop looks to be a few blocks away from his business. His daughter is in college and visits every weekend.
+She gave a lot of information on her father. He is up early every morning, works until dawn and always eats at the same burger place next to his shop, then heads home.
+He doesn't appear to ever leave a span of 6 blocks, a small radius to work with. What is so hard is he was well liked by friends and coworkers, and he didn't have any bad habits. He apparently doesn't drink, smoke, have any history of criminal behavior, and hasn't even been in a car related collision for 26 years.
+I have a few places to start this up. Where do I start?
+
+>Hardware store@HardwareStore.txt
+>His home@MissingPHouse.txt
+>Burger place next door@BurgerShop.txt
+>Find his daughter@GetDaughter.txt
