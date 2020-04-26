@@ -79,19 +79,19 @@ Proof of accepted test:
 
 #### Results:
 
-##### User 1
+##### User 1 - Noelia
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
 
-  -*Answer*
+  -*8. The game seemed interesting and the story intriguing. The UI was easy to use and intuitive.*
 - On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
 
-  -*Answer*
+  -*5. She said the story was creative and immersive. There was a good amount of choice that let her feel like she had control over what was going on. The story is well written.*
 - Is there any thing you can see right now that we can improve on? If so, what?
 
-  -*Answer*
+  -*Sometimes the wording was confusing. There were still small gramatical errors in the text that could have been fixed. Sometimes there was a lot of information at once which made remebering the finer details a little difficult.*
 - How do you feel about the interface of the game?
 
-  -*Answer*
+  -*The game looks and works fine, sometimes there is just a lot of information and text on the screen at once. The buttons and choices are concise and straightforward.*
 
 ##### User 2
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
