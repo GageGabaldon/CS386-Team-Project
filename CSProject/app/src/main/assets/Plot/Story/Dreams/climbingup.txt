@@ -1,0 +1,6 @@
+As you begin to climb back up onto the platform exhausted from the task. You notice the weird clouds above your head. They seem to be swirling in a weird pattern.
+You finally made your way up onto the cold ground.
+
+1Weird Clouds@dreamsclouds.txt
+2Investigate Clothes@dreamschoiceTwo.txt
+3Look Around@dreamschoiceThree.txt

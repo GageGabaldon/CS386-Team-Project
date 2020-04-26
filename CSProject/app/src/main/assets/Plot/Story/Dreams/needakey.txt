@@ -1,0 +1,4 @@
+As you try to pull on the door. The door does not budge. You see a little keyhole and conclude that you need some kind of key.
+With no choice you climb back up to the platform.
+
+1Climb back up the rope@climbingup.txt

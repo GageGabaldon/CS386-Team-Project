@@ -1,0 +1,6 @@
+You walk up to the pile of clothes suspicious about the only other thing up here and the weird shape it is in. You look through hte clothes. You find a small dark key that seems to be made of the same material as the platform.
+Other than that the clothes don't appear to be yours and seem rather ordinary. Other than the fact that they seemed to be in a weird place.
+
+1Look at Bed&ADDdarkkey@dreamschoiceFour.txt
+2Investigate Rope&ADDdarkkey@dreamschoiceOne.txt
+3Take Another Look Around&ADDdarkkey@dreamschoiceThree.txt

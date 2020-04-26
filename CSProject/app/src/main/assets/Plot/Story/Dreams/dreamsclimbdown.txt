@@ -1,0 +1,7 @@
+You decide that climbing down the rope anyway against your better judgement. As you climb down the crashing of the waves grow louder and the ocean mist starts to spray upon you.
+However at the bottom of the rope is a small platform that you didn't see from the top.The platform is mostly protected from the sea but an odd wave still crashes upon the platform.
+The platform has a metal door that is shut tight. It has strange carving into it that look foreign and slightly unsettling. You give it a tug and it didn't move all that much. What to do now.
+
+1Try To Pry open door@needakey.txt
+2Climb back up the rope@climbingup.txt
+3Open Door&NEEDdarkkey@darkendroom.txt
