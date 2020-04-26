@@ -70,7 +70,6 @@ public class DataAccess
             description = fileText.substring( 0, fileText.lastIndexOf( "1" ) );
         else
             return null;
-
         return description;
     }
 
