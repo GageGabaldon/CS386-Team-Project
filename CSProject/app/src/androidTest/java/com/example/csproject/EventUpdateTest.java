@@ -16,16 +16,16 @@ import static org.junit.Assert.assertEquals;
 @RunWith(AndroidJUnit4.class)
 public class EventUpdateTest {
     private Context context = ApplicationProvider.getApplicationContext();
-    Event event1 = new Event( "CoffeeShop/", context );
+    Event event1 = new Event( "Introduction/", context );
 
     @Test
     public void eventUpdateDescription()
     {
         String actualDescription =
-                "You find yourself waiting in line in a coffee shop. The barista states"
-                + "\"I can help whoever is next.\". You notice you are now at the front of"
-                + "the line and so you take a step forward to the counter. The barista asks"
-                + "\"What would you like, detective?\".\n";
+                "You find yourself waiting in line in a coffee shop. The barista states "
+                + "\"I can help whoever is next.\". You notice you are now at the front of "
+                + "the line and so you take a step forward to the counter. The barista asks "
+                + "\"What would you like, detective?\".";
         event1.setEventFileName( "CoffeeShopIntro.txt" );
         event1.updateDescription( "CoffeeShop/" );
         assertEquals( event1.getDescription(), actualDescription );
