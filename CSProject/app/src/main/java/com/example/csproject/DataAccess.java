@@ -12,6 +12,7 @@ public class DataAccess
 {
     String filepath;
     Context context;
+
     public DataAccess(Context context)
     {
         filepath = "Plot/Story/";
