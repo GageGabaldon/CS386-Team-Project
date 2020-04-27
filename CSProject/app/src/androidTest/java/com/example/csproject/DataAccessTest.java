@@ -1,5 +1,6 @@
 package com.example.csproject;
 import android.content.Context;
+import android.util.Log;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -8,7 +9,6 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 
 @RunWith(AndroidJUnit4.class)
-
 public class DataAccessTest
 {
     private Context context = ApplicationProvider.getApplicationContext();
@@ -39,12 +39,4 @@ public class DataAccessTest
         assertArrayEquals(exampleEvent, outputarray);
 
     }
-
-    @Test
-    public void testGetPaths()
-    {
-        outputarray = da.getChoicePaths(foldername, filename);
-        assertArrayEquals(examplePaths, outputarray);
-    }
-
 }
