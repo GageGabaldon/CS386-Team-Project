@@ -110,19 +110,19 @@ Proof of accepted test:
 
   *The game looks and works fine, sometimes there is just a lot of information and text on the screen at once. The buttons and choices are concise and straightforward.*
 
-##### User 2
+##### Anthony
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
   
-  *Answer*
+  *It was ok 4 out 10 what was alright but needs more stuff. Also would like to see more paths or some other gameplay mechanic.*
 - On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
 
-  *Answer*
+  *Cloud thing was ok I give it a 4. It was a lot to look through and I didnt have time to work at it.*
 - Is there any thing you can see right now that we can improve on? If so, what?
 
-  *Answer*
+  *Fix text better text and more divergent paths. Color changes based on the story plot.*
 - How do you feel about the interface of the game?
 
-  *Answer*
+  *I like it is simple. I want a little more variety in the colors though.*
   
 ##### User 3
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
