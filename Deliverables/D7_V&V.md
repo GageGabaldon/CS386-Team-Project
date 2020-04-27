@@ -23,17 +23,7 @@ https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src
 
 ##### 2.1.3
 
-We created a mock object to test the functionality of the item class and how it worked when being added to the player's inventory.
-
-Classes Being Tested: https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CSProject/app/src/main/java/com/example/csproject/Characters/Item.java
-
-https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CSProject/app/src/main/java/com/example/csproject/Characters/Player.java
-
-Test: https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CSProject/app/src/test/java/com/example/csproject/PlayerItemMockTest.java
-
 ##### 2.1.4
-
-![example2](/Deliverables/MockObjectTest.PNG)
 
 #### 2.2 Integration Tests
 
@@ -43,21 +33,23 @@ We used Mockito and Junit for our integration tests.
   
 ##### 2.2.2
 
-Integration Tests
+Integration Tests Location
 
 https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src/androidTest/java/com/example/csproject
 
-##### 2.2.3
+##### 2.2.3 
 
-![example](/Deliverables/exampleintegration.PNG)
+DataAccess Integration Test
 
-GitHubPath: CSProject/app/src/androidTest/java/com/example/csproject/DataAccessTest.java
+https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CSProject/app/src/androidTest/java/com/example/csproject/DataAccessTest.java
 
 With this example we are testing the integration test with our file reader class. We are making sure that the files being read are what we expect based on our text files.
 
-##### 2.2.4
+##### 2.2.4 
 
-![example1](/Deliverables/EventUpdateIntegrationTest.PNG)
+Proof of accepted test:
+
+![example](/Deliverables/exampleintegration.PNG)
 
 #### 2.3 Acceptance Tests
 
@@ -67,7 +59,7 @@ We used Espresso for our acceptance tests as it is already integrated in Android
 
 ##### 2.3.2
 
-Acceptance Tests
+Acceptance Tests Location
 
 https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src/androidTest/java/com/example/csproject
 
@@ -118,7 +110,7 @@ Proof of accepted test:
   *5. She said the story was creative and immersive. There was a good amount of choice that let her feel like she had control over what was going on. The story is well written.*
 - Is there any thing you can see right now that we can improve on? If so, what?
 
-  *Sometimes the wording was confusing. There were still small gramatical errors in the text that could have been fixed. Sometimes there was a lot of information at once which made remebering the finer details a little difficult.*
+  *Sometimes, the wording was confusing. There were still small gramatical errors in the text that could have been fixed. Sometimes, there was a lot of information at once which made remebering the finer details a little difficult.*
 - How do you feel about the interface of the game?
 
   *The game looks and works fine, sometimes there is just a lot of information and text on the screen at once. The buttons and choices are concise and straightforward.*
@@ -126,10 +118,10 @@ Proof of accepted test:
 ##### User 2 - Anthony
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
   
-  *It was ok 4 out 10 what was alright but needs more stuff. Also would like to see more paths or some other gameplay mechanic.*
+  *It was ok 4 out 10 what was alright but needs more stuff. Also, would like to see more paths or some other gameplay mechanic.*
 - On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
 
-  *Cloud thing was ok I give it a 4. It was a lot to look through and I didnt have time to work at it.*
+  *Cloud thing was ok. I give it a 4. It was a lot to look through and I didnt have time to work at it.*
 - Is there any thing you can see right now that we can improve on? If so, what?
 
   *Fix text better text and more divergent paths. Color changes based on the story plot.*
@@ -152,6 +144,6 @@ Proof of accepted test:
   *I do like the interface overall. It is a simple interface that is easy and clear to use. I don't like orange for the color however.*
 #### Reflections:
 
-The app as a whole did turn out to work pretty well. We had an intuitive layout for choosing story options that allowed the user to easily progress through the story and updated based on the choices they made. We could change how we handle the access of individual stories to allow for easier expansion of the app but overall what we implemented worked for us. The learning curve of our system is very easy as the app is straightforward and self-explanatory. The choices are presented in an intuitive way that allows for easy user interaction.
+The app as a whole did turn out to work pretty well. We had an intuitive layout for choosing story options that allowed the user to easily progress through the story and updated based on the choices they made. We could change how we handle the access of individual stories to allow for easier expansion of the app but overall, what we implemented worked for us. The learning curve of our system is very easy as the app is straightforward and self-explanatory. The choices are presented in an intuitive way that allows for easy user interaction.
  
-The users seemed to perform tasks as expected from starting the game to choosing their character's name and progressing through the story options. Based on our user feedback the users' actions seemed to produce the results as expected. The clicking of a button option progressed the story and updated the buttons as it should. The users seemed to like how creative the story was. The writing and ease of use with choosing options was attractive to users looking for an immersive story. Our value proposition seems to be accomplished. We offer a story that adapts to user choice and immerses them into an interactive story. 
+The users seemed to perform tasks as expected from starting the game to choosing their character's name and progressing through the story options. Based on our user feedback the users' actions seemed to produce the results as expected. The clicking of a button option progressed the story and updated the buttons as it should. Based on the user's feedback, there are mixed response as to how good our interface is but they seemed to like how creative the story was. Additionally, they added direct feedback which we will definitely look into to enhance our project. The writing and ease of use with choosing options was attractive to users looking for an immersive story. Our value proposition seems to be accomplished. We offer a story that adapts to user choice and immerses them into an interactive story. 
