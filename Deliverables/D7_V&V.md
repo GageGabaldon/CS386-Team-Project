@@ -39,6 +39,7 @@ https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src
 
 ##### 2.2.3
 ![example](/Deliverables/exampleintegration.PNG)
+
 GitHubPath: CSProject/app/src/androidTest/java/com/example/csproject/DataAccessTest.java
 
 With this example we are testing the integration test with our file reader class.We are making sure that the files being read are what we expect. 
