@@ -11,9 +11,15 @@
 
 #### 2.1 Unit Tests
 
-##### 2.1.1 
+##### 2.1.1
+
+We used JUnit for all of our unit tests through Android Studio.
 
 ##### 2.1.2
+
+Unit Tests
+
+https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src/test/java/com/example/csproject
 
 ##### 2.1.3
 
@@ -23,7 +29,13 @@
 
 ##### 2.2.1
 
+We used Mockito for our integration tests.
+  
 ##### 2.2.2
+
+Integration Tests
+
+https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src/androidTest/java/com/example/csproject
 
 ##### 2.2.3
 
@@ -121,3 +133,4 @@ Proof of accepted test:
 
   *Answer*
 #### Reflections:
+
