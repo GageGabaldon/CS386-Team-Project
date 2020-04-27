@@ -2,9 +2,8 @@ package com.example.csproject.StoryStuff;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
+
 import com.example.csproject.DataAccess;
-import com.example.csproject.MainGameActivity;
 import com.example.csproject.MainPage2;
 
 
@@ -95,6 +94,11 @@ public class Event
 
             cIndex++;
         }
+    }
+
+    public String[] getChoicePaths()
+    {
+        return choicePath;
     }
 
     public void updateChoicePaths( String storyDir )
