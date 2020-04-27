@@ -1,9 +1,9 @@
-You and your partner, Jeffrey, is in a warehouse on a mission to expose a mafia leader. It turned out Jeffrey was a spy and is the right hand of the mafioso. He betrayed you. You remorsed on all the times you guys spent together as a partner. He persuades you to come their side. You are now forced to make a decision. 
+You and your partner, Jeffrey, is in a warehouse on a mission to expose the crime of a suspected mafia leader and kill him if possible. You guys decide on a plan to storm the warehouse. What will be the plan?
 
->Join the dark side.@WarehouseChoiceOne.txt
+>Storm the warehouse valiantly with just the two of you.@WarehouseChoiceOne.txt
 
->Join the dark side and exterminate it from the inside.@Story End
+>Sneak up and assasinate.@WarehouseChoiceTwo.txt
 
->Fight to the death trying to escape the vacinity.@WarehouseChoiceThree.txt
+>Call authorities for back up.@WarehouseChoiceThree.txt
 
->Negotiate.@WarehouseChoiceFour.txt
+>Go home.@WarehouseChoiceFour.txt

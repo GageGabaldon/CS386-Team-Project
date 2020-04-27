@@ -1,4 +1,9 @@
-WIP Story Reached End
+How will you and your partner assasinate the mafia leader? You noticed that there is a conveniently placed hole on the warehouse gate and the leader is visible from the glass roof of the warehouse.
 
->Return to story start@WarehouseIntro.txt
->Leave story@Story End
+>Use a sniper rifle.@WarehouseChoiceTwo1.txt
+
+>One of you disguises as a pizza delivery guy.@WarehouseChoiceTwo2.txt
+
+>Assault nearby guards and use their clothing to sneak in.@WarehouseChoiceTwo3.txt
+
+>Change your plan.@WarehouseIntro.txt

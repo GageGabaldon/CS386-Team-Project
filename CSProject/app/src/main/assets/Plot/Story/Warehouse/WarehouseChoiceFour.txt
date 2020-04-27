@@ -1,3 +1,4 @@
-Wait a ducking minute here. Can we talk about this Jeffrey, please?
+Note from the devs: Hey scaredy cat, are you really going to give up from here?
 
->Continue...@Story End
+>Continue...@WarehouseIntro.txt
+>Exit.@Story End
