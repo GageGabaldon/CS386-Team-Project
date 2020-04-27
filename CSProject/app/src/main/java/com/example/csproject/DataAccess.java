@@ -152,7 +152,6 @@ public class DataAccess
             }
             ++index;
         }
-
         return choicePath;
     }
     public String[] redoArrayBasedOnItemRequirements(String[] array)
