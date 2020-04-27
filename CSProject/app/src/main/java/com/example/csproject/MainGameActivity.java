@@ -141,4 +141,9 @@ public class MainGameActivity extends AppCompatActivity
         }
         return -1;
     }
+
+    public void setUpdateGame(UpdateGame upgame)
+    {
+        this.upgame = upgame;
+    }
 }
