@@ -1,3 +1,9 @@
-Every story needs its hero. And its villain. And its monster. And a hero is not me.
+What will you and Jeffrey do to storm the warehouse? You noticed that there is a conveniently placed hole on the warehouse gate and the leader is visible from the glass roof of the warehouse.
 
->Continue...@Story End
+>Use a grenade through a hole in the door.@WarehouseChoiceOne1.txt
+
+>USE KAMEHAMEEEEHAAAAAA!!!!!!!@WarehouseChoiceOne2.txt
+
+>Slash the gate open with your katana.@WarehouseChoiceOne3.txt
+
+>Change your plan.@WarehouseIntro.txt
