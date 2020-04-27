@@ -11,9 +11,15 @@
 
 #### 2.1 Unit Tests
 
-##### 2.1.1 
+##### 2.1.1
+
+We used JUnit for all of our unit tests through Android Studio.
 
 ##### 2.1.2
+
+Unit Tests
+
+https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src/test/java/com/example/csproject
 
 ##### 2.1.3
 
@@ -23,9 +29,20 @@
 
 ##### 2.2.1
 
+We used Mockito and Junit for our integration tests.
+  
 ##### 2.2.2
 
+Integration Tests
+
+https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src/androidTest/java/com/example/csproject
+
 ##### 2.2.3
+![example](/Deliverables/exampleintegration.PNG)
+
+GitHubPath: CSProject/app/src/androidTest/java/com/example/csproject/DataAccessTest.java
+
+With this example we are testing the integration test with our file reader class.We are making sure that the files being read are what we expect. 
 
 ##### 2.2.4
 
@@ -121,3 +138,7 @@ Proof of accepted test:
 
   *Answer*
 #### Reflections:
+
+The app as a whole did turn out to work pretty well. We had an intuitive layout for choosing story options that allowed the user to easily progress through the story and updated based on the choices they made. We could change how we handle the access of individual stories to allow for easier expansion of the app but overall what we implemented worked for us. The learning curve of our system is very easy as the app is straightforward and self-explanatory. The choices are presented in an intuitive way that allows for easy user interaction.
+ 
+The users seemed to perform tasks as expected from starting the game to choosing their character's name and progressing through the story options. Based on our user feedback the users' actions seemed to produce the results as expected. The clicking of a button option progressed the story and updated the buttons as it should. The users seemed to like how creative the story was. The writing and ease of use with choosing options was attractive to users looking for an immersive story. Our value proposition seems to be accomplished. We offer a story that adapts to user choice and immerses them into an interactive story. 

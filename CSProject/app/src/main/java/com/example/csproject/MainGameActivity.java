@@ -1,22 +1,12 @@
 package com.example.csproject;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
-import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.csproject.db.AppDatabase;
-
-import org.w3c.dom.Text;
-
-import java.io.IOException;
-import java.io.InputStream;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainGameActivity extends AppCompatActivity
 {
@@ -80,6 +70,7 @@ public class MainGameActivity extends AppCompatActivity
     public void updateScreen(String text)
     {
         TextView textview = (TextView) findViewById(R.id.main_text);
+        textview.scrollTo( 0, 0 );
         textview.setText(text);
     }
 
