@@ -94,30 +94,18 @@ Proof of accepted test:
   *The game looks and works fine, sometimes there is just a lot of information and text on the screen at once. The buttons and choices are concise and straightforward.*
 
 ##### User 2
+
+##### User 3 - Jerid
 - On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
   
-  *Answer*
+  *Maybe a 2 out of 10. I would not replay this as it is now, but I like the idea of it. I would be more interested in it further down the road. It has potential, but feels incomplete.*
 - On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
 
-  *Answer*
+  *I will say a 2 out of 5. I don't see any good connection between all the stories, it lacks continuity, relevence, or maybe I would say it lacks some direction. Overall I found the stories felt disconnected. If the stories were to be completed and logically connected, then I would be more interested.*
 - Is there any thing you can see right now that we can improve on? If so, what?
 
-  *Answer*
+  *Some of the descriptions are too long. I think it should be broken up into segments somehow or shortened in some other way. Another note on display, you need to check for spelling and grammar errors. Other than that, I don't have any other thoughts on improvement.*
 - How do you feel about the interface of the game?
 
-  *Answer*
-  
-##### User 3
-- On a scale of 1-10 being 10 the greatest, how likely would you play our game in its current version/state
-
-  *Answer*
-- On a scale of 1-5 being 5 the greatest, how immersive is the story or plot of the game?
-
-  *Answer*
-- Is there any thing you can see right now that we can improve on? If so, what?
-
-  *Answer*
-- How do you feel about the interface of the game?
-
-  *Answer*
+  *I do like the interface overall. It is a simple interface that is easy and clear to use. I don't like orange for the color however.*
 #### Reflections:
