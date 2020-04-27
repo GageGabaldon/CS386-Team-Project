@@ -2,5 +2,5 @@ You start booking away from the door scared that whatever lives here is not a fr
 You startled by the voice slow down and notice that a puff of cloud is right next to you. Noticing the cloud was the one you spoke. You mutter "Hey".
 The cloud then whispers again like a light wind, "What are you doing here".
 
->I Have No Idea@explanation.txt
+>I Have No Idea@explantation.txt
 >Why Are You A Cloud@seniorcloud.txt
