@@ -33,7 +33,7 @@ Test: https://github.com/GageGabaldon/CS386-Team-Project/blob/master/CSProject/a
 
 ##### 2.1.4
 
-![example2](/Deliverables/MockObjectTest.PNG)
+![example2](/Deliverables/MockObjectTest.png)
 
 #### 2.2 Integration Tests
 
@@ -49,7 +49,7 @@ https://github.com/GageGabaldon/CS386-Team-Project/tree/master/CSProject/app/src
 
 ##### 2.2.3
 
-![example](/Deliverables/exampleintegration.png)
+![example](/Deliverables/exampleintegration.PNG)
 
 GitHubPath: CSProject/app/src/androidTest/java/com/example/csproject/DataAccessTest.java
 
